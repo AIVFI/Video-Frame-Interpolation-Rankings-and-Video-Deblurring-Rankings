@@ -39,7 +39,7 @@ The ranking only contains the single best model in terms of PSNR for one method 
 [11] Enhanced Bi-directional Motion Estimation for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2206.08572)  
 [12] Real-Time Intermediate Flow Estimation for Video Frame Interpolation (ECCV 2022) [[arXiv]](https://arxiv.org/abs/2011.06294) [[GitHub]](https://github.com/megvii-research/ECCV2022-RIFE)  
 [13] Asymmetric Bilateral Motion Estimation for Video Frame Interpolation (ICCV 2021) [[arXiv]](https://arxiv.org/abs/2108.06815) [[GitHub]](https://github.com/JunHeum/ABME))  
-[14] Enhancing Deformable Convolution based Video Frame Interpolation with Coarse-to-fine 3D CNN [[arXiv]](https://arxiv.org/abs/2202.07731)  
+[14] Enhancing Deformable Convolution based Video Frame Interpolation with Coarse-to-fine 3D CNN [[arXiv]](https://arxiv.org/abs/2202.07731) [[GitHub]](https://github.com/danielism97/EDC))  
 [15] Softmax Splatting for Video Frame Interpolation (CVPR 2020) [[arXiv]](https://arxiv.org/abs/2003.05534)
  [[GitHub]](https://github.com/sniklaus/softmax-splatting)  
 [16] FILM: Frame Interpolation for Large Motion (ECCV 2022) [[arXiv]](https://arxiv.org/abs/2202.04901) [[GitHub]](https://github.com/google-research/frame-interpolation)
