@@ -1,11 +1,10 @@
-# Vimeo90K: 36dB PSNR And Above - Video Frame Interpolation Models List
+# Rankings of Video Frame Interpolation Models Based on PSNR, SSIM, LPIPS, FloLPIPS Metrics
+
+Currently available 1 ranking based on the Vimeo90K benchmark. The entry threshold for ranking is 36dB PSNR. The ranking only contains the single best model in terms of PSNR for one method (paper).
 
 Looking for someone who has the knowledge, skills and willingness to test models from the following methods using **FloLPIPS** - probably the first and best metric specifically designed for video frame interpolation [[arXiv]](https://arxiv.org/abs/2207.08119) [[GitHub]](https://github.com/danielism97/flolpips) (originally announced July 2022).
 
 Also looking for someone who has the knowledge, skills and willingness to test the **inference time** of the following models under identical test conditions, preferably for 1920x1080p video.
-
-The ranking only contains the single best model in terms of PSNR for one method (paper).
-
 
 | Rank | Model | PSNR (official) | PSNR (unofficial) | Originally announced (arXiv)| 
 | :----:| :---- | :----: | :----: | :----: |
