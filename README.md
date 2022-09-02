@@ -6,7 +6,7 @@ Looking for someone who has the knowledge, skills and willingness to test models
 
 Also looking for someone who has the knowledge, skills and willingness to test the **inference time** of the following models under identical test conditions, preferably for 1920x1080p video.
 
-### Vimeo90K benchmark based on PSNR metric (entry threshold is 36dB)
+### Vimeo90K benchmark - PSNR metric (entry threshold is 36dB)
 
 | Rank | Model | PSNR (official) | PSNR (unofficial) | Originally announced (arXiv)| 
 | :----:| :---- | :----: | :----: | :----: |
