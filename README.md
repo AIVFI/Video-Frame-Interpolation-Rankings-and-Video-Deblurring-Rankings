@@ -1,6 +1,6 @@
 # Rankings of Video Frame Interpolation Models Based on PSNR, SSIM, LPIPS, FloLPIPS Metrics
 
-Currently available 1 ranking based on the Vimeo90K benchmark. The entry threshold for ranking is 36dB PSNR. The ranking only contains the single best model in terms of PSNR for one method (paper).
+Currently available 2 rankings based on the Vimeo90K benchmark. Entry thresholds for rankings are 36dB (PSNR) and 0.9800 (SSIM). Rankings only contains the single best model in terms of PSNR or SSIM for one method (paper).
 
 Looking for someone who has the knowledge, skills and willingness to test models from the following methods using **FloLPIPS** - probably the first and best metric specifically designed for video frame interpolation [[arXiv]](https://arxiv.org/abs/2207.08119) [[GitHub]](https://github.com/danielism97/flolpips) (originally announced July 2022).
 
@@ -26,6 +26,18 @@ Also looking for someone who has the knowledge, skills and willingness to test t
 | 14 | EDC | - [14] | **36.14dB** [1] | February 2022 |
 | 15 | SoftSplat *L*Lap |  **36.10dB** [15] | - | March 2020 |
 | 16 | FILM-*L*1 |  **36.06dB** [16] | - | February 2022 |
+
+### Vimeo90K benchmark - SSIM metric (entry threshold is 0.9800)
+
+| Rank | Model | SSIM (official) | SSIM (unofficial) | Originally announced (arXiv)| 
+| :----:| :---- | :----: | :----: | :----: |
+| 1 | TTVFI |  **0.9819** [4] | - | July 2022 |
+| 2 | VFIformer |  **0.9816** [6] | - | May 2022 |
+| 3-4 | EBME-H∗ |  **0.981** [11] | - | June 2022 |
+| 3-4 | RIFE-Large |  **0.981** [12] | - | November 2020 |
+| 5 | IFRNet large |  **0.9808** [10] | - | May 2022 |
+| 6 | ABME |  **0.9805** [13] | - | August 2021 |
+| 7 | MA-CSPA |  **0.980** [3] | - | March 2022 |
 
 [1] JNMR: Joint Non-linear Motion Regression for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2206.04231)  
 [2] Video Frame Interpolation Transformer (CVPR 2022) [[arXiv]](https://arxiv.org/abs/2111.13817) [[GitHub]](https://github.com/zhshi0816/Video-Frame-Interpolation-Transformer)  
