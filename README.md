@@ -49,7 +49,7 @@ Also looking for someone who has the knowledge, skills and willingness to test t
 [8] Error-Aware Spatial Ensembles for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2207.12305)  
 [9] FLAVR: Flow-Agnostic Video Representations for Fast Frame Interpolation [[arXiv]](https://arxiv.org/abs/2012.08512) [[GitHub]](https://github.com/tarun005/FLAVR)  
 [10] IFRNet: Intermediate Feature Refine Network for Efficient Frame Interpolation (CVPR 2022) [[arXiv]](https://arxiv.org/abs/2205.14620) [[GitHub]](https://github.com/ltkong218/IFRNet)  
-[11] Enhanced Bi-directional Motion Estimation for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2206.08572)  
+[11] Enhanced Bi-directional Motion Estimation for Video Frame Interpolation (WACV 2023) [[arXiv]](https://arxiv.org/abs/2206.08572) [[GitHub]](https://github.com/srcn-ivl/EBME)  
 [12] Real-Time Intermediate Flow Estimation for Video Frame Interpolation (ECCV 2022) [[arXiv]](https://arxiv.org/abs/2011.06294) [[GitHub]](https://github.com/megvii-research/ECCV2022-RIFE)  
 [13] Asymmetric Bilateral Motion Estimation for Video Frame Interpolation (ICCV 2021) [[arXiv]](https://arxiv.org/abs/2108.06815) [[GitHub]](https://github.com/JunHeum/ABME))  
 [14] Enhancing Deformable Convolution based Video Frame Interpolation with Coarse-to-fine 3D CNN [[arXiv]](https://arxiv.org/abs/2202.07731) [[GitHub]](https://github.com/danielism97/EDC))  
