@@ -1,6 +1,6 @@
-# Rankings of Video Frame Interpolation Models Based on PSNR, SSIM, LPIPS, FloLPIPS Metrics
+# Rankings of Video Frame Interpolation Models
 
-Currently available 3 rankings based on the Vimeo90K benchmarks. Each Ranking contains only the single best model for one method (paper).
+Currently available 3 rankings based on Vimeo90K benchmarks. Each Ranking contains only the single best model for one method (paper).
 
 A request to researchers: please use in the evaluation of your models **FloLPIPS** - probably the first and best metric specifically designed for video frame interpolation [[arXiv]](https://arxiv.org/abs/2207.08119) [[GitHub]](https://github.com/danielism97/flolpips) (originally announced July 2022).
 
@@ -45,6 +45,27 @@ A request to researchers: please use in the evaluation of your models **FloLPIPS
 | 6 | IFRNet large |  **0.9808** [^10] | May 2022 [^10] | [PyTorch](https://github.com/ltkong218/IFRNet) ![Github stars](https://img.shields.io/github/stars/ltkong218/IFRNet) | [ncnn](https://github.com/nihui/ifrnet-ncnn-vulkan) ![Github stars](https://img.shields.io/github/stars/nihui/ifrnet-ncnn-vulkan) | - |
 | 7 | ABME |  **0.9805** [^13] | August 2021 [^13] | [PyTorch](https://github.com/JunHeum/ABME) ![Github stars](https://img.shields.io/github/stars/JunHeum/ABME) | - | - |
 | 8 | MA-CSPA triplet-trained |  **0.980** [^3] | March 2022 [^3] | - | - | - |
+
+Full list of interpolation methods that qualified for the above rankings (random order):
+
+1. JNMR: Joint Non-linear Motion Regression for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2206.04231)
+2. Video Frame Interpolation Transformer (CVPR 2022) [[arXiv]](https://arxiv.org/abs/2111.13817)
+3. Exploring Motion Ambiguity and Alignment for High-Quality Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2203.10291)
+4. TTVFI: Learning Trajectory-Aware Transformer for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2207.09048)
+5. VRT: A Video Restoration Transformer [[arXiv]](https://arxiv.org/abs/2201.12288)
+6. Video Frame Interpolation with Transformer (CVPR 2022) [[arXiv]](https://arxiv.org/abs/2205.07230)
+7. ST-MFNet: A Spatio-Temporal Multi-Flow Network for Frame Interpolation (CVPR 2022) [[arXiv]](https://arxiv.org/abs/2111.15483)
+8. Error-Aware Spatial Ensembles for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2207.12305)
+9. FLAVR: Flow-Agnostic Video Representations for Fast Frame Interpolation [[arXiv]](https://arxiv.org/abs/2012.08512)
+10. IFRNet: Intermediate Feature Refine Network for Efficient Frame Interpolation (CVPR 2022) [[arXiv]](https://arxiv.org/abs/2205.14620)
+11. Enhanced Bi-directional Motion Estimation for Video Frame Interpolation (WACV 2023) [[arXiv]](https://arxiv.org/abs/2206.08572)
+12. Real-Time Intermediate Flow Estimation for Video Frame Interpolation (ECCV 2022) [[arXiv]](https://arxiv.org/abs/2011.06294)
+13. Asymmetric Bilateral Motion Estimation for Video Frame Interpolation (ICCV 2021) [[arXiv]](https://arxiv.org/abs/2108.06815)
+14. Enhancing Deformable Convolution based Video Frame Interpolation with Coarse-to-fine 3D CNN (ICIP'2022) [[arXiv]](https://arxiv.org/abs/2202.07731)
+15. Softmax Splatting for Video Frame Interpolation (CVPR 2020) [[arXiv]](https://arxiv.org/abs/2003.05534)
+16. FILM: Frame Interpolation for Large Motion (ECCV 2022) [[arXiv]](https://arxiv.org/abs/2202.04901)
+17. Deep Bayesian Video Frame Interpolation (ECCV 2022) [[ECVA]](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/1287_ECCV_2022_paper.php)
+18. A Unified Pyramid Recurrent Network for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2211.03456)
 
 [^1]: JNMR: Joint Non-linear Motion Regression for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2206.04231)
 [^2]: Video Frame Interpolation Transformer (CVPR 2022) [[arXiv]](https://arxiv.org/abs/2111.13817)
