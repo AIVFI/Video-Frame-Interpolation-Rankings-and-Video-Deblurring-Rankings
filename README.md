@@ -2,7 +2,16 @@
 
 Currently available 3 rankings based on Vimeo90K benchmarks. Each Ranking contains only the single best model for one method (paper).
 
-A request to researchers: please use in the evaluation of your models **FloLPIPS** - probably the first and best metric specifically designed for video frame interpolation [[arXiv]](https://arxiv.org/abs/2207.08119) [[GitHub]](https://github.com/danielism97/flolpips) (originally announced July 2022).
+Researchers, please train at least one of your models on **perceptual loss**. Models trained using color loss perform best in terms of PSNR and SSIM whereas models trained using perceptual loss performs best in terms of LPIPS and better **recovers fine details** in challenging cases, making them **preferable in practice**[^15]. 
+
+Please also use the following metric:
+
+**LPIPS** (CVPR 2018) https://github.com/richzhang/PerceptualSimilarity
+
+or even better, one of the metrics specifically designed for video frame interpolation:
+
+**FloLPIPS** (PCS 2022) https://github.com/danielism97/flolpips
+**VFIPS** (ECCV 2022) https://github.com/hqqxyy/VFIPS
 
 ### Vimeo90K benchmark (septuplet test set) - PSNR metric (entry threshold is 36dB)
 
@@ -59,7 +68,7 @@ A request to researchers: please use in the evaluation of your models **FloLPIPS
 [^11]: Enhanced Bi-directional Motion Estimation for Video Frame Interpolation (WACV 2023) [[arXiv]](https://arxiv.org/abs/2206.08572)
 [^12]: Real-Time Intermediate Flow Estimation for Video Frame Interpolation (ECCV 2022) [[arXiv]](https://arxiv.org/abs/2011.06294)
 [^13]: Asymmetric Bilateral Motion Estimation for Video Frame Interpolation (ICCV 2021) [[arXiv]](https://arxiv.org/abs/2108.06815)
-[^14]: Enhancing Deformable Convolution based Video Frame Interpolation with Coarse-to-fine 3D CNN (ICIP'2022) [[arXiv]](https://arxiv.org/abs/2202.07731)
+[^14]: Enhancing Deformable Convolution based Video Frame Interpolation with Coarse-to-fine 3D CNN (ICIP 2022) [[arXiv]](https://arxiv.org/abs/2202.07731)
 [^15]: Softmax Splatting for Video Frame Interpolation (CVPR 2020) [[arXiv]](https://arxiv.org/abs/2003.05534)
 [^16]: FILM: Frame Interpolation for Large Motion (ECCV 2022) [[arXiv]](https://arxiv.org/abs/2202.04901)
 [^17]: Deep Bayesian Video Frame Interpolation (ECCV 2022) [[ECVA]](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/1287_ECCV_2022_paper.php)
