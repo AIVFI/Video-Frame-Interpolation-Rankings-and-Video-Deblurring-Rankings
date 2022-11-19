@@ -1,8 +1,8 @@
 # Video Frame Interpolation Rankings
 
-Currently available 3 rankings based on Vimeo90K benchmarks. Each Ranking contains only the single best model for one method (paper).
+Each Ranking contains only the single best model for one method (paper).
 
-Researchers, please train at least one of your models on **perceptual loss**. Models trained using color loss perform best in terms of PSNR and SSIM whereas models trained using perceptual loss performs best in terms of LPIPS and better **recovers fine details** in challenging cases, making them **preferable in practice**[^15]. 
+Researchers, please train at least one of your models on **perceptual loss**. Models trained using color loss perform best in terms of PSNR and SSIM whereas models trained using perceptual loss performs best in terms of LPIPS and **better recovers fine details** in challenging cases, making them **preferable in practice**[^15]. 
 
 Please also use the following metric:
 
@@ -10,10 +10,10 @@ Please also use the following metric:
 
 or even better, one of the metrics specifically designed for video frame interpolation:
 
-**FloLPIPS** (PCS 2022) https://github.com/danielism97/flolpips
+**FloLPIPS** (PCS 2022) https://github.com/danielism97/flolpips  
 **VFIPS** (ECCV 2022) https://github.com/hqqxyy/VFIPS
 
-### Vimeo90K benchmark (septuplet test set) - PSNR metric (entry threshold is 36dB)
+### Vimeo90K septuplet test set: PSNR>=36dB
 
 | Rank | Model | PSNR | Originally announced | Official repository | ncnn | VapourSynth and AviSynth+ |
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
@@ -26,7 +26,7 @@ or even better, one of the metrics specifically designed for video frame interpo
 | 7 | DBVI |  **36.17dB** [^17] | 2022 [^17] | [PyTorch](https://github.com/Oceanlib/DBVI) ![Github stars](https://img.shields.io/github/stars/Oceanlib/DBVI) | - | - |
 | 8 | EDC | **36.14dB** [^1] | February 2022 [^14] | [PyTorch](https://github.com/danielism97/EDC) ![Github stars](https://img.shields.io/github/stars/danielism97/EDC) | - | - |
 
-### Vimeo90K benchmark (triplet test set) - PSNR metric (entry threshold is 36dB)
+### Vimeo90K triplet test set: PSNR>=36dB
 
 | Rank | Model | PSNR | Originally announced | Official repository | ncnn | VapourSynth and AviSynth+ |
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
@@ -42,7 +42,18 @@ or even better, one of the metrics specifically designed for video frame interpo
 | 10 | SoftSplat *L*Lap |  **36.10dB** [^15] | March 2020 [^15] | [PyTorch](https://github.com/sniklaus/softmax-splatting) ![Github stars](https://img.shields.io/github/stars/sniklaus/softmax-splatting) | - | - |
 | 11 | FILM-*L*1 |  **36.06dB** [^16] | February 2022 [^16] | [TensorFlow](https://github.com/google-research/frame-interpolation) ![Github stars](https://img.shields.io/github/stars/google-research/frame-interpolation) | - | - |
 
-### Vimeo90K benchmark (triplet test set) - SSIM metric (entry threshold is 0.9800)
+### Vimeo90K septuplet test set: SSIM>=0.975
+
+| Rank | Model | PSNR | Originally announced | Official repository | ncnn | VapourSynth and AviSynth+ |
+|:----:|:----|:----:|:----:|:----:|:----:|:----:|
+| 1-2 | JNMR | **0.978** [^1] | June 2022 [^1] | - | - | - |
+| 1-2 | VFIT-B | **0.978** [^2] | November 2021 [^2] | [PyTorch](https://github.com/zhshi0816/Video-Frame-Interpolation-Transformer) ![Github stars](https://img.shields.io/github/stars/zhshi0816/Video-Frame-Interpolation-Transformer) | - | - |
+| 3 | VRT |  **0.977** [^5] | June 2022 (VFI) [^5] | [PyTorch](https://github.com/JingyunLiang/VRT) ![Github stars](https://img.shields.io/github/stars/JingyunLiang/VRT) | - | - |
+| 4-5 | DBVI |  **0.976** [^17] | 2022 [^17] | [PyTorch](https://github.com/Oceanlib/DBVI) ![Github stars](https://img.shields.io/github/stars/Oceanlib/DBVI) | - | - |
+| 4-5 | ST-MFNet | **0.976** [^1] | November 2021 [^7] | [PyTorch](https://github.com/danielism97/ST-MFNet) ![Github stars](https://img.shields.io/github/stars/danielism97/ST-MFNet) | - | - |
+| 6 | FLAVR |  **0.975** [^9] | December 2020 [^9] | [PyTorch](https://github.com/tarun005/FLAVR) ![Github stars](https://img.shields.io/github/stars/tarun005/FLAVR) | - | - |
+
+### Vimeo90K triplet test set: SSIM>=0.98
 
 | Rank | Model | SSIM | Originally announced | Official repository | ncnn | VapourSynth and AviSynth+ |
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
@@ -71,5 +82,5 @@ or even better, one of the metrics specifically designed for video frame interpo
 [^14]: Enhancing Deformable Convolution based Video Frame Interpolation with Coarse-to-fine 3D CNN (ICIP 2022) [[arXiv]](https://arxiv.org/abs/2202.07731)
 [^15]: Softmax Splatting for Video Frame Interpolation (CVPR 2020) [[arXiv]](https://arxiv.org/abs/2003.05534)
 [^16]: FILM: Frame Interpolation for Large Motion (ECCV 2022) [[arXiv]](https://arxiv.org/abs/2202.04901)
-[^17]: Deep Bayesian Video Frame Interpolation (ECCV 2022) [[ECVA]](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/1287_ECCV_2022_paper.php)
+[^17]: Deep Bayesian Video Frame Interpolation [[ECCV 2022]](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/1287_ECCV_2022_paper.php)
 [^18]: A Unified Pyramid Recurrent Network for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2211.03456) 
