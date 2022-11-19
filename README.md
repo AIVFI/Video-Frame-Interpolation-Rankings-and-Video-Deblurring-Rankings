@@ -6,12 +6,12 @@ Researchers, please train at least one of your models on **perceptual loss**. Mo
 
 Please also use the following metric:
 
-**LPIPS** (CVPR 2018) https://github.com/richzhang/PerceptualSimilarity
+**LPIPS** [[CVPR 2018]](https://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_The_Unreasonable_Effectiveness_CVPR_2018_paper.html) [[arXiv]](https://arxiv.org/abs/1801.03924) https://github.com/richzhang/PerceptualSimilarity
 
 or even better, one of the metrics specifically designed for video frame interpolation:
 
-**FloLPIPS** (PCS 2022) https://github.com/danielism97/flolpips  
-**VFIPS** (ECCV 2022) https://github.com/hqqxyy/VFIPS
+**FloLPIPS** [PCS 2022] [[arXiv]](https://arxiv.org/abs/2207.08119) https://github.com/danielism97/flolpips  
+**VFIPS** [[ECCV 2022]](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/1542_ECCV_2022_paper.php) [[arXiv]](https://arxiv.org/abs/2210.01879) https://github.com/hqqxyy/VFIPS
 
 ### Vimeo90K septuplet test set: PSNR>=36dB
 
@@ -44,7 +44,7 @@ or even better, one of the metrics specifically designed for video frame interpo
 
 ### Vimeo90K septuplet test set: SSIM>=0.975
 
-| Rank | Model | PSNR | Originally announced | Official repository | ncnn | VapourSynth and AviSynth+ |
+| Rank | Model | SSIM | Originally announced | Official repository | ncnn | VapourSynth and AviSynth+ |
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
 | 1-2 | JNMR | **0.978** [^1] | June 2022 [^1] | - | - | - |
 | 1-2 | VFIT-B | **0.978** [^2] | November 2021 [^2] | [PyTorch](https://github.com/zhshi0816/Video-Frame-Interpolation-Transformer) ![Github stars](https://img.shields.io/github/stars/zhshi0816/Video-Frame-Interpolation-Transformer) | - | - |
@@ -67,20 +67,20 @@ or even better, one of the metrics specifically designed for video frame interpo
 | 8 | MA-CSPA triplet-trained |  **0.980** [^3] | March 2022 [^3] | - | - | - |
 
 [^1]: JNMR: Joint Non-linear Motion Regression for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2206.04231)
-[^2]: Video Frame Interpolation Transformer (CVPR 2022) [[arXiv]](https://arxiv.org/abs/2111.13817)
+[^2]: Video Frame Interpolation Transformer [[CVPR 2022]](https://openaccess.thecvf.com/content/CVPR2022/html/Shi_Video_Frame_Interpolation_Transformer_CVPR_2022_paper.html) [[arXiv]](https://arxiv.org/abs/2111.13817)
 [^3]: Exploring Motion Ambiguity and Alignment for High-Quality Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2203.10291)
 [^4]: TTVFI: Learning Trajectory-Aware Transformer for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2207.09048)
 [^5]: VRT: A Video Restoration Transformer [[arXiv]](https://arxiv.org/abs/2201.12288)
-[^6]: Video Frame Interpolation with Transformer (CVPR 2022) [[arXiv]](https://arxiv.org/abs/2205.07230)
-[^7]: ST-MFNet: A Spatio-Temporal Multi-Flow Network for Frame Interpolation (CVPR 2022) [[arXiv]](https://arxiv.org/abs/2111.15483)
+[^6]: Video Frame Interpolation with Transformer [[CVPR 2022]](https://openaccess.thecvf.com/content/CVPR2022/html/Lu_Video_Frame_Interpolation_With_Transformer_CVPR_2022_paper.html) [[arXiv]](https://arxiv.org/abs/2205.07230)
+[^7]: ST-MFNet: A Spatio-Temporal Multi-Flow Network for Frame Interpolation [[CVPR 2022]](https://openaccess.thecvf.com/content/CVPR2022/html/Danier_ST-MFNet_A_Spatio-Temporal_Multi-Flow_Network_for_Frame_Interpolation_CVPR_2022_paper.html) [[arXiv]](https://arxiv.org/abs/2111.15483)
 [^8]: Error-Aware Spatial Ensembles for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2207.12305)
 [^9]: FLAVR: Flow-Agnostic Video Representations for Fast Frame Interpolation [[arXiv]](https://arxiv.org/abs/2012.08512)
-[^10]: IFRNet: Intermediate Feature Refine Network for Efficient Frame Interpolation (CVPR 2022) [[arXiv]](https://arxiv.org/abs/2205.14620)
-[^11]: Enhanced Bi-directional Motion Estimation for Video Frame Interpolation (WACV 2023) [[arXiv]](https://arxiv.org/abs/2206.08572)
-[^12]: Real-Time Intermediate Flow Estimation for Video Frame Interpolation (ECCV 2022) [[arXiv]](https://arxiv.org/abs/2011.06294)
-[^13]: Asymmetric Bilateral Motion Estimation for Video Frame Interpolation (ICCV 2021) [[arXiv]](https://arxiv.org/abs/2108.06815)
-[^14]: Enhancing Deformable Convolution based Video Frame Interpolation with Coarse-to-fine 3D CNN (ICIP 2022) [[arXiv]](https://arxiv.org/abs/2202.07731)
-[^15]: Softmax Splatting for Video Frame Interpolation (CVPR 2020) [[arXiv]](https://arxiv.org/abs/2003.05534)
-[^16]: FILM: Frame Interpolation for Large Motion (ECCV 2022) [[arXiv]](https://arxiv.org/abs/2202.04901)
+[^10]: IFRNet: Intermediate Feature Refine Network for Efficient Frame Interpolation [[CVPR 2022]](https://openaccess.thecvf.com/content/CVPR2022/html/Kong_IFRNet_Intermediate_Feature_Refine_Network_for_Efficient_Frame_Interpolation_CVPR_2022_paper.html) [[arXiv]](https://arxiv.org/abs/2205.14620)
+[^11]: Enhanced Bi-directional Motion Estimation for Video Frame Interpolation [WACV 2023] [[arXiv]](https://arxiv.org/abs/2206.08572)
+[^12]: Real-Time Intermediate Flow Estimation for Video Frame Interpolation [[ECCV 2022]](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/95_ECCV_2022_paper.php) [[arXiv]](https://arxiv.org/abs/2011.06294)
+[^13]: Asymmetric Bilateral Motion Estimation for Video Frame Interpolation [[ICCV 2021]](https://openaccess.thecvf.com/content/ICCV2021/html/Park_Asymmetric_Bilateral_Motion_Estimation_for_Video_Frame_Interpolation_ICCV_2021_paper.html) [[arXiv]](https://arxiv.org/abs/2108.06815)
+[^14]: Enhancing Deformable Convolution based Video Frame Interpolation with Coarse-to-fine 3D CNN [ICIP 2022] [[arXiv]](https://arxiv.org/abs/2202.07731)
+[^15]: Softmax Splatting for Video Frame Interpolation [[CVPR 2020]](https://openaccess.thecvf.com/content_CVPR_2020/html/Niklaus_Softmax_Splatting_for_Video_Frame_Interpolation_CVPR_2020_paper.html) [[arXiv]](https://arxiv.org/abs/2003.05534)
+[^16]: FILM: Frame Interpolation for Large Motion [[ECCV 2022]](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4614_ECCV_2022_paper.php) [[arXiv]](https://arxiv.org/abs/2202.04901)
 [^17]: Deep Bayesian Video Frame Interpolation [[ECCV 2022]](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/1287_ECCV_2022_paper.php)
 [^18]: A Unified Pyramid Recurrent Network for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2211.03456) 
