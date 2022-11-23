@@ -30,17 +30,19 @@ or even better, one of the metrics specifically designed for video frame interpo
 
 | Rank | Model | PSNR | Originally announced | Official repository | ncnn | VapourSynth and AviSynth+ |
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
-| 1 | MA-CSPA triplet-trained |  **36.76dB** [^3] | March 2022 [^3] | - | - | - |
-| 2 | TTVFI |  **36.54dB** [^4] | July 2022 [^4] | - | - | - |
-| 3 | VFIformer |  **36.50dB** [^6] | May 2022 [^6] | [PyTorch](https://github.com/dvlab-research/VFIformer) ![Github stars](https://img.shields.io/github/stars/dvlab-research/VFIformer) | - | - |
-| 4 | UPR-Net LARGE |  **36.42dB** [^18] | November 2022 [^18] | - | - | - |
-| 5 | EAFI *L*ecc |  **36.38dB** [^8] | July 2022 [^8] | - | - | - |
-| 6 | IFRNet large |  **36.20dB** [^10] | May 2022 [^10] | [PyTorch](https://github.com/ltkong218/IFRNet) ![Github stars](https://img.shields.io/github/stars/ltkong218/IFRNet) | [ncnn](https://github.com/nihui/ifrnet-ncnn-vulkan) ![Github stars](https://img.shields.io/github/stars/nihui/ifrnet-ncnn-vulkan) | - |
-| 7-8 | EBME-H∗ |  **36.19dB** [^11] | June 2022 [^11] | [PyTorch](https://github.com/srcn-ivl/EBME) ![Github stars](https://img.shields.io/github/stars/srcn-ivl/EBME) | - | - |
-| 7-8 | RIFE-Large |  **36.19dB** [^12] | November 2020 [^12] | [PyTorch](https://github.com/megvii-research/ECCV2022-RIFE) ![Github stars](https://img.shields.io/github/stars/megvii-research/ECCV2022-RIFE) | [ncnn](https://github.com/nihui/rife-ncnn-vulkan) ![Github stars](https://img.shields.io/github/stars/nihui/rife-ncnn-vulkan) | [VapourSynth&TensorRT](https://github.com/HolyWu/vs-rife) ![Github stars](https://img.shields.io/github/stars/HolyWu/vs-rife) [VapourSynth&ncnn](https://github.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan) ![Github stars](https://img.shields.io/github/stars/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan) [VapourSynth&ncnn](https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan) ![Github stars](https://img.shields.io/github/stars/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan)  [AviSynth+&ncnn](https://github.com/Asd-g/AviSynthPlus-RIFE) ![Github stars](https://img.shields.io/github/stars/Asd-g/AviSynthPlus-RIFE) |
-| 9 | ABME |  **36.18dB** [^13] | August 2021 [^13] | [PyTorch](https://github.com/JunHeum/ABME) ![Github stars](https://img.shields.io/github/stars/JunHeum/ABME) | - | - |
-| 10 | SoftSplat *L*Lap |  **36.10dB** [^15] | March 2020 [^15] | [PyTorch](https://github.com/sniklaus/softmax-splatting) ![Github stars](https://img.shields.io/github/stars/sniklaus/softmax-splatting) | - | - |
-| 11 | FILM-*L*1 |  **36.06dB** [^16] | February 2022 [^16] | [TensorFlow](https://github.com/google-research/frame-interpolation) ![Github stars](https://img.shields.io/github/stars/google-research/frame-interpolation) | - | - |
+| 1 | NIO |  **36.80dB** [^19] | November 2022 [^19] | - | - | - |
+| 2 | MA-CSPA triplet-trained |  **36.76dB** [^3] | March 2022 [^3] | - | - | - |
+| 3 | TTVFI |  **36.54dB** [^4] | July 2022 [^4] | - | - | - |
+| 4 | VFIformer |  **36.50dB** [^6] | May 2022 [^6] | [PyTorch](https://github.com/dvlab-research/VFIformer) ![Github stars](https://img.shields.io/github/stars/dvlab-research/VFIformer) | - | - |
+| 5 | UPR-Net LARGE |  **36.42dB** [^18] | November 2022 [^18] | - | - | - |
+| 6 | EAFI *L*ecc |  **36.38dB** [^8] | July 2022 [^8] | - | - | - |
+| 7 | H-VFI-Large |  **36.37dB** [^20] | November 2022 [^20] | - | - | - |
+| 8 | IFRNet large |  **36.20dB** [^10] | May 2022 [^10] | [PyTorch](https://github.com/ltkong218/IFRNet) ![Github stars](https://img.shields.io/github/stars/ltkong218/IFRNet) | [ncnn](https://github.com/nihui/ifrnet-ncnn-vulkan) ![Github stars](https://img.shields.io/github/stars/nihui/ifrnet-ncnn-vulkan) | - |
+| 9-10 | EBME-H∗ |  **36.19dB** [^11] | June 2022 [^11] | [PyTorch](https://github.com/srcn-ivl/EBME) ![Github stars](https://img.shields.io/github/stars/srcn-ivl/EBME) | - | - |
+| 9-10 | RIFE-Large |  **36.19dB** [^12] | November 2020 [^12] | [PyTorch](https://github.com/megvii-research/ECCV2022-RIFE) ![Github stars](https://img.shields.io/github/stars/megvii-research/ECCV2022-RIFE) | [ncnn](https://github.com/nihui/rife-ncnn-vulkan) ![Github stars](https://img.shields.io/github/stars/nihui/rife-ncnn-vulkan) | [VapourSynth&TensorRT](https://github.com/HolyWu/vs-rife) ![Github stars](https://img.shields.io/github/stars/HolyWu/vs-rife) [VapourSynth&ncnn](https://github.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan) ![Github stars](https://img.shields.io/github/stars/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan) [VapourSynth&ncnn](https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan) ![Github stars](https://img.shields.io/github/stars/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan)  [AviSynth+&ncnn](https://github.com/Asd-g/AviSynthPlus-RIFE) ![Github stars](https://img.shields.io/github/stars/Asd-g/AviSynthPlus-RIFE) |
+| 11 | ABME |  **36.18dB** [^13] | August 2021 [^13] | [PyTorch](https://github.com/JunHeum/ABME) ![Github stars](https://img.shields.io/github/stars/JunHeum/ABME) | - | - |
+| 12 | SoftSplat *L*Lap |  **36.10dB** [^15] | March 2020 [^15] | [PyTorch](https://github.com/sniklaus/softmax-splatting) ![Github stars](https://img.shields.io/github/stars/sniklaus/softmax-splatting) | - | - |
+| 13 | FILM-*L*1 |  **36.06dB** [^16] | February 2022 [^16] | [TensorFlow](https://github.com/google-research/frame-interpolation) ![Github stars](https://img.shields.io/github/stars/google-research/frame-interpolation) | - | - |
 
 ### Vimeo90K septuplet test set: SSIM>=0.975
 
@@ -60,11 +62,12 @@ or even better, one of the metrics specifically designed for video frame interpo
 | 1 | TTVFI |  **0.9819** [^4] | July 2022 [^4] | - | - | - |
 | 2 | VFIformer |  **0.9816** [^6] | May 2022 [^6] | [PyTorch](https://github.com/dvlab-research/VFIformer) ![Github stars](https://img.shields.io/github/stars/dvlab-research/VFIformer) | - | - |
 | 3 | UPR-Net LARGE |  **0.9815** [^18] | November 2022 [^18] | - | - | - |
-| 4-5 | EBME-H∗ |  **0.981** [^11] | June 2022 [^11] | [PyTorch](https://github.com/srcn-ivl/EBME) ![Github stars](https://img.shields.io/github/stars/srcn-ivl/EBME) | - | - |
-| 4-5 | RIFE-Large |  **0.981** [^12] | November 2020 [^12] | [PyTorch](https://github.com/megvii-research/ECCV2022-RIFE) ![Github stars](https://img.shields.io/github/stars/megvii-research/ECCV2022-RIFE) | [ncnn](https://github.com/nihui/rife-ncnn-vulkan) ![Github stars](https://img.shields.io/github/stars/nihui/rife-ncnn-vulkan) | [VapourSynth&TensorRT](https://github.com/HolyWu/vs-rife) ![Github stars](https://img.shields.io/github/stars/HolyWu/vs-rife) [VapourSynth&ncnn](https://github.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan) ![Github stars](https://img.shields.io/github/stars/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan) [VapourSynth&ncnn](https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan) ![Github stars](https://img.shields.io/github/stars/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan)  [AviSynth+&ncnn](https://github.com/Asd-g/AviSynthPlus-RIFE) ![Github stars](https://img.shields.io/github/stars/Asd-g/AviSynthPlus-RIFE) |
-| 6 | IFRNet large |  **0.9808** [^10] | May 2022 [^10] | [PyTorch](https://github.com/ltkong218/IFRNet) ![Github stars](https://img.shields.io/github/stars/ltkong218/IFRNet) | [ncnn](https://github.com/nihui/ifrnet-ncnn-vulkan) ![Github stars](https://img.shields.io/github/stars/nihui/ifrnet-ncnn-vulkan) | - |
-| 7 | ABME |  **0.9805** [^13] | August 2021 [^13] | [PyTorch](https://github.com/JunHeum/ABME) ![Github stars](https://img.shields.io/github/stars/JunHeum/ABME) | - | - |
-| 8 | MA-CSPA triplet-trained |  **0.980** [^3] | March 2022 [^3] | - | - | - |
+| 4-6 | EBME-H∗ |  **0.981** [^11] | June 2022 [^11] | [PyTorch](https://github.com/srcn-ivl/EBME) ![Github stars](https://img.shields.io/github/stars/srcn-ivl/EBME) | - | - |
+| 4-6 | H-VFI-Large |  **0.981** [^20] | November 2022 [^20] | - | - | - |
+| 4-6 | RIFE-Large |  **0.981** [^12] | November 2020 [^12] | [PyTorch](https://github.com/megvii-research/ECCV2022-RIFE) ![Github stars](https://img.shields.io/github/stars/megvii-research/ECCV2022-RIFE) | [ncnn](https://github.com/nihui/rife-ncnn-vulkan) ![Github stars](https://img.shields.io/github/stars/nihui/rife-ncnn-vulkan) | [VapourSynth&TensorRT](https://github.com/HolyWu/vs-rife) ![Github stars](https://img.shields.io/github/stars/HolyWu/vs-rife) [VapourSynth&ncnn](https://github.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan) ![Github stars](https://img.shields.io/github/stars/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan) [VapourSynth&ncnn](https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan) ![Github stars](https://img.shields.io/github/stars/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan)  [AviSynth+&ncnn](https://github.com/Asd-g/AviSynthPlus-RIFE) ![Github stars](https://img.shields.io/github/stars/Asd-g/AviSynthPlus-RIFE) |
+| 7 | IFRNet large |  **0.9808** [^10] | May 2022 [^10] | [PyTorch](https://github.com/ltkong218/IFRNet) ![Github stars](https://img.shields.io/github/stars/ltkong218/IFRNet) | [ncnn](https://github.com/nihui/ifrnet-ncnn-vulkan) ![Github stars](https://img.shields.io/github/stars/nihui/ifrnet-ncnn-vulkan) | - |
+| 8 | ABME |  **0.9805** [^13] | August 2021 [^13] | [PyTorch](https://github.com/JunHeum/ABME) ![Github stars](https://img.shields.io/github/stars/JunHeum/ABME) | - | - |
+| 9 | MA-CSPA triplet-trained |  **0.980** [^3] | March 2022 [^3] | - | - | - |
 
 [^1]: JNMR: Joint Non-linear Motion Regression for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2206.04231)
 [^2]: Video Frame Interpolation Transformer [[CVPR 2022]](https://openaccess.thecvf.com/content/CVPR2022/html/Shi_Video_Frame_Interpolation_Transformer_CVPR_2022_paper.html) [[arXiv]](https://arxiv.org/abs/2111.13817)
@@ -83,4 +86,6 @@ or even better, one of the metrics specifically designed for video frame interpo
 [^15]: Softmax Splatting for Video Frame Interpolation [[CVPR 2020]](https://openaccess.thecvf.com/content_CVPR_2020/html/Niklaus_Softmax_Splatting_for_Video_Frame_Interpolation_CVPR_2020_paper.html) [[arXiv]](https://arxiv.org/abs/2003.05534)
 [^16]: FILM: Frame Interpolation for Large Motion [[ECCV 2022]](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4614_ECCV_2022_paper.php) [[arXiv]](https://arxiv.org/abs/2202.04901)
 [^17]: Deep Bayesian Video Frame Interpolation [[ECCV 2022]](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/1287_ECCV_2022_paper.php)
-[^18]: A Unified Pyramid Recurrent Network for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2211.03456) 
+[^18]: A Unified Pyramid Recurrent Network for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2211.03456)
+[^19]: NIO: Lightweight neural operator-based architecture for video frame interpolation [[arXiv]](https://arxiv.org/abs/2211.10791)
+[^20]: H-VFI: Hierarchical Frame Interpolation for Videos with Large Motions [[arXiv]](https://arxiv.org/abs/2211.11309)
