@@ -26,26 +26,18 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 ### Video Deblurring Rankings
 - (to do)
 ### Video Frame Interpolation Rankings
-- (to do)
+4. **Vimeo-90K triplet: LPIPS:heart_eyes:** (to do)
+4. [**Vimeo-90K triplet: PSNR:disappointed:>=36dB**](#Vimeo-90K-triplet-PSNRdisappointed36dB)
+4. [**Vimeo-90K triplet: SSIM:disappointed:>=0.98**](#Vimeo-90K-triplet-SSIMdisappointed098)
+4. **Vimeo-90K septuplet: LPIPS:heart_eyes:** (no data)
+4. [**Vimeo-90K septuplet: PSNR:disappointed:>=36dB**](#Vimeo-90K-septuplet-PSNRdisappointed36dB)
+4. [**Vimeo-90K septuplet: SSIM:disappointed:>=0.975**](#Vimeo-90K-septuplet-SSIMdisappointed0975)
 ### Appendices
 - (to do)
 
 --------------------
 
-### Vimeo-90K septuplet: PSNR:disappointed:>=36dB
-
-| Rank | Model | PSNR ↑ | Originally<br />announced | Official<br />repository | Practical<br />models | VapourSynth |
-|:----:|:----|:----:|:----:|:----:|:----:|:----:|
-| 1 | JNMR | **37.09dB** [^1] | June 2022 [^1] | - | - | - |
-| 2 | VFIT-B | **36.96dB** [^2] | November 2021 [^2] | [PyTorch](https://github.com/zhshi0816/Video-Frame-Interpolation-Transformer) ![Github stars](https://img.shields.io/github/stars/zhshi0816/Video-Frame-Interpolation-Transformer) | - | - |
-| 3 | VRT |  **36.53dB** [^5] | June 2022 (VFI) [^5] | [PyTorch](https://github.com/JingyunLiang/VRT) ![Github stars](https://img.shields.io/github/stars/JingyunLiang/VRT) | - | - |
-| 4 | MA-CSPA septuplet-trained |  **36.50dB** [^3] | March 2022 [^3] | - | - | - |
-| 5 | ST-MFNet | **36.45dB** [^1] | November 2021 [^7] | [PyTorch](https://github.com/danielism97/ST-MFNet) ![Github stars](https://img.shields.io/github/stars/danielism97/ST-MFNet) | - | - |
-| 6 | FLAVR |  **36.25dB** [^9] | December 2020 [^9] | [PyTorch](https://github.com/tarun005/FLAVR) ![Github stars](https://img.shields.io/github/stars/tarun005/FLAVR) | - | - |
-| 7 | DBVI |  **36.17dB** [^17] | 2022 [^17] | [PyTorch](https://github.com/Oceanlib/DBVI) ![Github stars](https://img.shields.io/github/stars/Oceanlib/DBVI) | - | - |
-| 8 | EDC | **36.14dB** [^1] | February 2022 [^14] | [PyTorch](https://github.com/danielism97/EDC) ![Github stars](https://img.shields.io/github/stars/danielism97/EDC) | - | - |
-
-### Vimeo-90K triplet: PSNR:disappointed:>=36dB
+## Vimeo-90K triplet: PSNR:disappointed:>=36dB
 
 | Rank | Model | PSNR ↑ | Originally<br />announced | Official<br />repository | Practical<br />models | VapourSynth |
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
@@ -64,18 +56,7 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 | 13 | SoftSplat - 𝓛<sub>*Lap*</sub> |  **36.10dB** [^15] | March 2020 [^15] | [PyTorch](https://github.com/sniklaus/softmax-splatting) ![Github stars](https://img.shields.io/github/stars/sniklaus/softmax-splatting) | - | - |
 | 14 | FILM-𝓛<sub>1</sub> |  **36.06dB** [^16] | February 2022 [^16] | [TensorFlow](https://github.com/google-research/frame-interpolation) ![Github stars](https://img.shields.io/github/stars/google-research/frame-interpolation) | [FILM-𝓛<sub>*S*</sub>;<br />FILM-𝓛<sub>VGG</sub>](https://github.com/google-research/frame-interpolation#pre-trained-models) | - |
 
-### Vimeo-90K septuplet: SSIM:disappointed:>=0.975
-
-| Rank | Model | SSIM ↑ | Originally<br />announced | Official<br />repository | Practical<br />models | VapourSynth |
-|:----:|:----|:----:|:----:|:----:|:----:|:----:|
-| 1-2 | JNMR | **0.978** [^1] | June 2022 [^1] | - | - | - |
-| 1-2 | VFIT-B | **0.978** [^2] | November 2021 [^2] | [PyTorch](https://github.com/zhshi0816/Video-Frame-Interpolation-Transformer) ![Github stars](https://img.shields.io/github/stars/zhshi0816/Video-Frame-Interpolation-Transformer) | - | - |
-| 3 | VRT |  **0.977** [^5] | June 2022 (VFI) [^5] | [PyTorch](https://github.com/JingyunLiang/VRT) ![Github stars](https://img.shields.io/github/stars/JingyunLiang/VRT) | - | - |
-| 4-5 | DBVI |  **0.976** [^17] | 2022 [^17] | [PyTorch](https://github.com/Oceanlib/DBVI) ![Github stars](https://img.shields.io/github/stars/Oceanlib/DBVI) | - | - |
-| 4-5 | ST-MFNet | **0.976** [^1] | November 2021 [^7] | [PyTorch](https://github.com/danielism97/ST-MFNet) ![Github stars](https://img.shields.io/github/stars/danielism97/ST-MFNet) | - | - |
-| 6 | FLAVR |  **0.975** [^9] | December 2020 [^9] | [PyTorch](https://github.com/tarun005/FLAVR) ![Github stars](https://img.shields.io/github/stars/tarun005/FLAVR) | - | - |
-
-### Vimeo-90K triplet: SSIM:disappointed:>=0.98
+## Vimeo-90K triplet: SSIM:disappointed:>=0.98
 
 | Rank | Model | SSIM ↑ | Originally<br />announced | Official<br />repository | Practical<br />models | VapourSynth |
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
@@ -89,6 +70,30 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 | 8 | IFRNet large |  **0.9808** [^10] | May 2022 [^10] | [PyTorch](https://github.com/ltkong218/IFRNet) ![Github stars](https://img.shields.io/github/stars/ltkong218/IFRNet) | - | - |
 | 9 | ABME |  **0.9805** [^13] | August 2021 [^13] | [PyTorch](https://github.com/JunHeum/ABME) ![Github stars](https://img.shields.io/github/stars/JunHeum/ABME) | - | - |
 | 10 | MA-CSPA triplet-trained |  **0.980** [^3] | March 2022 [^3] | - | - | - |
+
+## Vimeo-90K septuplet: PSNR:disappointed:>=36dB
+
+| Rank | Model | PSNR ↑ | Originally<br />announced | Official<br />repository | Practical<br />models | VapourSynth |
+|:----:|:----|:----:|:----:|:----:|:----:|:----:|
+| 1 | JNMR | **37.09dB** [^1] | June 2022 [^1] | - | - | - |
+| 2 | VFIT-B | **36.96dB** [^2] | November 2021 [^2] | [PyTorch](https://github.com/zhshi0816/Video-Frame-Interpolation-Transformer) ![Github stars](https://img.shields.io/github/stars/zhshi0816/Video-Frame-Interpolation-Transformer) | - | - |
+| 3 | VRT |  **36.53dB** [^5] | June 2022 (VFI) [^5] | [PyTorch](https://github.com/JingyunLiang/VRT) ![Github stars](https://img.shields.io/github/stars/JingyunLiang/VRT) | - | - |
+| 4 | MA-CSPA septuplet-trained |  **36.50dB** [^3] | March 2022 [^3] | - | - | - |
+| 5 | ST-MFNet | **36.45dB** [^1] | November 2021 [^7] | [PyTorch](https://github.com/danielism97/ST-MFNet) ![Github stars](https://img.shields.io/github/stars/danielism97/ST-MFNet) | - | - |
+| 6 | FLAVR |  **36.25dB** [^9] | December 2020 [^9] | [PyTorch](https://github.com/tarun005/FLAVR) ![Github stars](https://img.shields.io/github/stars/tarun005/FLAVR) | - | - |
+| 7 | DBVI |  **36.17dB** [^17] | 2022 [^17] | [PyTorch](https://github.com/Oceanlib/DBVI) ![Github stars](https://img.shields.io/github/stars/Oceanlib/DBVI) | - | - |
+| 8 | EDC | **36.14dB** [^1] | February 2022 [^14] | [PyTorch](https://github.com/danielism97/EDC) ![Github stars](https://img.shields.io/github/stars/danielism97/EDC) | - | - |
+
+## Vimeo-90K septuplet: SSIM:disappointed:>=0.975
+
+| Rank | Model | SSIM ↑ | Originally<br />announced | Official<br />repository | Practical<br />models | VapourSynth |
+|:----:|:----|:----:|:----:|:----:|:----:|:----:|
+| 1-2 | JNMR | **0.978** [^1] | June 2022 [^1] | - | - | - |
+| 1-2 | VFIT-B | **0.978** [^2] | November 2021 [^2] | [PyTorch](https://github.com/zhshi0816/Video-Frame-Interpolation-Transformer) ![Github stars](https://img.shields.io/github/stars/zhshi0816/Video-Frame-Interpolation-Transformer) | - | - |
+| 3 | VRT |  **0.977** [^5] | June 2022 (VFI) [^5] | [PyTorch](https://github.com/JingyunLiang/VRT) ![Github stars](https://img.shields.io/github/stars/JingyunLiang/VRT) | - | - |
+| 4-5 | DBVI |  **0.976** [^17] | 2022 [^17] | [PyTorch](https://github.com/Oceanlib/DBVI) ![Github stars](https://img.shields.io/github/stars/Oceanlib/DBVI) | - | - |
+| 4-5 | ST-MFNet | **0.976** [^1] | November 2021 [^7] | [PyTorch](https://github.com/danielism97/ST-MFNet) ![Github stars](https://img.shields.io/github/stars/danielism97/ST-MFNet) | - | - |
+| 6 | FLAVR |  **0.975** [^9] | December 2020 [^9] | [PyTorch](https://github.com/tarun005/FLAVR) ![Github stars](https://img.shields.io/github/stars/tarun005/FLAVR) | - | - |
 
 [^1]: JNMR: Joint Non-linear Motion Regression for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2206.04231)
 [^2]: Video Frame Interpolation Transformer [[CVPR 2022]](https://openaccess.thecvf.com/content/CVPR2022/html/Shi_Video_Frame_Interpolation_Transformer_CVPR_2022_paper.html) [[arXiv]](https://arxiv.org/abs/2111.13817)
