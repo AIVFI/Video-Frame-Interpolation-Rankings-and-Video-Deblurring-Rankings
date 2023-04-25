@@ -1,41 +1,93 @@
-# Video Frame Interpolation Rankings
+# <p align=center>Video Frame Interpolation Rankings<br />and Video Deblurring Rankings</p>
 
-Announcement on 15 February 2023: my Video Frame Interpolation Rankings are about to undergo huge changes.
+An introduction to the rankings is in the development process....
 
-A revolution in Video Frame Interpolation is coming. It will finally be possible to train Joint Video Deblurring and Frame Interpolation models on a dataset with real motion blur!!!
-
-I lack the time to do all these changes currently.
-
-However, today I received the Starstruck badge from Github. I am very happy that my rankings have received so much interest. Thank you all for your support! I need this support because I want this revolution to quickly translate into practical applications and I hope that my rankings will help a little in this.
-
-So, despite the lack of time, I decided not to wait and on the occasion of receiving a Starstruck badge I would like to share the link to the paper that started this revolution:
-
-https://arxiv.org/abs/2211.11423 
+It will contain important information that will depend on the answer I receive to the question asked [here](https://github.com/zzh-tech/BiT/issues/4).
 
 --------------------
-Researchers! Please train at least one of your models on **perceptual loss**. Models trained using color loss perform best in terms of PSNR and SSIM whereas models trained using perceptual loss performs best in terms of LPIPS and **better recovers fine details** in challenging cases, making them **preferable in practice**[^15]. I have made a special column in my rankings dedicated specifically to such models.
+Researchers! Please train at least one of your models on **perceptual loss**. I have made a special column in my rankings dedicated specifically to such models. Why models trained on perceptual loss? This is best summarised by the following quote [^15]:
 
-**Each Ranking contains only the single best model for one method.**  
+> "the model trained using color loss 𝓛<sub>*Lap*</sub> performs best in
+terms of PSNR and SSIM whereas **the one trained using perceptual
+loss 𝓛<sub>*F*</sub> performs best in terms of LPIPS**. We further
+note that the 𝓛<sub>*F*</sub>-trained model **better recovers fine details in
+challenging cases, making it preferable in practice**."
+
+It can be seen from the results of two **video frame interpolation models** from the quote above on the  Vimeo-90K triplet test set [^15]:
+
+| Model | PSNR ↑ | SSIM ↑ | LPIPS ↓ |
+|:----|:----:|:----:|:----:|
+| SoftSplat - 𝓛<sub>*Lap*</sub> | <ins>**36.10dB**</ins> | <ins>**0.970**</ins> | 0.021 |
+| SoftSplat - 𝓛<sub>*F*</sub> | 35.48dB | 0.964 | <ins>**0.013**</ins> |
+
+The same can also be seen from the results of two **single image deblurring models** on the GoPro test set [^28]:
+
+| Model | PSNR ↑ | SSIM ↑ | LPIPS ↓ | NIQE ↓ | FID ↓ | KID ↓ |
+|:----|:----:|:----:|:----:|:----:|:----:|:----:|
+| DGD-SA | <ins>**33.20dB**</ins> | <ins>**0.963**</ins> | 0.078 | 4.10 | 8.69 | 0.00706 |
+| DGD | 31.19dB | 0.943 | <ins>**0.057**</ins> | <ins>**3.27**</ins> | <ins>**3.50**</ins> | <ins>**0.00077**</ins> |
+
+Sometimes even almost 3dB better PSNR result does not guarantee better LPIPS result, as shown by the results of two different video frame interpolation methods on the Vimeo-90K septuplet test set [^27]:
+
+| Model | PSNR ↑ | SSIM ↑ | LPIPS ↓ |
+|:----|:----:|:----:|:----:|
+| VFIT-B | <ins>**36.963dB**</ins> | <ins>**0.9649**</ins> | 0.0304 |
+| RIFE | 34.048dB | 0.9449 | <ins>**0.0233**</ins> |
+
+LPIPS [^30] is a metric that reflects human perception much better than PSNR or SSIM, which is also evident from the results presented in the paper of the competitive perceptual metric [^29]:
+
+| IQA<br />Model | BAPPS database<br />Frame interpolation<br />2AFC score ↑ | BAPPS database<br />Video deblurring<br />2AFC score ↑ | Ding20 database<br />Deblurring<br />2AFC score ↑ |
+|:----|:----:|:----:|:----:|
+| Human | 0.686 | 0.671 | 0.843 |
+| LPIPS | 0.630 | 0.605 | 0.788 |
+| PSNR | 0.543 | 0.590 | 0.518 |
+| SSIM | 0.548 | 0.583 | 0.575 |
 
 ## <p align=center>List of Rankings</p>
+<p align=center>Each Ranking contains only the single best model for one method.</p>
+
 ### Joint Video Deblurring and Frame Interpolation Rankings
 1. :crown: **RBI with real motion blur:heavy_check_mark:: LPIPS**:heart_eyes: (no data)  
 _This will be the King of all rankings. We look forward to ambitious researchers._
 1. **RBI with real motion blur:heavy_check_mark:: PSNR**:disappointed: (to do)
 1. **RBI with real motion blur:heavy_check_mark:: SSIM**:disappointed: (to do)
+1. **Adobe240 (640 × 352) with synthetic motion blur:bangbang:: LPIPS**:heart_eyes: (no data)  
+1. **Adobe240 (640 × 352) with synthetic motion blur:bangbang:: PSNR**:disappointed: (to do)
+1. **Adobe240 (640 × 352) with synthetic motion blur:bangbang:: SSIM**:disappointed: (to do)
 ### Video Deblurring Rankings
 - (to do)
 ### Video Frame Interpolation Rankings
-4. **Vimeo-90K triplet: LPIPS:heart_eyes:** (to do)
-4. [**Vimeo-90K triplet: PSNR:disappointed:>=36dB**](#Vimeo-90K-triplet-PSNRdisappointed36dB)
-4. [**Vimeo-90K triplet: SSIM:disappointed:>=0.98**](#Vimeo-90K-triplet-SSIMdisappointed098)
-4. **Vimeo-90K septuplet: LPIPS:heart_eyes:** (no data)
-4. [**Vimeo-90K septuplet: PSNR:disappointed:>=36dB**](#Vimeo-90K-septuplet-PSNRdisappointed36dB)
-4. [**Vimeo-90K septuplet: SSIM:disappointed:>=0.975**](#Vimeo-90K-septuplet-SSIMdisappointed0975)
+7. [**Vimeo-90K triplet: LPIPS:heart_eyes:(SqueezeNet)<=0.014**](#vimeo-90k-triplet-lpipsheart_eyessqueezenet0014)
+7. [**Vimeo-90K triplet: LPIPS:heart_eyes:<=0.016**](#vimeo-90k-triplet-lpipsheart_eyes0016)
+7. [**Vimeo-90K triplet: PSNR:disappointed:>=36dB**](#Vimeo-90K-triplet-PSNRdisappointed36dB)
+7. [**Vimeo-90K triplet: SSIM:disappointed:>=0.98**](#Vimeo-90K-triplet-SSIMdisappointed098)
+7. [**Vimeo-90K septuplet: LPIPS:heart_eyes:<=0.032**](#vimeo-90k-septuplet-lpipsheart_eyes0032)
+7. [**Vimeo-90K septuplet: PSNR:disappointed:>=36dB**](#Vimeo-90K-septuplet-PSNRdisappointed36dB)
+7. [**Vimeo-90K septuplet: SSIM:disappointed:>=0.975**](#Vimeo-90K-septuplet-SSIMdisappointed0975)
 ### Appendices
 - (to do)
 
 --------------------
+
+## Vimeo-90K triplet: LPIPS:heart_eyes:(SqueezeNet)<=0.014
+| Rank | Model | LPIPS ↓ | Originally<br />announced | Official<br />repository | Practical<br />models | VapourSynth |
+|:----:|:----|:----:|:----:|:----:|:----:|:----:|
+| 1 | CDFI w/ adaP/U |  **0.008** [^23] | March 2021 [^24] | [PyTorch](https://github.com/tding1/CDFI) ![Github stars](https://img.shields.io/github/stars/tding1/CDFI) | - | - |
+| 2 | EDSC_s-𝓛<sub>*F*</sub> |  **0.010** [^24] | June 2020 [^25] | [PyTorch](https://github.com/Xianhang/EDSC-pytorch) ![Github stars](https://img.shields.io/github/stars/Xianhang/EDSC-pytorch) | [EDSC_s-𝓛<sub>*F*</sub>](https://github.com/Xianhang/EDSC-pytorch#pre-trained-models) | - |
+| 3 | DRVI |  **0.013** [^26] | August 2021 [^26] | - | - | - |
+
+[[Back to Top]](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
+[[Back to the List of Rankings]](#list-of-rankings)
+
+## Vimeo-90K triplet: LPIPS:heart_eyes:<=0.016
+| Rank | Model | LPIPS ↓ | Originally<br />announced | Official<br />repository | Practical<br />models | VapourSynth |
+|:----:|:----|:----:|:----:|:----:|:----:|:----:|
+| 1 | EAFI-𝓛<sub>*ecp*</sub> |  **0.012** [^8] | July 2022 [^8] | - | - | - |
+| 2 | SoftSplat - 𝓛<sub>*F*</sub> |  **0.013** [^15] | March 2020 [^15] | [PyTorch](https://github.com/sniklaus/softmax-splatting) ![Github stars](https://img.shields.io/github/stars/sniklaus/softmax-splatting) | - | - |
+| 3 | EDSC_s-𝓛<sub>*F*</sub> |  **0.016** [^25] | June 2020 [^25] | [PyTorch](https://github.com/Xianhang/EDSC-pytorch) ![Github stars](https://img.shields.io/github/stars/Xianhang/EDSC-pytorch) | [EDSC_s-𝓛<sub>*F*</sub>](https://github.com/Xianhang/EDSC-pytorch#pre-trained-models) | - |
+
+[[Back to Top]](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
+[[Back to the List of Rankings]](#list-of-rankings)
 
 ## Vimeo-90K triplet: PSNR:disappointed:>=36dB
 
@@ -45,33 +97,54 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 | 2 | MA-CSPA triplet-trained |  **36.76dB** [^3] | March 2022 [^3] | - | - | - |
 | 3 | EMA-VFI |  **36.64dB** [^22] | March 2023 [^22] | [PyTorch](https://github.com/MCG-NJU/EMA-VFI) ![Github stars](https://img.shields.io/github/stars/MCG-NJU/EMA-VFI) | - | - |
 | 4 | TTVFI |  **36.54dB** [^4] | July 2022 [^4] | - | - | - |
-| 5 | VFIformer |  **36.50dB** [^6] | May 2022 [^6] | [PyTorch](https://github.com/dvlab-research/VFIformer) ![Github stars](https://img.shields.io/github/stars/dvlab-research/VFIformer) | - | - |
-| 6 | FGDCN-L |  **36.46dB** [^21] | November 2022 [^21] | - | - | - |
-| 7 | UPR-Net LARGE |  **36.42dB** [^18] | November 2022 [^18] | - | - | - |
-| 8 | EAFI-𝓛<sub>*ecc*</sub> |  **36.38dB** [^8] | July 2022 [^8] | - | - | - |
-| 9 | H-VFI-Large |  **36.37dB** [^20] | November 2022 [^20] | - | - | - |
-| 10 | IFRNet large |  **36.20dB** [^10] | May 2022 [^10] | [PyTorch](https://github.com/ltkong218/IFRNet) ![Github stars](https://img.shields.io/github/stars/ltkong218/IFRNet) | - | - |
-| 11-12 | EBME-H* |  **36.19dB** [^11] | June 2022 [^11] | [PyTorch](https://github.com/srcn-ivl/EBME) ![Github stars](https://img.shields.io/github/stars/srcn-ivl/EBME) | - | - |
-| 11-12 | RIFE-Large |  **36.19dB** [^12] | November 2020 [^12] | [PyTorch](https://github.com/megvii-research/ECCV2022-RIFE) ![Github stars](https://img.shields.io/github/stars/megvii-research/ECCV2022-RIFE) | [RIFE v4.6;<br />v4.5; v4.4;<br />v4.3; v4.2;<br />v3.8; v3.1](https://github.com/hzwer/Practical-RIFE#model-list)<br />![Github stars](https://img.shields.io/github/stars/hzwer/Practical-RIFE) | [TensorRT;<br />ONNX;<br />OpenVINO](https://github.com/AmusementClub/vs-mlrt)<br />![Github stars](https://img.shields.io/github/stars/AmusementClub/vs-mlrt)<br />[TensorRT](https://github.com/HolyWu/vs-rife)<br />![Github stars](https://img.shields.io/github/stars/HolyWu/vs-rife)<br />[ncnn](https://github.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan)<br />![Github stars](https://img.shields.io/github/stars/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan)<br />[ncnn](https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan)<br />![Github stars](https://img.shields.io/github/stars/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan) |
-| 13 | ABME |  **36.18dB** [^13] | August 2021 [^13] | [PyTorch](https://github.com/JunHeum/ABME) ![Github stars](https://img.shields.io/github/stars/JunHeum/ABME) | - | - |
-| 14 | SoftSplat - 𝓛<sub>*Lap*</sub> |  **36.10dB** [^15] | March 2020 [^15] | [PyTorch](https://github.com/sniklaus/softmax-splatting) ![Github stars](https://img.shields.io/github/stars/sniklaus/softmax-splatting) | - | - |
-| 15 | FILM-𝓛<sub>1</sub> |  **36.06dB** [^16] | February 2022 [^16] | [TensorFlow](https://github.com/google-research/frame-interpolation) ![Github stars](https://img.shields.io/github/stars/google-research/frame-interpolation) | [FILM-𝓛<sub>*S*</sub>;<br />FILM-𝓛<sub>VGG</sub>](https://github.com/google-research/frame-interpolation#pre-trained-models) | - |
+| 5 | AMT-G |  **36.53dB** [^31] | April 2023 [^31] | [PyTorch](https://github.com/MCG-NKU/AMT) ![Github stars](https://img.shields.io/github/stars/MCG-NKU/AMT) | - | - |
+| 6 | VFIformer |  **36.50dB** [^6] | May 2022 [^6] | [PyTorch](https://github.com/dvlab-research/VFIformer) ![Github stars](https://img.shields.io/github/stars/dvlab-research/VFIformer) | - | - |
+| 7 | FGDCN-L |  **36.46dB** [^21] | November 2022 [^21] | - | - | - |
+| 8 | UPR-Net LARGE |  **36.42dB** [^18] | November 2022 [^18] | [PyTorch](https://github.com/srcn-ivl/UPR-Net) ![Github stars](https://img.shields.io/github/stars/srcn-ivl/UPR-Net) | - | - |
+| 9 | EAFI-𝓛<sub>*ecc*</sub> |  **36.38dB** [^8] | July 2022 [^8] | - | - | - |
+| 10 | H-VFI-Large |  **36.37dB** [^20] | November 2022 [^20] | - | - | - |
+| 11 | NCM-Large |  **36.22dB** [^32] | July 2022 [^32] | - | - | - |
+| 12 | IFRNet large |  **36.20dB** [^10] | May 2022 [^10] | [PyTorch](https://github.com/ltkong218/IFRNet) ![Github stars](https://img.shields.io/github/stars/ltkong218/IFRNet) | - | - |
+| 13-14 | EBME-H* |  **36.19dB** [^11] | June 2022 [^11] | [PyTorch](https://github.com/srcn-ivl/EBME) ![Github stars](https://img.shields.io/github/stars/srcn-ivl/EBME) | - | - |
+| 13-14 | RIFE-Large |  **36.19dB** [^12] | November 2020 [^12] | [PyTorch](https://github.com/megvii-research/ECCV2022-RIFE) ![Github stars](https://img.shields.io/github/stars/megvii-research/ECCV2022-RIFE) | [RIFE v4.6;<br />v4.5; v4.4;<br />v4.3; v4.2;<br />v3.8; v3.1](https://github.com/hzwer/Practical-RIFE#model-list)<br />![Github stars](https://img.shields.io/github/stars/hzwer/Practical-RIFE) | [TensorRT;<br />ONNX;<br />OpenVINO](https://github.com/AmusementClub/vs-mlrt)<br />![Github stars](https://img.shields.io/github/stars/AmusementClub/vs-mlrt)<br />[TensorRT](https://github.com/HolyWu/vs-rife)<br />![Github stars](https://img.shields.io/github/stars/HolyWu/vs-rife)<br />[ncnn](https://github.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan)<br />![Github stars](https://img.shields.io/github/stars/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan)<br />[ncnn](https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan)<br />![Github stars](https://img.shields.io/github/stars/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan) |
+| 15 | ABME |  **36.18dB** [^13] | August 2021 [^13] | [PyTorch](https://github.com/JunHeum/ABME) ![Github stars](https://img.shields.io/github/stars/JunHeum/ABME) | - | - |
+| 16 | SoftSplat - 𝓛<sub>*Lap*</sub> |  **36.10dB** [^15] | March 2020 [^15] | [PyTorch](https://github.com/sniklaus/softmax-splatting) ![Github stars](https://img.shields.io/github/stars/sniklaus/softmax-splatting) | - | - |
+| 17 | FILM-𝓛<sub>1</sub> |  **36.06dB** [^16] | February 2022 [^16] | [TensorFlow](https://github.com/google-research/frame-interpolation) ![Github stars](https://img.shields.io/github/stars/google-research/frame-interpolation) | [FILM-𝓛<sub>*S*</sub>;<br />FILM-𝓛<sub>VGG</sub>](https://github.com/google-research/frame-interpolation#pre-trained-models) | - |
+
+[[Back to Top]](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
+[[Back to the List of Rankings]](#list-of-rankings)
 
 ## Vimeo-90K triplet: SSIM:disappointed:>=0.98
 
 | Rank | Model | SSIM ↑ | Originally<br />announced | Official<br />repository | Practical<br />models | VapourSynth |
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
-| 1-2 | EMA-VFI |  **0.9819** [^22] | March 2023 [^22] | [PyTorch](https://github.com/MCG-NJU/EMA-VFI) ![Github stars](https://img.shields.io/github/stars/MCG-NJU/EMA-VFI) | - | - |
-| 1-2 | TTVFI |  **0.9819** [^4] | July 2022 [^4] | - | - | - |
-| 3 | VFIformer |  **0.9816** [^6] | May 2022 [^6] | [PyTorch](https://github.com/dvlab-research/VFIformer) ![Github stars](https://img.shields.io/github/stars/dvlab-research/VFIformer) | - | - |
-| 4 | UPR-Net LARGE |  **0.9815** [^18] | November 2022 [^18] | - | - | - |
-| 5 | FGDCN-L |  **0.9814** [^21] | November 2022 [^21] | - | - | - |
-| 6-8 | EBME-H* |  **0.981** [^11] | June 2022 [^11] | [PyTorch](https://github.com/srcn-ivl/EBME) ![Github stars](https://img.shields.io/github/stars/srcn-ivl/EBME) | - | - |
-| 6-8 | H-VFI-Large |  **0.981** [^20] | November 2022 [^20] | - | - | - |
-| 6-8 | RIFE-Large |  **0.981** [^12] | November 2020 [^12] | [PyTorch](https://github.com/megvii-research/ECCV2022-RIFE) ![Github stars](https://img.shields.io/github/stars/megvii-research/ECCV2022-RIFE) | [RIFE v4.6;<br />v4.5; v4.4;<br />v4.3; v4.2;<br />v3.8; v3.1](https://github.com/hzwer/Practical-RIFE#model-list)<br />![Github stars](https://img.shields.io/github/stars/hzwer/Practical-RIFE) | [TensorRT;<br />ONNX;<br />OpenVINO](https://github.com/AmusementClub/vs-mlrt)<br />![Github stars](https://img.shields.io/github/stars/AmusementClub/vs-mlrt)<br />[TensorRT](https://github.com/HolyWu/vs-rife)<br />![Github stars](https://img.shields.io/github/stars/HolyWu/vs-rife)<br />[ncnn](https://github.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan)<br />![Github stars](https://img.shields.io/github/stars/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan)<br />[ncnn](https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan)<br />![Github stars](https://img.shields.io/github/stars/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan) |
-| 9 | IFRNet large |  **0.9808** [^10] | May 2022 [^10] | [PyTorch](https://github.com/ltkong218/IFRNet) ![Github stars](https://img.shields.io/github/stars/ltkong218/IFRNet) | - | - |
-| 10 | ABME |  **0.9805** [^13] | August 2021 [^13] | [PyTorch](https://github.com/JunHeum/ABME) ![Github stars](https://img.shields.io/github/stars/JunHeum/ABME) | - | - |
-| 11 | MA-CSPA triplet-trained |  **0.980** [^3] | March 2022 [^3] | - | - | - |
+| 1 | AMT-G |  **0.982** [^31] | April 2023 [^31] | [PyTorch](https://github.com/MCG-NKU/AMT) ![Github stars](https://img.shields.io/github/stars/MCG-NKU/AMT) | - | - |
+| 2-3 | EMA-VFI |  **0.9819** [^22] | March 2023 [^22] | [PyTorch](https://github.com/MCG-NJU/EMA-VFI) ![Github stars](https://img.shields.io/github/stars/MCG-NJU/EMA-VFI) | - | - |
+| 2-3 | TTVFI |  **0.9819** [^4] | July 2022 [^4] | - | - | - |
+| 4 | VFIformer |  **0.9816** [^6] | May 2022 [^6] | [PyTorch](https://github.com/dvlab-research/VFIformer) ![Github stars](https://img.shields.io/github/stars/dvlab-research/VFIformer) | - | - |
+| 5 | UPR-Net LARGE |  **0.9815** [^18] | November 2022 [^18] | [PyTorch](https://github.com/srcn-ivl/UPR-Net) ![Github stars](https://img.shields.io/github/stars/srcn-ivl/UPR-Net) | - | - |
+| 6 | FGDCN-L |  **0.9814** [^21] | November 2022 [^21] | - | - | - |
+| 7-9 | EBME-H* |  **0.981** [^11] | June 2022 [^11] | [PyTorch](https://github.com/srcn-ivl/EBME) ![Github stars](https://img.shields.io/github/stars/srcn-ivl/EBME) | - | - |
+| 7-9 | H-VFI-Large |  **0.981** [^20] | November 2022 [^20] | - | - | - |
+| 7-9 | RIFE-Large |  **0.981** [^12] | November 2020 [^12] | [PyTorch](https://github.com/megvii-research/ECCV2022-RIFE) ![Github stars](https://img.shields.io/github/stars/megvii-research/ECCV2022-RIFE) | [RIFE v4.6;<br />v4.5; v4.4;<br />v4.3; v4.2;<br />v3.8; v3.1](https://github.com/hzwer/Practical-RIFE#model-list)<br />![Github stars](https://img.shields.io/github/stars/hzwer/Practical-RIFE) | [TensorRT;<br />ONNX;<br />OpenVINO](https://github.com/AmusementClub/vs-mlrt)<br />![Github stars](https://img.shields.io/github/stars/AmusementClub/vs-mlrt)<br />[TensorRT](https://github.com/HolyWu/vs-rife)<br />![Github stars](https://img.shields.io/github/stars/HolyWu/vs-rife)<br />[ncnn](https://github.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan)<br />![Github stars](https://img.shields.io/github/stars/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan)<br />[ncnn](https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan)<br />![Github stars](https://img.shields.io/github/stars/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan) |
+| 10 | IFRNet large |  **0.9808** [^10] | May 2022 [^10] | [PyTorch](https://github.com/ltkong218/IFRNet) ![Github stars](https://img.shields.io/github/stars/ltkong218/IFRNet) | - | - |
+| 11 | NCM-Large |  **0.9807** [^32] | July 2022 [^32] | - | - | - |
+| 12 | ABME |  **0.9805** [^13] | August 2021 [^13] | [PyTorch](https://github.com/JunHeum/ABME) ![Github stars](https://img.shields.io/github/stars/JunHeum/ABME) | - | - |
+| 13 | MA-CSPA triplet-trained |  **0.980** [^3] | March 2022 [^3] | - | - | - |
+
+[[Back to Top]](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
+[[Back to the List of Rankings]](#list-of-rankings)
+
+## Vimeo-90K septuplet: LPIPS:heart_eyes:<=0.032
+| Rank | Model | LPIPS ↓ | Originally<br />announced | Official<br />repository | Practical<br />models | VapourSynth |
+|:----:|:----|:----:|:----:|:----:|:----:|:----:|
+| 1 | RIFE |  **0.0233** [^27] | November 2020 [^12] | [PyTorch](https://github.com/megvii-research/ECCV2022-RIFE) ![Github stars](https://img.shields.io/github/stars/megvii-research/ECCV2022-RIFE) | [RIFE v4.6;<br />v4.5; v4.4;<br />v4.3; v4.2;<br />v3.8; v3.1](https://github.com/hzwer/Practical-RIFE#model-list)<br />![Github stars](https://img.shields.io/github/stars/hzwer/Practical-RIFE) | [TensorRT;<br />ONNX;<br />OpenVINO](https://github.com/AmusementClub/vs-mlrt)<br />![Github stars](https://img.shields.io/github/stars/AmusementClub/vs-mlrt)<br />[TensorRT](https://github.com/HolyWu/vs-rife)<br />![Github stars](https://img.shields.io/github/stars/HolyWu/vs-rife)<br />[ncnn](https://github.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan)<br />![Github stars](https://img.shields.io/github/stars/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan)<br />[ncnn](https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan)<br />![Github stars](https://img.shields.io/github/stars/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan) |
+| 2 | IFRNet |  **0.0274** [^27] | May 2022 [^10] | [PyTorch](https://github.com/ltkong218/IFRNet) ![Github stars](https://img.shields.io/github/stars/ltkong218/IFRNet) | - | - |
+| 3 | VFIT-B | **0.0304** [^27] | November 2021 [^2] | [PyTorch](https://github.com/zhshi0816/Video-Frame-Interpolation-Transformer) ![Github stars](https://img.shields.io/github/stars/zhshi0816/Video-Frame-Interpolation-Transformer) | - | - |
+| 4 | ABME |  **0.0309** [^27] | August 2021 [^13] | [PyTorch](https://github.com/JunHeum/ABME) ![Github stars](https://img.shields.io/github/stars/JunHeum/ABME) | - | - |
+
+[[Back to Top]](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
+[[Back to the List of Rankings]](#list-of-rankings)
 
 ## Vimeo-90K septuplet: PSNR:disappointed:>=36dB
 
@@ -83,8 +156,11 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 | 4 | MA-CSPA septuplet-trained |  **36.50dB** [^3] | March 2022 [^3] | - | - | - |
 | 5 | ST-MFNet | **36.45dB** [^1] | November 2021 [^7] | [PyTorch](https://github.com/danielism97/ST-MFNet) ![Github stars](https://img.shields.io/github/stars/danielism97/ST-MFNet) | - | - |
 | 6 | FLAVR |  **36.25dB** [^9] | December 2020 [^9] | [PyTorch](https://github.com/tarun005/FLAVR) ![Github stars](https://img.shields.io/github/stars/tarun005/FLAVR) | - | - |
-| 7 | DBVI |  **36.17dB** [^17] | 2022 [^17] | [PyTorch](https://github.com/Oceanlib/DBVI) ![Github stars](https://img.shields.io/github/stars/Oceanlib/DBVI) | - | - |
+| 7 | DBVI |  **36.17dB** [^17] | October 2022 [^17] | [PyTorch](https://github.com/Oceanlib/DBVI) ![Github stars](https://img.shields.io/github/stars/Oceanlib/DBVI) | - | - |
 | 8 | EDC | **36.14dB** [^1] | February 2022 [^14] | [PyTorch](https://github.com/danielism97/EDC) ![Github stars](https://img.shields.io/github/stars/danielism97/EDC) | - | - |
+
+[[Back to Top]](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
+[[Back to the List of Rankings]](#list-of-rankings)
 
 ## Vimeo-90K septuplet: SSIM:disappointed:>=0.975
 
@@ -93,9 +169,12 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 | 1-2 | JNMR | **0.978** [^1] | June 2022 [^1] | - | - | - |
 | 1-2 | VFIT-B | **0.978** [^2] | November 2021 [^2] | [PyTorch](https://github.com/zhshi0816/Video-Frame-Interpolation-Transformer) ![Github stars](https://img.shields.io/github/stars/zhshi0816/Video-Frame-Interpolation-Transformer) | - | - |
 | 3 | VRT |  **0.977** [^5] | June 2022 (VFI) [^5] | [PyTorch](https://github.com/JingyunLiang/VRT) ![Github stars](https://img.shields.io/github/stars/JingyunLiang/VRT) | - | - |
-| 4-5 | DBVI |  **0.976** [^17] | 2022 [^17] | [PyTorch](https://github.com/Oceanlib/DBVI) ![Github stars](https://img.shields.io/github/stars/Oceanlib/DBVI) | - | - |
+| 4-5 | DBVI |  **0.976** [^17] | October 2022 [^17] | [PyTorch](https://github.com/Oceanlib/DBVI) ![Github stars](https://img.shields.io/github/stars/Oceanlib/DBVI) | - | - |
 | 4-5 | ST-MFNet | **0.976** [^1] | November 2021 [^7] | [PyTorch](https://github.com/danielism97/ST-MFNet) ![Github stars](https://img.shields.io/github/stars/danielism97/ST-MFNet) | - | - |
 | 6 | FLAVR |  **0.975** [^9] | December 2020 [^9] | [PyTorch](https://github.com/tarun005/FLAVR) ![Github stars](https://img.shields.io/github/stars/tarun005/FLAVR) | - | - |
+
+[[Back to Top]](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
+[[Back to the List of Rankings]](#list-of-rankings)
 
 [^1]: JNMR: Joint Non-linear Motion Regression for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2206.04231)
 [^2]: Video Frame Interpolation Transformer [[CVPR 2022]](https://openaccess.thecvf.com/content/CVPR2022/html/Shi_Video_Frame_Interpolation_Transformer_CVPR_2022_paper.html) [[arXiv]](https://arxiv.org/abs/2111.13817)
@@ -119,3 +198,13 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 [^20]: H-VFI: Hierarchical Frame Interpolation for Videos with Large Motions [[arXiv]](https://arxiv.org/abs/2211.11309)
 [^21]: Flow Guidance Deformable Compensation Network for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2211.12117)
 [^22]: Extracting Motion and Appearance via Inter-Frame Attention for Efficient Video Frame Interpolation [CVPR 2023] [[arXiv]](https://arxiv.org/abs/2303.00440)
+[^23]: AdaPool: Exponential Adaptive Pooling for Information-Retaining Downsampling [[TIP 2022]](https://ieeexplore.ieee.org/document/9982650) [[arXiv]](https://arxiv.org/abs/2111.00772)
+[^24]: CDFI: Compression-Driven Network Design for Frame Interpolation [[CVPR 2021]](https://openaccess.thecvf.com/content/CVPR2021/html/Ding_CDFI_Compression-Driven_Network_Design_for_Frame_Interpolation_CVPR_2021_paper.html) [[arXiv]](https://arxiv.org/abs/2103.10559)
+[^25]: Multiple Video Frame Interpolation via Enhanced Deformable Separable Convolution [[TPAMI 2021]](https://ieeexplore.ieee.org/document/9501506) [[arXiv]](https://arxiv.org/abs/2006.08070)
+[^26]: DRVI: Dual Refinement for Video Interpolation [[Access 2021]](https://ieeexplore.ieee.org/document/9513293)
+[^27]: Beyond the Natural Motion: Exploring Discontinuity for Video Frame Interpolation [CVPR 2023] [[arXiv]](https://arxiv.org/abs/2202.07291)
+[^28]: Image Deblurring with Domain Generalizable Diffusion Models [[arXiv]](https://arxiv.org/abs/2212.01789)
+[^29]: Locally Adaptive Structure and Texture Similarity for Image Quality Assessment [[arXiv]](https://arxiv.org/abs/2110.08521)
+[^30]: The Unreasonable Effectiveness of Deep Features as a Perceptual Metric [[CVPR 2018]](https://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_The_Unreasonable_Effectiveness_CVPR_2018_paper.html) [[arXiv]](https://arxiv.org/abs/1801.03924)
+[^31]: AMT: All-Pairs Multi-Field Transforms for Efficient Frame Interpolation [CVPR 2023] [[arXiv]](https://arxiv.org/abs/2304.09790)
+[^32]: Neighbor Correspondence Matching for Flow-based Video Frame Synthesis [[MM 2022]](https://dl.acm.org/doi/10.1145/3503161.3548163) [[arXiv]](https://arxiv.org/abs/2207.06763)
