@@ -2,8 +2,6 @@
 
 An introduction to the rankings is in the development process....
 
-It will contain important information that will depend on the answer I receive to the question asked [here](https://github.com/zzh-tech/BiT/issues/4).
-
 --------------------
 Researchers! Please train at least one of your models on **perceptual loss**. I have made a special column in my rankings dedicated specifically to such models. Why models trained on perceptual loss? This is best summarised by the following quote [^15]:
 
@@ -47,23 +45,23 @@ LPIPS [^30] is a metric that reflects human perception much better than PSNR or 
 <p align=center>Each Ranking contains only the single best model for one method.</p>
 
 ### Joint Video Deblurring and Frame Interpolation Rankings
-1. :crown: **RBI with real motion blur:heavy_check_mark:: LPIPS**:heart_eyes: (no data)  
+1. :crown: **RBI with real motion blur:heavy_check_mark:: LPIPS:heart_eyes:** (no data)  
 _This will be the King of all rankings. We look forward to ambitious researchers._
-1. [**RBI with real motion blur:heavy_check_mark:: PSNR:disappointed:>=28.5dB**](#RBI-with-real-motion-blurheavy_check_mark-PSNRdisappointed285db)
-1. **RBI with real motion blur:heavy_check_mark:: SSIM**:disappointed: (to do)
-1. **Adobe240 (640 × 352) with synthetic motion blur:bangbang:: LPIPS**:heart_eyes: (no data)  
-1. **Adobe240 (640 × 352) with synthetic motion blur:bangbang:: PSNR**:disappointed: (to do)
-1. **Adobe240 (640 × 352) with synthetic motion blur:bangbang:: SSIM**:disappointed: (to do)
+1. [**RBI with real motion blur:heavy_check_mark:: PSNR:disappointed:>=28.5dB**](#rbi-with-real-motion-blurheavy_check_mark-psnrdisappointed285db)
+1. **RBI with real motion blur:heavy_check_mark:: SSIM:disappointed:** (to do)
+1. **Adobe240 (640×352) with synthetic motion blur:bangbang:: LPIPS:heart_eyes:** (no data)  
+1. [**Adobe240 (640×352) with synthetic motion blur:bangbang:: PSNR:disappointed:>=33.3dB**](#adobe240-640352-with-synthetic-motion-blurbangbang-psnrdisappointed333db)
+1. **Adobe240 (640×352) with synthetic motion blur:bangbang:: SSIM:disappointed:** (to do)
 ### Video Deblurring Rankings
 - (to do)
 ### Video Frame Interpolation Rankings
 7. [**Vimeo-90K triplet: LPIPS:heart_eyes:(SqueezeNet)<=0.014**](#vimeo-90k-triplet-lpipsheart_eyessqueezenet0014)
 7. [**Vimeo-90K triplet: LPIPS:heart_eyes:<=0.016**](#vimeo-90k-triplet-lpipsheart_eyes0016)
-7. [**Vimeo-90K triplet: PSNR:disappointed:>=36dB**](#Vimeo-90K-triplet-PSNRdisappointed36dB)
-7. [**Vimeo-90K triplet: SSIM:disappointed:>=0.98**](#Vimeo-90K-triplet-SSIMdisappointed098)
+7. [**Vimeo-90K triplet: PSNR:disappointed:>=36dB**](#vimeo-90k-triplet-psnrdisappointed36db)
+7. [**Vimeo-90K triplet: SSIM:disappointed:>=0.98**](#vimeo-90k-triplet-ssimdisappointed098)
 7. [**Vimeo-90K septuplet: LPIPS:heart_eyes:<=0.032**](#vimeo-90k-septuplet-lpipsheart_eyes0032)
-7. [**Vimeo-90K septuplet: PSNR:disappointed:>=36dB**](#Vimeo-90K-septuplet-PSNRdisappointed36dB)
-7. [**Vimeo-90K septuplet: SSIM:disappointed:>=0.975**](#Vimeo-90K-septuplet-SSIMdisappointed0975)
+7. [**Vimeo-90K septuplet: PSNR:disappointed:>=36dB**](#vimeo-90k-septuplet-psnrdisappointed36db)
+7. [**Vimeo-90K septuplet: SSIM:disappointed:>=0.975**](#vimeo-90k-septuplet-ssimdisappointed0975)
 ### Appendices
 - (to do)
 
@@ -75,6 +73,17 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 | 1 | Pre-BiT++ |  **31.32dB** [^33] | November 2022 [^33] | [PyTorch](https://github.com/zzh-tech/BiT) ![Github stars](https://img.shields.io/github/stars/zzh-tech/BiT) | - | - |
 | 2 | DeMFI-Net<sub>*rb*</sub>(5,3) |  **29.03dB** [^33] | November 2021 [^34] | [PyTorch](https://github.com/JihyongOh/DeMFI) ![Github stars](https://img.shields.io/github/stars/JihyongOh/DeMFI) | - | - |
 | 3 | PRF<sub>4</sub> -*Large* |  **28.55dB** [^33] | February 2020 [^35] | [PyTorch](https://github.com/laomao0/BIN) ![Github stars](https://img.shields.io/github/stars/laomao0/BIN) | - | - |
+
+[[Back to Top]](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
+[[Back to the List of Rankings]](#list-of-rankings)
+
+## Adobe240 (640×352) with synthetic motion blur:bangbang:: PSNR**:disappointed:>=33.3dB
+| Rank | Model | PSNR ↑ | Originally<br />announced | Official<br />repository | Practical<br />models | VapourSynth |
+|:----:|:----|:----:|:----:|:----:|:----:|:----:|
+| 1 | BiT++ |  **34.97dB** [^33] | November 2022 [^33] | [PyTorch](https://github.com/zzh-tech/BiT) ![Github stars](https://img.shields.io/github/stars/zzh-tech/BiT) | - | - |
+| 2 | DeMFI-Net<sub>*rb*</sub>(5,3) |  **34.34dB** [^34] | November 2021 [^34] | [PyTorch](https://github.com/JihyongOh/DeMFI) ![Github stars](https://img.shields.io/github/stars/JihyongOh/DeMFI) | - | - |
+| 3 | ALANET |  **33.34dB** [^37] | August 2020 [^37] | [PyTorch](https://github.com/agupt013/ALANET) ![Github stars](https://img.shields.io/github/stars/agupt013/ALANET) | - | - |
+| 4 | PRF<sub>4</sub> -*Large* |  **33.32dB** [^38] | February 2020 [^35] | [PyTorch](https://github.com/laomao0/BIN) ![Github stars](https://img.shields.io/github/stars/laomao0/BIN) | - | - |
 
 [[Back to Top]](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [[Back to the List of Rankings]](#list-of-rankings)
@@ -224,3 +233,5 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 [^34]: DeMFI: Deep Joint Deblurring and Multi-Frame Interpolation with Flow-Guided Attentive Correlation and Recursive Boosting [[ECCV 2022]](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4406_ECCV_2022_paper.php) [[arXiv]](https://arxiv.org/abs/2111.09985)
 [^35]: Blurry Video Frame Interpolation [[CVPR 2020]](https://openaccess.thecvf.com/content_CVPR_2020/html/Shen_Blurry_Video_Frame_Interpolation_CVPR_2020_paper.html) [[arXiv]](https://arxiv.org/abs/2002.12259)
 [^36]: Video Frame Interpolation with Densely Queried Bilateral Correlation [IJCAI 2023] [[arXiv]](https://arxiv.org/abs/2304.13596)
+[^37]: ALANET: Adaptive Latent Attention Network for Joint Video Deblurring and Interpolation [[MM 2020]](https://dl.acm.org/doi/10.1145/3394171.3413686) [[arXiv]](https://arxiv.org/abs/2009.01005)
+[^38]: Video Frame Interpolation and Enhancement via Pyramid Recurrent Framework [[TIP 2020]](https://ieeexplore.ieee.org/document/9257179)
