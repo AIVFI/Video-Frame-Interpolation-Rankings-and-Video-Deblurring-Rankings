@@ -1,5 +1,15 @@
 # <p align=center>Video Frame Interpolation Rankings<br />and Video Deblurring Rankings</p>
 
+Gradually I intend to add new rankings, but my priority is to keep the existing ones up to date. Below is a list of <ins>**7 upcoming updates**</ins> that <ins>**I intend to add**</ins> to keep the existing rankings up to date:
+1. Changed model name from NIO to AdaFNIO and changed PSNR score [[arXiv]](https://arxiv.org/abs/2211.10791)
+1. Modified presentation of enhanced models in the rankings 
+1. Enhanced models added: [[arXiv]](https://arxiv.org/abs/2306.13933)
+1. Enhanced model added: SoftSplat - 𝓛<sub>*Lap*</sub> with ensemble [[arXiv]](https://arxiv.org/abs/2011.01280)
+1. Missing model added: [[ACCV 2022]](https://openaccess.thecvf.com/content/ACCV2022/html/Lin_MVFI-Net_Motion-aware_Video_Frame_Interpolation_Network_ACCV_2022_paper.html)
+1. New model added: [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Plack_Frame_Interpolation_Transformer_and_Uncertainty_Guidance_CVPR_2023_paper.html)
+1. New model added: [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Yu_Range-Nullspace_Video_Frame_Interpolation_With_Focalized_Motion_Estimation_CVPR_2023_paper.html)
+
+
 An introduction to the rankings is in the development process....
 
 --------------------
@@ -42,7 +52,8 @@ LPIPS [^30] is a metric that reflects human perception much better than PSNR or 
 | SSIM | 0.548 | 0.583 | 0.575 |
 
 ## <p align=center>List of Rankings</p>
-<p align=center>Each Ranking contains only the single best model for one method.</p>
+<p align=center>Each ranking includes only the best model for one method.</p>  
+<p align=center>The rankings exclude all event-based models.</p>
 
 ### Joint Video Deblurring and Frame Interpolation Rankings
 1. :crown: **RBI with real motion blur:heavy_check_mark:: LPIPS:heart_eyes:** (no data)  
@@ -52,38 +63,52 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 1. **Adobe240 (640×352) with synthetic motion blur:bangbang:: LPIPS:heart_eyes:** (no data)  
 1. [**Adobe240 (640×352) with synthetic motion blur:bangbang:: PSNR:disappointed:>=33.3dB**](#adobe240-640352-with-synthetic-motion-blurbangbang-psnrdisappointed333db)
 1. **Adobe240 (640×352) with synthetic motion blur:bangbang:: SSIM:disappointed:** (to do)
+1. **Adobe240 (5:8) with synthetic motion blur:bangbang:: LPIPS:heart_eyes:** (no data)
+1. [**Adobe240 (5:8) with synthetic motion blur:bangbang:: PSNR:disappointed:>=25dB**](#adobe240-58-with-synthetic-motion-blurbangbang-psnrdisappointed25db)
+1. **Adobe240 (5:8) with synthetic motion blur:bangbang:: SSIM:disappointed:** (to do)
 ### Video Deblurring Rankings
 - (to do)
 ### Video Frame Interpolation Rankings
-7. [**Vimeo-90K triplet: LPIPS:heart_eyes:(SqueezeNet)<=0.014**](#vimeo-90k-triplet-lpipsheart_eyessqueezenet0014)
-7. [**Vimeo-90K triplet: LPIPS:heart_eyes:<=0.016**](#vimeo-90k-triplet-lpipsheart_eyes0016)
-7. [**Vimeo-90K triplet: PSNR:disappointed:>=36dB**](#vimeo-90k-triplet-psnrdisappointed36db)
-7. [**Vimeo-90K triplet: SSIM:disappointed:>=0.98**](#vimeo-90k-triplet-ssimdisappointed098)
-7. [**Vimeo-90K septuplet: LPIPS:heart_eyes:<=0.032**](#vimeo-90k-septuplet-lpipsheart_eyes0032)
-7. [**Vimeo-90K septuplet: PSNR:disappointed:>=36dB**](#vimeo-90k-septuplet-psnrdisappointed36db)
-7. [**Vimeo-90K septuplet: SSIM:disappointed:>=0.975**](#vimeo-90k-septuplet-ssimdisappointed0975)
+10. [**Vimeo-90K triplet: LPIPS:heart_eyes:(SqueezeNet)<=0.014**](#vimeo-90k-triplet-lpipsheart_eyessqueezenet0014)
+10. [**Vimeo-90K triplet: LPIPS:heart_eyes:<=0.016**](#vimeo-90k-triplet-lpipsheart_eyes0016)
+10. [**Vimeo-90K triplet: PSNR:disappointed:>=36dB**](#vimeo-90k-triplet-psnrdisappointed36db)
+10. [**Vimeo-90K triplet: SSIM:disappointed:>=0.98**](#vimeo-90k-triplet-ssimdisappointed098)
+10. [**Vimeo-90K septuplet: LPIPS:heart_eyes:<=0.032**](#vimeo-90k-septuplet-lpipsheart_eyes0032)
+10. [**Vimeo-90K septuplet: PSNR:disappointed:>=36dB**](#vimeo-90k-septuplet-psnrdisappointed36db)
+10. [**Vimeo-90K septuplet: SSIM:disappointed:>=0.975**](#vimeo-90k-septuplet-ssimdisappointed0975)
 ### Appendices
-- (to do)
+- **Rules for qualifying models for the rankings** (to do)
 
 --------------------
 
 ## RBI with real motion blur:heavy_check_mark:: PSNR:disappointed:>=28.5dB
 | Rank | Model | PSNR ↑ | Originally<br />announced | Official<br />repository | Practical<br />models | VapourSynth |
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
-| 1 | Pre-BiT++ |  **31.32dB** [^33] | November 2022 [^33] | [PyTorch](https://github.com/zzh-tech/BiT) ![Github stars](https://img.shields.io/github/stars/zzh-tech/BiT) | - | - |
+| 1 | Pre-BiT++ |  **31.32dB** [^33] | November 2022 [^33] | [PyTorch](https://github.com/zzh-tech/BiT) ![Github stars](https://img.shields.io/github/stars/zzh-tech/BiT) | [<img alt="Request" width="40px" src="cat.png">](https://github.com/zzh-tech/BiT/issues/5) | - |
 | 2 | DeMFI-Net<sub>*rb*</sub>(5,3) |  **29.03dB** [^33] | November 2021 [^34] | [PyTorch](https://github.com/JihyongOh/DeMFI) ![Github stars](https://img.shields.io/github/stars/JihyongOh/DeMFI) | - | - |
 | 3 | PRF<sub>4</sub> -*Large* |  **28.55dB** [^33] | February 2020 [^35] | [PyTorch](https://github.com/laomao0/BIN) ![Github stars](https://img.shields.io/github/stars/laomao0/BIN) | - | - |
 
 [[Back to Top]](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [[Back to the List of Rankings]](#list-of-rankings)
 
-## Adobe240 (640×352) with synthetic motion blur:bangbang:: PSNR**:disappointed:>=33.3dB
+## Adobe240 (640×352) with synthetic motion blur:bangbang:: PSNR:disappointed:>=33.3dB
 | Rank | Model | PSNR ↑ | Originally<br />announced | Official<br />repository | Practical<br />models | VapourSynth |
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
-| 1 | BiT++ |  **34.97dB** [^33] | November 2022 [^33] | [PyTorch](https://github.com/zzh-tech/BiT) ![Github stars](https://img.shields.io/github/stars/zzh-tech/BiT) | - | - |
+| 1 | BiT++ |  **34.97dB** [^33] | November 2022 [^33] | [PyTorch](https://github.com/zzh-tech/BiT) ![Github stars](https://img.shields.io/github/stars/zzh-tech/BiT) | [<img alt="Request" width="40px" src="cat.png">](https://github.com/zzh-tech/BiT/issues/5) | - |
 | 2 | DeMFI-Net<sub>*rb*</sub>(5,3) |  **34.34dB** [^34] | November 2021 [^34] | [PyTorch](https://github.com/JihyongOh/DeMFI) ![Github stars](https://img.shields.io/github/stars/JihyongOh/DeMFI) | - | - |
 | 3 | ALANET |  **33.34dB** [^37] | August 2020 [^37] | [PyTorch](https://github.com/agupt013/ALANET) ![Github stars](https://img.shields.io/github/stars/agupt013/ALANET) | - | - |
 | 4 | PRF<sub>4</sub> -*Large* |  **33.32dB** [^38] | February 2020 [^35] | [PyTorch](https://github.com/laomao0/BIN) ![Github stars](https://img.shields.io/github/stars/laomao0/BIN) | - | - |
+
+[[Back to Top]](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
+[[Back to the List of Rankings]](#list-of-rankings)
+
+## Adobe240 (5:8) with synthetic motion blur:bangbang:: PSNR:disappointed:>=25dB
+| Rank | Model | PSNR ↑ | Originally<br />announced | Official<br />repository | Practical<br />models | VapourSynth |
+|:----:|:----|:----:|:----:|:----:|:----:|:----:|
+| 1 | VIDUE |  **28.74dB** [^39] | March 2023 [^39] | [PyTorch](https://github.com/shangwei5/VIDUE) ![Github stars](https://img.shields.io/github/stars/shangwei5/VIDUE) | - | - |
+| 2 | FLAVR |  **27.23dB** [^39] | December 2020 [^9] | [PyTorch](https://github.com/tarun005/FLAVR) ![Github stars](https://img.shields.io/github/stars/tarun005/FLAVR) | - | - |
+| 3 | UTI-VFI |  **26.69dB** [^39] | December 2020 [^40] | [PyTorch](https://github.com/yjzhang96/UTI-VFI) ![Github stars](https://img.shields.io/github/stars/yjzhang96/UTI-VFI) | - | - |
+| 4 | DeMFI |  **25.71dB** [^39] | November 2021 [^34] | [PyTorch](https://github.com/JihyongOh/DeMFI) ![Github stars](https://img.shields.io/github/stars/JihyongOh/DeMFI) | - | - |
 
 [[Back to Top]](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [[Back to the List of Rankings]](#list-of-rankings)
@@ -199,7 +224,7 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 
 [^1]: JNMR: Joint Non-linear Motion Regression for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2206.04231)
 [^2]: Video Frame Interpolation Transformer [[CVPR 2022]](https://openaccess.thecvf.com/content/CVPR2022/html/Shi_Video_Frame_Interpolation_Transformer_CVPR_2022_paper.html) [[arXiv]](https://arxiv.org/abs/2111.13817)
-[^3]: Exploring Motion Ambiguity and Alignment for High-Quality Video Frame Interpolation [CVPR 2023] [[arXiv]](https://arxiv.org/abs/2203.10291)
+[^3]: Exploring Motion Ambiguity and Alignment for High-Quality Video Frame Interpolation [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Zhou_Exploring_Motion_Ambiguity_and_Alignment_for_High-Quality_Video_Frame_Interpolation_CVPR_2023_paper.html) [[arXiv]](https://arxiv.org/abs/2203.10291)
 [^4]: TTVFI: Learning Trajectory-Aware Transformer for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2207.09048)
 [^5]: VRT: A Video Restoration Transformer [[arXiv]](https://arxiv.org/abs/2201.12288)
 [^6]: Video Frame Interpolation with Transformer [[CVPR 2022]](https://openaccess.thecvf.com/content/CVPR2022/html/Lu_Video_Frame_Interpolation_With_Transformer_CVPR_2022_paper.html) [[arXiv]](https://arxiv.org/abs/2205.07230)
@@ -214,24 +239,26 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 [^15]: Softmax Splatting for Video Frame Interpolation [[CVPR 2020]](https://openaccess.thecvf.com/content_CVPR_2020/html/Niklaus_Softmax_Splatting_for_Video_Frame_Interpolation_CVPR_2020_paper.html) [[arXiv]](https://arxiv.org/abs/2003.05534)
 [^16]: FILM: Frame Interpolation for Large Motion [[ECCV 2022]](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4614_ECCV_2022_paper.php) [[arXiv]](https://arxiv.org/abs/2202.04901)
 [^17]: Deep Bayesian Video Frame Interpolation [[ECCV 2022]](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/1287_ECCV_2022_paper.php)
-[^18]: A Unified Pyramid Recurrent Network for Video Frame Interpolation [CVPR 2023] [[arXiv]](https://arxiv.org/abs/2211.03456)
+[^18]: A Unified Pyramid Recurrent Network for Video Frame Interpolation [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Jin_A_Unified_Pyramid_Recurrent_Network_for_Video_Frame_Interpolation_CVPR_2023_paper.html) [[arXiv]](https://arxiv.org/abs/2211.03456)
 [^19]: NIO: Lightweight neural operator-based architecture for video frame interpolation [[arXiv]](https://arxiv.org/abs/2211.10791)
 [^20]: H-VFI: Hierarchical Frame Interpolation for Videos with Large Motions [[arXiv]](https://arxiv.org/abs/2211.11309)
-[^21]: Flow Guidance Deformable Compensation Network for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2211.12117)
-[^22]: Extracting Motion and Appearance via Inter-Frame Attention for Efficient Video Frame Interpolation [CVPR 2023] [[arXiv]](https://arxiv.org/abs/2303.00440)
+[^21]: Flow Guidance Deformable Compensation Network for Video Frame Interpolation [[TMM 2023]](https://ieeexplore.ieee.org/document/10164197) [[arXiv]](https://arxiv.org/abs/2211.12117)
+[^22]: Extracting Motion and Appearance via Inter-Frame Attention for Efficient Video Frame Interpolation [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Zhang_Extracting_Motion_and_Appearance_via_Inter-Frame_Attention_for_Efficient_Video_CVPR_2023_paper.html) [[arXiv]](https://arxiv.org/abs/2303.00440)
 [^23]: AdaPool: Exponential Adaptive Pooling for Information-Retaining Downsampling [[TIP 2022]](https://ieeexplore.ieee.org/document/9982650) [[arXiv]](https://arxiv.org/abs/2111.00772)
 [^24]: CDFI: Compression-Driven Network Design for Frame Interpolation [[CVPR 2021]](https://openaccess.thecvf.com/content/CVPR2021/html/Ding_CDFI_Compression-Driven_Network_Design_for_Frame_Interpolation_CVPR_2021_paper.html) [[arXiv]](https://arxiv.org/abs/2103.10559)
 [^25]: Multiple Video Frame Interpolation via Enhanced Deformable Separable Convolution [[TPAMI 2021]](https://ieeexplore.ieee.org/document/9501506) [[arXiv]](https://arxiv.org/abs/2006.08070)
 [^26]: DRVI: Dual Refinement for Video Interpolation [[Access 2021]](https://ieeexplore.ieee.org/document/9513293)
-[^27]: Beyond the Natural Motion: Exploring Discontinuity for Video Frame Interpolation [CVPR 2023] [[arXiv]](https://arxiv.org/abs/2202.07291)
+[^27]: Exploring Discontinuity for Video Frame Interpolation [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Lee_Exploring_Discontinuity_for_Video_Frame_Interpolation_CVPR_2023_paper.html) [[arXiv]](https://arxiv.org/abs/2202.07291)
 [^28]: Image Deblurring with Domain Generalizable Diffusion Models [[arXiv]](https://arxiv.org/abs/2212.01789)
-[^29]: Locally Adaptive Structure and Texture Similarity for Image Quality Assessment [[arXiv]](https://arxiv.org/abs/2110.08521)
+[^29]: Locally Adaptive Structure and Texture Similarity for Image Quality Assessment [[MM 2021]](https://dl.acm.org/doi/10.1145/3474085.3475419) [[arXiv]](https://arxiv.org/abs/2110.08521)
 [^30]: The Unreasonable Effectiveness of Deep Features as a Perceptual Metric [[CVPR 2018]](https://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_The_Unreasonable_Effectiveness_CVPR_2018_paper.html) [[arXiv]](https://arxiv.org/abs/1801.03924)
-[^31]: AMT: All-Pairs Multi-Field Transforms for Efficient Frame Interpolation [CVPR 2023] [[arXiv]](https://arxiv.org/abs/2304.09790)
+[^31]: AMT: All-Pairs Multi-Field Transforms for Efficient Frame Interpolation [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Li_AMT_All-Pairs_Multi-Field_Transforms_for_Efficient_Frame_Interpolation_CVPR_2023_paper.html) [[arXiv]](https://arxiv.org/abs/2304.09790)
 [^32]: Neighbor Correspondence Matching for Flow-based Video Frame Synthesis [[MM 2022]](https://dl.acm.org/doi/10.1145/3503161.3548163) [[arXiv]](https://arxiv.org/abs/2207.06763)
-[^33]: Blur Interpolation Transformer for Real-World Motion from Blur [CVPR 2023] [[arXiv]](https://arxiv.org/abs/2211.11423)
+[^33]: Blur Interpolation Transformer for Real-World Motion from Blur [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Zhong_Blur_Interpolation_Transformer_for_Real-World_Motion_From_Blur_CVPR_2023_paper.html) [[arXiv]](https://arxiv.org/abs/2211.11423)
 [^34]: DeMFI: Deep Joint Deblurring and Multi-Frame Interpolation with Flow-Guided Attentive Correlation and Recursive Boosting [[ECCV 2022]](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4406_ECCV_2022_paper.php) [[arXiv]](https://arxiv.org/abs/2111.09985)
 [^35]: Blurry Video Frame Interpolation [[CVPR 2020]](https://openaccess.thecvf.com/content_CVPR_2020/html/Shen_Blurry_Video_Frame_Interpolation_CVPR_2020_paper.html) [[arXiv]](https://arxiv.org/abs/2002.12259)
 [^36]: Video Frame Interpolation with Densely Queried Bilateral Correlation [IJCAI 2023] [[arXiv]](https://arxiv.org/abs/2304.13596)
 [^37]: ALANET: Adaptive Latent Attention Network for Joint Video Deblurring and Interpolation [[MM 2020]](https://dl.acm.org/doi/10.1145/3394171.3413686) [[arXiv]](https://arxiv.org/abs/2009.01005)
 [^38]: Video Frame Interpolation and Enhancement via Pyramid Recurrent Framework [[TIP 2020]](https://ieeexplore.ieee.org/document/9257179)
+[^39]: Joint Video Multi-Frame Interpolation and Deblurring under Unknown Exposure Time [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Shang_Joint_Video_Multi-Frame_Interpolation_and_Deblurring_Under_Unknown_Exposure_Time_CVPR_2023_paper.html) [[arXiv]](https://arxiv.org/abs/2303.15043)
+[^40]: Video Frame Interpolation without Temporal Priors [[NeurIPS 2020]](https://proceedings.neurips.cc/paper_files/paper/2020/hash/9a11883317fde3aef2e2432a58c86779-Abstract.html) [[arXiv]](https://arxiv.org/abs/2112.01161)
