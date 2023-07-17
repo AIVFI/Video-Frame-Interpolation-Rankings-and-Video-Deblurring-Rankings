@@ -1,14 +1,13 @@
 # <p align=center>Video Frame Interpolation Rankings<br />and Video Deblurring Rankings</p>
 
 Gradually I intend to add new rankings, but my priority is to keep the existing ones up to date. Below is a list of <ins>**7 upcoming updates**</ins> that <ins>**I intend to add**</ins> to keep the existing rankings up to date:
-1. Changed model name from NIO to AdaFNIO and changed PSNR score [[arXiv]](https://arxiv.org/abs/2211.10791)
 1. Modified presentation of enhanced models in the rankings 
 1. Enhanced models added: [[arXiv]](https://arxiv.org/abs/2306.13933)
-1. Enhanced model added: SoftSplat - 𝓛<sub>*Lap*</sub> with ensemble [[arXiv]](https://arxiv.org/abs/2011.01280)
-1. Missing model added: [[ACCV 2022]](https://openaccess.thecvf.com/content/ACCV2022/html/Lin_MVFI-Net_Motion-aware_Video_Frame_Interpolation_Network_ACCV_2022_paper.html)
+1. Missing enhanced model added: SoftSplat - 𝓛<sub>*Lap*</sub> with ensemble [[WACV 2021]](https://openaccess.thecvf.com/content/WACV2021/html/Niklaus_Revisiting_Adaptive_Convolutions_for_Video_Frame_Interpolation_WACV_2021_paper.html) [[arXiv]](https://arxiv.org/abs/2011.01280)
+1. Missing model added: MVFI-Net<sub>*L*</sub> [[ACCV 2022]](https://openaccess.thecvf.com/content/ACCV2022/html/Lin_MVFI-Net_Motion-aware_Video_Frame_Interpolation_Network_ACCV_2022_paper.html)
 1. New model added: [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Plack_Frame_Interpolation_Transformer_and_Uncertainty_Guidance_CVPR_2023_paper.html)
 1. New model added: [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Yu_Range-Nullspace_Video_Frame_Interpolation_With_Focalized_Motion_Estimation_CVPR_2023_paper.html)
-
+1. New model added: EDENVFI [[arXiv]](https://arxiv.org/abs/2307.06443)
 
 An introduction to the rankings is in the development process....
 
@@ -137,13 +136,13 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 
 | Rank | Model | PSNR ↑ | Originally<br />announced | Official<br />repository | Practical<br />models | VapourSynth |
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
-| 1 | NIO |  **36.80dB** [^19] | November 2022 [^19] | - | - | - |
-| 2 | MA-CSPA triplet-trained |  **36.76dB** [^3] | March 2022 [^3] | - | - | - |
-| 3 | EMA-VFI |  **36.64dB** [^22] | March 2023 [^22] | [PyTorch](https://github.com/MCG-NJU/EMA-VFI) ![Github stars](https://img.shields.io/github/stars/MCG-NJU/EMA-VFI) | - | - |
-| 4 | DQBC-Aug |  **36.57dB** [^36] | April 2023 [^36] | [PyTorch](https://github.com/kinoud/DQBC) ![Github stars](https://img.shields.io/github/stars/kinoud/DQBC) | - | - |
-| 5 | TTVFI |  **36.54dB** [^4] | July 2022 [^4] | - | - | - |
-| 6 | AMT-G |  **36.53dB** [^31] | April 2023 [^31] | [PyTorch](https://github.com/MCG-NKU/AMT) ![Github stars](https://img.shields.io/github/stars/MCG-NKU/AMT) | - | - |
-| 7 | VFIformer |  **36.50dB** [^6] | May 2022 [^6] | [PyTorch](https://github.com/dvlab-research/VFIformer) ![Github stars](https://img.shields.io/github/stars/dvlab-research/VFIformer) | - | - |
+| 1 | MA-CSPA triplet-trained |  **36.76dB** [^3] | March 2022 [^3] | - | - | - |
+| 2 | EMA-VFI |  **36.64dB** [^22] | March 2023 [^22] | [PyTorch](https://github.com/MCG-NJU/EMA-VFI) ![Github stars](https://img.shields.io/github/stars/MCG-NJU/EMA-VFI) | - | - |
+| 3 | DQBC-Aug |  **36.57dB** [^36] | April 2023 [^36] | [PyTorch](https://github.com/kinoud/DQBC) ![Github stars](https://img.shields.io/github/stars/kinoud/DQBC) | - | - |
+| 4 | TTVFI |  **36.54dB** [^4] | July 2022 [^4] | - | - | - |
+| 5 | AMT-G |  **36.53dB** [^31] | April 2023 [^31] | [PyTorch](https://github.com/MCG-NKU/AMT) ![Github stars](https://img.shields.io/github/stars/MCG-NKU/AMT) | - | - |
+| 6-7 | AdaFNIO |  **36.50dB** [^19] | November 2022 [^19] | [PyTorch](https://github.com/HrishikeshVish/AdaFNIO) ![Github stars](https://img.shields.io/github/stars/HrishikeshVish/AdaFNIO) | - | - |
+| 6-7 | VFIformer |  **36.50dB** [^6] | May 2022 [^6] | [PyTorch](https://github.com/dvlab-research/VFIformer) ![Github stars](https://img.shields.io/github/stars/dvlab-research/VFIformer) | - | - |
 | 8 | FGDCN-L |  **36.46dB** [^21] | November 2022 [^21] | [TBD](https://github.com/lpcccc-cv/FGDCN) ![Github stars](https://img.shields.io/github/stars/lpcccc-cv/FGDCN) | - | - |
 | 9 | UPR-Net LARGE |  **36.42dB** [^18] | November 2022 [^18] | [PyTorch](https://github.com/srcn-ivl/UPR-Net) ![Github stars](https://img.shields.io/github/stars/srcn-ivl/UPR-Net) | - | - |
 | 10 | EAFI-𝓛<sub>*ecc*</sub> |  **36.38dB** [^8] | July 2022 [^8] | - | - | - |
@@ -240,7 +239,7 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 [^16]: FILM: Frame Interpolation for Large Motion [[ECCV 2022]](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4614_ECCV_2022_paper.php) [[arXiv]](https://arxiv.org/abs/2202.04901)
 [^17]: Deep Bayesian Video Frame Interpolation [[ECCV 2022]](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/1287_ECCV_2022_paper.php)
 [^18]: A Unified Pyramid Recurrent Network for Video Frame Interpolation [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Jin_A_Unified_Pyramid_Recurrent_Network_for_Video_Frame_Interpolation_CVPR_2023_paper.html) [[arXiv]](https://arxiv.org/abs/2211.03456)
-[^19]: NIO: Lightweight neural operator-based architecture for video frame interpolation [[arXiv]](https://arxiv.org/abs/2211.10791)
+[^19]: AdaFNIO: Adaptive Fourier Neural Interpolation Operator for video frame interpolation [[arXiv]](https://arxiv.org/abs/2211.10791)
 [^20]: H-VFI: Hierarchical Frame Interpolation for Videos with Large Motions [[arXiv]](https://arxiv.org/abs/2211.11309)
 [^21]: Flow Guidance Deformable Compensation Network for Video Frame Interpolation [[TMM 2023]](https://ieeexplore.ieee.org/document/10164197) [[arXiv]](https://arxiv.org/abs/2211.12117)
 [^22]: Extracting Motion and Appearance via Inter-Frame Attention for Efficient Video Frame Interpolation [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Zhang_Extracting_Motion_and_Appearance_via_Inter-Frame_Attention_for_Efficient_Video_CVPR_2023_paper.html) [[arXiv]](https://arxiv.org/abs/2303.00440)
