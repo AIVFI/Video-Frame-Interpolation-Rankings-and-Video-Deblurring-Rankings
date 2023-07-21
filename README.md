@@ -195,7 +195,7 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 
 | Rank | Model | PSNR ↑ | Originally<br />announced | Official<br />repository | Practical<br />models | VapourSynth |
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
-| 1 | JNMR | **37.09dB** [^1] | June 2022 [^1] | - | - | - |
+| 1 | JNMR | **37.09dB** [^1] | June 2022 [^1] | [TBD](https://github.com/ruhig6/JNMR) ![Github stars](https://img.shields.io/github/stars/ruhig6/JNMR) | - | - |
 | 2 | VFIT-B | **36.96dB** [^2] | November 2021 [^2] | [PyTorch](https://github.com/zhshi0816/Video-Frame-Interpolation-Transformer) ![Github stars](https://img.shields.io/github/stars/zhshi0816/Video-Frame-Interpolation-Transformer) | - | - |
 | 3 | VRT |  **36.53dB** [^5] | June 2022 (VFI) [^5] | [PyTorch](https://github.com/JingyunLiang/VRT) ![Github stars](https://img.shields.io/github/stars/JingyunLiang/VRT) | - | - |
 | 4 | MA-CSPA septuplet-trained |  **36.50dB** [^3] | March 2022 [^3] | - | - | - |
@@ -211,7 +211,7 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 
 | Rank | Model | SSIM ↑ | Originally<br />announced | Official<br />repository | Practical<br />models | VapourSynth |
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
-| 1-2 | JNMR | **0.978** [^1] | June 2022 [^1] | - | - | - |
+| 1-2 | JNMR | **0.978** [^1] | June 2022 [^1] | [TBD](https://github.com/ruhig6/JNMR) ![Github stars](https://img.shields.io/github/stars/ruhig6/JNMR) | - | - |
 | 1-2 | VFIT-B | **0.978** [^2] | November 2021 [^2] | [PyTorch](https://github.com/zhshi0816/Video-Frame-Interpolation-Transformer) ![Github stars](https://img.shields.io/github/stars/zhshi0816/Video-Frame-Interpolation-Transformer) | - | - |
 | 3 | VRT |  **0.977** [^5] | June 2022 (VFI) [^5] | [PyTorch](https://github.com/JingyunLiang/VRT) ![Github stars](https://img.shields.io/github/stars/JingyunLiang/VRT) | - | - |
 | 4-5 | DBVI |  **0.976** [^17] | October 2022 [^17] | [PyTorch](https://github.com/Oceanlib/DBVI) ![Github stars](https://img.shields.io/github/stars/Oceanlib/DBVI) | - | - |
