@@ -136,14 +136,14 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 
 | Rank | Model | PSNR ↑ | Originally<br />announced | Official<br />repository | Practical<br />models | VapourSynth |
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
-| 1 | MA-CSPA triplet-trained |  **36.76dB** [^3] | March 2022 [^3] | - | - | - |
+| 1 | MA-GCSPA triplet-trained |  **36.76dB** [^3] | March 2022 [^3] | [PyTorch](https://github.com/redrock303/CVPR23-MA-GCSPA) ![Github stars](https://img.shields.io/github/stars/redrock303/CVPR23-MA-GCSPA) | - | - |
 | 2 | EMA-VFI |  **36.64dB** [^22] | March 2023 [^22] | [PyTorch](https://github.com/MCG-NJU/EMA-VFI) ![Github stars](https://img.shields.io/github/stars/MCG-NJU/EMA-VFI) | - | - |
 | 3 | DQBC-Aug |  **36.57dB** [^36] | April 2023 [^36] | [PyTorch](https://github.com/kinoud/DQBC) ![Github stars](https://img.shields.io/github/stars/kinoud/DQBC) | - | - |
 | 4 | TTVFI |  **36.54dB** [^4] | July 2022 [^4] | - | - | - |
 | 5 | AMT-G |  **36.53dB** [^31] | April 2023 [^31] | [PyTorch](https://github.com/MCG-NKU/AMT) ![Github stars](https://img.shields.io/github/stars/MCG-NKU/AMT) | - | - |
-| 6-7 | AdaFNIO |  **36.50dB** [^19] | November 2022 [^19] | [PyTorch](https://github.com/HrishikeshVish/AdaFNIO) ![Github stars](https://img.shields.io/github/stars/HrishikeshVish/AdaFNIO) | - | - |
+| 6-7 | AdaFNIO |  **36.50dB** [^19] | November 2022 [^19] | [PyTorch](https://github.com/IDEAS-Lab-Purdue/AdaFNIO) ![Github stars](https://img.shields.io/github/stars/IDEAS-Lab-Purdue/AdaFNIO) | - | - |
 | 6-7 | VFIformer |  **36.50dB** [^6] | May 2022 [^6] | [PyTorch](https://github.com/dvlab-research/VFIformer) ![Github stars](https://img.shields.io/github/stars/dvlab-research/VFIformer) | - | - |
-| 8 | FGDCN-L |  **36.46dB** [^21] | November 2022 [^21] | [TBD](https://github.com/lpcccc-cv/FGDCN) ![Github stars](https://img.shields.io/github/stars/lpcccc-cv/FGDCN) | - | - |
+| 8 | FGDCN-L |  **36.46dB** [^21] | November 2022 [^21] | [PyTorch](https://github.com/lpcccc-cv/FGDCN) ![Github stars](https://img.shields.io/github/stars/lpcccc-cv/FGDCN) | - | - |
 | 9 | UPR-Net LARGE |  **36.42dB** [^18] | November 2022 [^18] | [PyTorch](https://github.com/srcn-ivl/UPR-Net) ![Github stars](https://img.shields.io/github/stars/srcn-ivl/UPR-Net) | - | - |
 | 10 | EAFI-𝓛<sub>*ecc*</sub> |  **36.38dB** [^8] | July 2022 [^8] | - | - | - |
 | 11 | H-VFI-Large |  **36.37dB** [^20] | November 2022 [^20] | - | - | - |
@@ -168,14 +168,14 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 | 4 | DQBC-Aug |  **0.9817** [^36] | April 2023 [^36] | [PyTorch](https://github.com/kinoud/DQBC) ![Github stars](https://img.shields.io/github/stars/kinoud/DQBC) | - | - |
 | 5 | VFIformer |  **0.9816** [^6] | May 2022 [^6] | [PyTorch](https://github.com/dvlab-research/VFIformer) ![Github stars](https://img.shields.io/github/stars/dvlab-research/VFIformer) | - | - |
 | 6 | UPR-Net LARGE |  **0.9815** [^18] | November 2022 [^18] | [PyTorch](https://github.com/srcn-ivl/UPR-Net) ![Github stars](https://img.shields.io/github/stars/srcn-ivl/UPR-Net) | - | - |
-| 7 | FGDCN-L |  **0.9814** [^21] | November 2022 [^21] | [TBD](https://github.com/lpcccc-cv/FGDCN) ![Github stars](https://img.shields.io/github/stars/lpcccc-cv/FGDCN) | - | - |
+| 7 | FGDCN-L |  **0.9814** [^21] | November 2022 [^21] | [PyTorch](https://github.com/lpcccc-cv/FGDCN) ![Github stars](https://img.shields.io/github/stars/lpcccc-cv/FGDCN) | - | - |
 | 8-10 | EBME-H* |  **0.981** [^11] | June 2022 [^11] | [PyTorch](https://github.com/srcn-ivl/EBME) ![Github stars](https://img.shields.io/github/stars/srcn-ivl/EBME) | - | - |
 | 8-10 | H-VFI-Large |  **0.981** [^20] | November 2022 [^20] | - | - | - |
 | 8-10 | RIFE-Large |  **0.981** [^12] | November 2020 [^12] | [PyTorch](https://github.com/megvii-research/ECCV2022-RIFE) ![Github stars](https://img.shields.io/github/stars/megvii-research/ECCV2022-RIFE) | [RIFE v4.6;<br />v4.5; v4.4;<br />v4.3; v4.2;<br />v3.8; v3.1](https://github.com/hzwer/Practical-RIFE#model-list)<br />![Github stars](https://img.shields.io/github/stars/hzwer/Practical-RIFE) | [TensorRT;<br />ONNX;<br />OpenVINO](https://github.com/AmusementClub/vs-mlrt)<br />![Github stars](https://img.shields.io/github/stars/AmusementClub/vs-mlrt)<br />[TensorRT](https://github.com/HolyWu/vs-rife)<br />![Github stars](https://img.shields.io/github/stars/HolyWu/vs-rife)<br />[ncnn](https://github.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan)<br />![Github stars](https://img.shields.io/github/stars/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan)<br />[ncnn](https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan)<br />![Github stars](https://img.shields.io/github/stars/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan) |
 | 11 | IFRNet large |  **0.9808** [^10] | May 2022 [^10] | [PyTorch](https://github.com/ltkong218/IFRNet) ![Github stars](https://img.shields.io/github/stars/ltkong218/IFRNet) | - | - |
 | 12 | NCM-Large |  **0.9807** [^32] | July 2022 [^32] | - | - | - |
 | 13 | ABME |  **0.9805** [^13] | August 2021 [^13] | [PyTorch](https://github.com/JunHeum/ABME) ![Github stars](https://img.shields.io/github/stars/JunHeum/ABME) | - | - |
-| 14 | MA-CSPA triplet-trained |  **0.980** [^3] | March 2022 [^3] | - | - | - |
+| 14 | MA-GCSPA triplet-trained |  **0.980** [^3] | March 2022 [^3] | [PyTorch](https://github.com/redrock303/CVPR23-MA-GCSPA) ![Github stars](https://img.shields.io/github/stars/redrock303/CVPR23-MA-GCSPA) | - | - |
 
 [[Back to Top]](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [[Back to the List of Rankings]](#list-of-rankings)
@@ -195,10 +195,10 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 
 | Rank | Model | PSNR ↑ | Originally<br />announced | Official<br />repository | Practical<br />models | VapourSynth |
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
-| 1 | JNMR | **37.09dB** [^1] | June 2022 [^1] | [TBD](https://github.com/ruhig6/JNMR) ![Github stars](https://img.shields.io/github/stars/ruhig6/JNMR) | - | - |
+| 1 | JNMR | **37.09dB** [^1] | June 2022 [^1] | [PyTorch](https://github.com/ruhig6/JNMR) ![Github stars](https://img.shields.io/github/stars/ruhig6/JNMR) | - | - |
 | 2 | VFIT-B | **36.96dB** [^2] | November 2021 [^2] | [PyTorch](https://github.com/zhshi0816/Video-Frame-Interpolation-Transformer) ![Github stars](https://img.shields.io/github/stars/zhshi0816/Video-Frame-Interpolation-Transformer) | - | - |
 | 3 | VRT |  **36.53dB** [^5] | June 2022 (VFI) [^5] | [PyTorch](https://github.com/JingyunLiang/VRT) ![Github stars](https://img.shields.io/github/stars/JingyunLiang/VRT) | - | - |
-| 4 | MA-CSPA septuplet-trained |  **36.50dB** [^3] | March 2022 [^3] | - | - | - |
+| 4 | MA-GCSPA septuplet-trained |  **36.50dB** [^3] | March 2022 [^3] | [PyTorch](https://github.com/redrock303/CVPR23-MA-GCSPA) ![Github stars](https://img.shields.io/github/stars/redrock303/CVPR23-MA-GCSPA) | - | - |
 | 5 | ST-MFNet | **36.45dB** [^1] | November 2021 [^7] | [PyTorch](https://github.com/danielism97/ST-MFNet) ![Github stars](https://img.shields.io/github/stars/danielism97/ST-MFNet) | - | - |
 | 6 | FLAVR |  **36.25dB** [^9] | December 2020 [^9] | [PyTorch](https://github.com/tarun005/FLAVR) ![Github stars](https://img.shields.io/github/stars/tarun005/FLAVR) | - | - |
 | 7 | DBVI |  **36.17dB** [^17] | October 2022 [^17] | [PyTorch](https://github.com/Oceanlib/DBVI) ![Github stars](https://img.shields.io/github/stars/Oceanlib/DBVI) | - | - |
@@ -211,7 +211,7 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 
 | Rank | Model | SSIM ↑ | Originally<br />announced | Official<br />repository | Practical<br />models | VapourSynth |
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
-| 1-2 | JNMR | **0.978** [^1] | June 2022 [^1] | [TBD](https://github.com/ruhig6/JNMR) ![Github stars](https://img.shields.io/github/stars/ruhig6/JNMR) | - | - |
+| 1-2 | JNMR | **0.978** [^1] | June 2022 [^1] | [PyTorch](https://github.com/ruhig6/JNMR) ![Github stars](https://img.shields.io/github/stars/ruhig6/JNMR) | - | - |
 | 1-2 | VFIT-B | **0.978** [^2] | November 2021 [^2] | [PyTorch](https://github.com/zhshi0816/Video-Frame-Interpolation-Transformer) ![Github stars](https://img.shields.io/github/stars/zhshi0816/Video-Frame-Interpolation-Transformer) | - | - |
 | 3 | VRT |  **0.977** [^5] | June 2022 (VFI) [^5] | [PyTorch](https://github.com/JingyunLiang/VRT) ![Github stars](https://img.shields.io/github/stars/JingyunLiang/VRT) | - | - |
 | 4-5 | DBVI |  **0.976** [^17] | October 2022 [^17] | [PyTorch](https://github.com/Oceanlib/DBVI) ![Github stars](https://img.shields.io/github/stars/Oceanlib/DBVI) | - | - |
