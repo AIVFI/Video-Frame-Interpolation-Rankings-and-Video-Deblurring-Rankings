@@ -1,10 +1,9 @@
 # <p align=center>Video Frame Interpolation Rankings<br />and Video Deblurring Rankings</p>
 
-Gradually I intend to add new rankings, but my priority is to keep the existing ones up to date. Below is a list of <ins>**7 upcoming updates**</ins> that <ins>**I intend to add**</ins> to keep the existing rankings up to date:
+Gradually I intend to add new rankings, but my priority is to keep the existing ones up to date. Below is a list of <ins>**6 upcoming updates**</ins> that <ins>**I intend to add**</ins> to keep the existing rankings up to date:
 1. Modified presentation of enhanced models in the rankings 
 1. Enhanced models added: [[arXiv]](https://arxiv.org/abs/2306.13933)
 1. Missing enhanced model added: SoftSplat - 𝓛<sub>*Lap*</sub> with ensemble [[WACV 2021]](https://openaccess.thecvf.com/content/WACV2021/html/Niklaus_Revisiting_Adaptive_Convolutions_for_Video_Frame_Interpolation_WACV_2021_paper.html) [[arXiv]](https://arxiv.org/abs/2011.01280)
-1. Missing model added: MVFI-Net<sub>*L*</sub> [[ACCV 2022]](https://openaccess.thecvf.com/content/ACCV2022/html/Lin_MVFI-Net_Motion-aware_Video_Frame_Interpolation_Network_ACCV_2022_paper.html)
 1. New model added: [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Plack_Frame_Interpolation_Transformer_and_Uncertainty_Guidance_CVPR_2023_paper.html)
 1. New model added: [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Yu_Range-Nullspace_Video_Frame_Interpolation_With_Focalized_Motion_Estimation_CVPR_2023_paper.html)
 1. New model added: EDENVFI [[arXiv]](https://arxiv.org/abs/2307.06443)
@@ -169,13 +168,14 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 | 5 | VFIformer |  **0.9816** [^6] | May 2022 [^6] | [PyTorch](https://github.com/dvlab-research/VFIformer) ![Github stars](https://img.shields.io/github/stars/dvlab-research/VFIformer) | - | - |
 | 6 | UPR-Net LARGE |  **0.9815** [^18] | November 2022 [^18] | [PyTorch](https://github.com/srcn-ivl/UPR-Net) ![Github stars](https://img.shields.io/github/stars/srcn-ivl/UPR-Net) | - | - |
 | 7 | FGDCN-L |  **0.9814** [^21] | November 2022 [^21] | [PyTorch](https://github.com/lpcccc-cv/FGDCN) ![Github stars](https://img.shields.io/github/stars/lpcccc-cv/FGDCN) | - | - |
-| 8-10 | EBME-H* |  **0.981** [^11] | June 2022 [^11] | [PyTorch](https://github.com/srcn-ivl/EBME) ![Github stars](https://img.shields.io/github/stars/srcn-ivl/EBME) | - | - |
-| 8-10 | H-VFI-Large |  **0.981** [^20] | November 2022 [^20] | - | - | - |
-| 8-10 | RIFE-Large |  **0.981** [^12] | November 2020 [^12] | [PyTorch](https://github.com/megvii-research/ECCV2022-RIFE) ![Github stars](https://img.shields.io/github/stars/megvii-research/ECCV2022-RIFE) | [RIFE v4.6;<br />v4.5; v4.4;<br />v4.3; v4.2;<br />v3.8; v3.1](https://github.com/hzwer/Practical-RIFE#model-list)<br />![Github stars](https://img.shields.io/github/stars/hzwer/Practical-RIFE) | [TensorRT;<br />ONNX;<br />OpenVINO](https://github.com/AmusementClub/vs-mlrt)<br />![Github stars](https://img.shields.io/github/stars/AmusementClub/vs-mlrt)<br />[TensorRT](https://github.com/HolyWu/vs-rife)<br />![Github stars](https://img.shields.io/github/stars/HolyWu/vs-rife)<br />[ncnn](https://github.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan)<br />![Github stars](https://img.shields.io/github/stars/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan)<br />[ncnn](https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan)<br />![Github stars](https://img.shields.io/github/stars/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan) |
-| 11 | IFRNet large |  **0.9808** [^10] | May 2022 [^10] | [PyTorch](https://github.com/ltkong218/IFRNet) ![Github stars](https://img.shields.io/github/stars/ltkong218/IFRNet) | - | - |
-| 12 | NCM-Large |  **0.9807** [^32] | July 2022 [^32] | - | - | - |
-| 13 | ABME |  **0.9805** [^13] | August 2021 [^13] | [PyTorch](https://github.com/JunHeum/ABME) ![Github stars](https://img.shields.io/github/stars/JunHeum/ABME) | - | - |
-| 14 | MA-GCSPA triplet-trained |  **0.980** [^3] | March 2022 [^3] | [PyTorch](https://github.com/redrock303/CVPR23-MA-GCSPA) ![Github stars](https://img.shields.io/github/stars/redrock303/CVPR23-MA-GCSPA) | - | - |
+| 8-11 | EBME-H* |  **0.981** [^11] | June 2022 [^11] | [PyTorch](https://github.com/srcn-ivl/EBME) ![Github stars](https://img.shields.io/github/stars/srcn-ivl/EBME) | - | - |
+| 8-11 | H-VFI-Large |  **0.981** [^20] | November 2022 [^20] | - | - | - |
+| 8-11 | MVFI-Net<sub>*L*</sub> |  **0.981** [^41] | December 2022 [^41] | [PyTorch](https://github.com/MediaLabVFI/MVFI-Net) ![Github stars](https://img.shields.io/github/stars/MediaLabVFI/MVFI-Net) | - | - |
+| 8-11 | RIFE-Large |  **0.981** [^12] | November 2020 [^12] | [PyTorch](https://github.com/megvii-research/ECCV2022-RIFE) ![Github stars](https://img.shields.io/github/stars/megvii-research/ECCV2022-RIFE) | [RIFE v4.6;<br />v4.5; v4.4;<br />v4.3; v4.2;<br />v3.8; v3.1](https://github.com/hzwer/Practical-RIFE#model-list)<br />![Github stars](https://img.shields.io/github/stars/hzwer/Practical-RIFE) | [TensorRT;<br />ONNX;<br />OpenVINO](https://github.com/AmusementClub/vs-mlrt)<br />![Github stars](https://img.shields.io/github/stars/AmusementClub/vs-mlrt)<br />[TensorRT](https://github.com/HolyWu/vs-rife)<br />![Github stars](https://img.shields.io/github/stars/HolyWu/vs-rife)<br />[ncnn](https://github.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan)<br />![Github stars](https://img.shields.io/github/stars/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan)<br />[ncnn](https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan)<br />![Github stars](https://img.shields.io/github/stars/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan) |
+| 12 | IFRNet large |  **0.9808** [^10] | May 2022 [^10] | [PyTorch](https://github.com/ltkong218/IFRNet) ![Github stars](https://img.shields.io/github/stars/ltkong218/IFRNet) | - | - |
+| 13 | NCM-Large |  **0.9807** [^32] | July 2022 [^32] | - | - | - |
+| 14 | ABME |  **0.9805** [^13] | August 2021 [^13] | [PyTorch](https://github.com/JunHeum/ABME) ![Github stars](https://img.shields.io/github/stars/JunHeum/ABME) | - | - |
+| 15 | MA-GCSPA triplet-trained |  **0.980** [^3] | March 2022 [^3] | [PyTorch](https://github.com/redrock303/CVPR23-MA-GCSPA) ![Github stars](https://img.shields.io/github/stars/redrock303/CVPR23-MA-GCSPA) | - | - |
 
 [[Back to Top]](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [[Back to the List of Rankings]](#list-of-rankings)
@@ -261,3 +261,4 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 [^38]: Video Frame Interpolation and Enhancement via Pyramid Recurrent Framework [[TIP 2020]](https://ieeexplore.ieee.org/document/9257179)
 [^39]: Joint Video Multi-Frame Interpolation and Deblurring under Unknown Exposure Time [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Shang_Joint_Video_Multi-Frame_Interpolation_and_Deblurring_Under_Unknown_Exposure_Time_CVPR_2023_paper.html) [[arXiv]](https://arxiv.org/abs/2303.15043)
 [^40]: Video Frame Interpolation without Temporal Priors [[NeurIPS 2020]](https://proceedings.neurips.cc/paper_files/paper/2020/hash/9a11883317fde3aef2e2432a58c86779-Abstract.html) [[arXiv]](https://arxiv.org/abs/2112.01161)
+[^41]: MVFI-Net: Motion-aware Video Frame Interpolation Network [[ACCV 2022]](https://openaccess.thecvf.com/content/ACCV2022/html/Lin_MVFI-Net_Motion-aware_Video_Frame_Interpolation_Network_ACCV_2022_paper.html)
