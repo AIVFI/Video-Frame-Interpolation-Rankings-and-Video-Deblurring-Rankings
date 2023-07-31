@@ -1,9 +1,7 @@
 # <p align=center>Video Frame Interpolation Rankings<br />and Video Deblurring Rankings</p>
 
-Gradually I intend to add new rankings, but my priority is to keep the existing ones up to date. Below is a list of <ins>**6 upcoming updates**</ins> that <ins>**I intend to add**</ins> to keep the existing rankings up to date:
-1. Modified presentation of enhanced models in the rankings 
+Gradually I intend to add new rankings, but my priority is to keep the existing ones up to date. Below is a list of <ins>**4 upcoming updates**</ins> that <ins>**I intend to add**</ins> to keep the existing rankings up to date:
 1. Enhanced models added: [[arXiv]](https://arxiv.org/abs/2306.13933)
-1. Missing enhanced model added: SoftSplat - 𝓛<sub>*Lap*</sub> with ensemble [[WACV 2021]](https://openaccess.thecvf.com/content/WACV2021/html/Niklaus_Revisiting_Adaptive_Convolutions_for_Video_Frame_Interpolation_WACV_2021_paper.html) [[arXiv]](https://arxiv.org/abs/2011.01280)
 1. New model added: [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Plack_Frame_Interpolation_Transformer_and_Uncertainty_Guidance_CVPR_2023_paper.html)
 1. New model added: [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Yu_Range-Nullspace_Video_Frame_Interpolation_With_Focalized_Motion_Estimation_CVPR_2023_paper.html)
 1. New model added: EDENVFI [[arXiv]](https://arxiv.org/abs/2307.06443)
@@ -25,13 +23,6 @@ It can be seen from the results of two **video frame interpolation models** from
 |:----|:----:|:----:|:----:|
 | SoftSplat - 𝓛<sub>*Lap*</sub> | <ins>**36.10dB**</ins> | <ins>**0.970**</ins> | 0.021 |
 | SoftSplat - 𝓛<sub>*F*</sub> | 35.48dB | 0.964 | <ins>**0.013**</ins> |
-
-The same can also be seen from the results of two **single image deblurring models** on the GoPro test set [^28]:
-
-| Model | PSNR ↑ | SSIM ↑ | LPIPS ↓ | NIQE ↓ | FID ↓ | KID ↓ |
-|:----|:----:|:----:|:----:|:----:|:----:|:----:|
-| DGD-SA | <ins>**33.20dB**</ins> | <ins>**0.963**</ins> | 0.078 | 4.10 | 8.69 | 0.00706 |
-| DGD | 31.19dB | 0.943 | <ins>**0.057**</ins> | <ins>**3.27**</ins> | <ins>**3.50**</ins> | <ins>**0.00077**</ins> |
 
 Sometimes even almost 3dB better PSNR result does not guarantee better LPIPS result, as shown by the results of two different video frame interpolation methods on the Vimeo-90K septuplet test set [^27]:
 
@@ -146,12 +137,12 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 | 9 | UPR-Net LARGE |  **36.42dB** [^18] | November 2022 [^18] | [PyTorch](https://github.com/srcn-ivl/UPR-Net) ![Github stars](https://img.shields.io/github/stars/srcn-ivl/UPR-Net) | - | - |
 | 10 | EAFI-𝓛<sub>*ecc*</sub> |  **36.38dB** [^8] | July 2022 [^8] | - | - | - |
 | 11 | H-VFI-Large |  **36.37dB** [^20] | November 2022 [^20] | - | - | - |
-| 12 | NCM-Large |  **36.22dB** [^32] | July 2022 [^32] | - | - | - |
-| 13 | IFRNet large |  **36.20dB** [^10] | May 2022 [^10] | [PyTorch](https://github.com/ltkong218/IFRNet) ![Github stars](https://img.shields.io/github/stars/ltkong218/IFRNet) | - | - |
-| 14-15 | EBME-H* |  **36.19dB** [^11] | June 2022 [^11] | [PyTorch](https://github.com/srcn-ivl/EBME) ![Github stars](https://img.shields.io/github/stars/srcn-ivl/EBME) | - | - |
-| 14-15 | RIFE-Large |  **36.19dB** [^12] | November 2020 [^12] | [PyTorch](https://github.com/megvii-research/ECCV2022-RIFE) ![Github stars](https://img.shields.io/github/stars/megvii-research/ECCV2022-RIFE) | [RIFE v4.6;<br />v4.5; v4.4;<br />v4.3; v4.2;<br />v3.8; v3.1](https://github.com/hzwer/Practical-RIFE#model-list)<br />![Github stars](https://img.shields.io/github/stars/hzwer/Practical-RIFE) | [TensorRT;<br />ONNX;<br />OpenVINO](https://github.com/AmusementClub/vs-mlrt)<br />![Github stars](https://img.shields.io/github/stars/AmusementClub/vs-mlrt)<br />[TensorRT](https://github.com/HolyWu/vs-rife)<br />![Github stars](https://img.shields.io/github/stars/HolyWu/vs-rife)<br />[ncnn](https://github.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan)<br />![Github stars](https://img.shields.io/github/stars/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan)<br />[ncnn](https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan)<br />![Github stars](https://img.shields.io/github/stars/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan) |
-| 16 | ABME |  **36.18dB** [^13] | August 2021 [^13] | [PyTorch](https://github.com/JunHeum/ABME) ![Github stars](https://img.shields.io/github/stars/JunHeum/ABME) | - | - |
-| 17 | SoftSplat - 𝓛<sub>*Lap*</sub> |  **36.10dB** [^15] | March 2020 [^15] | [PyTorch](https://github.com/sniklaus/softmax-splatting) ![Github stars](https://img.shields.io/github/stars/sniklaus/softmax-splatting) | - | - |
+| 12 | SoftSplat - 𝓛<sub>*Lap*</sub> with ensemble |  **36.28dB** [^28] | March 2020 [^15] | [PyTorch](https://github.com/sniklaus/softmax-splatting) ![Github stars](https://img.shields.io/github/stars/sniklaus/softmax-splatting) | - | - |
+| 13 | NCM-Large |  **36.22dB** [^32] | July 2022 [^32] | - | - | - |
+| 14 | IFRNet large |  **36.20dB** [^10] | May 2022 [^10] | [PyTorch](https://github.com/ltkong218/IFRNet) ![Github stars](https://img.shields.io/github/stars/ltkong218/IFRNet) | - | - |
+| 15-16 | EBME-H* |  **36.19dB** [^11] | June 2022 [^11] | [PyTorch](https://github.com/srcn-ivl/EBME) ![Github stars](https://img.shields.io/github/stars/srcn-ivl/EBME) | - | - |
+| 15-16 | RIFE-Large |  **36.19dB** [^12] | November 2020 [^12] | [PyTorch](https://github.com/megvii-research/ECCV2022-RIFE) ![Github stars](https://img.shields.io/github/stars/megvii-research/ECCV2022-RIFE) | [RIFE v4.6;<br />v4.5; v4.4;<br />v4.3; v4.2;<br />v3.8; v3.1](https://github.com/hzwer/Practical-RIFE#model-list)<br />![Github stars](https://img.shields.io/github/stars/hzwer/Practical-RIFE) | [TensorRT;<br />ONNX;<br />OpenVINO](https://github.com/AmusementClub/vs-mlrt)<br />![Github stars](https://img.shields.io/github/stars/AmusementClub/vs-mlrt)<br />[TensorRT](https://github.com/HolyWu/vs-rife)<br />![Github stars](https://img.shields.io/github/stars/HolyWu/vs-rife)<br />[ncnn](https://github.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan)<br />![Github stars](https://img.shields.io/github/stars/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan)<br />[ncnn](https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan)<br />![Github stars](https://img.shields.io/github/stars/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan) |
+| 17 | ABME |  **36.18dB** [^13] | August 2021 [^13] | [PyTorch](https://github.com/JunHeum/ABME) ![Github stars](https://img.shields.io/github/stars/JunHeum/ABME) | - | - |
 | 18 | FILM-𝓛<sub>1</sub> |  **36.06dB** [^16] | February 2022 [^16] | [TensorFlow](https://github.com/google-research/frame-interpolation) ![Github stars](https://img.shields.io/github/stars/google-research/frame-interpolation) | [FILM-𝓛<sub>*S*</sub>;<br />FILM-𝓛<sub>VGG</sub>](https://github.com/google-research/frame-interpolation#pre-trained-models) | - |
 
 [[Back to Top]](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
@@ -248,7 +239,7 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 [^25]: Multiple Video Frame Interpolation via Enhanced Deformable Separable Convolution [[TPAMI 2021]](https://ieeexplore.ieee.org/document/9501506) [[arXiv]](https://arxiv.org/abs/2006.08070)
 [^26]: DRVI: Dual Refinement for Video Interpolation [[Access 2021]](https://ieeexplore.ieee.org/document/9513293)
 [^27]: Exploring Discontinuity for Video Frame Interpolation [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Lee_Exploring_Discontinuity_for_Video_Frame_Interpolation_CVPR_2023_paper.html) [[arXiv]](https://arxiv.org/abs/2202.07291)
-[^28]: Image Deblurring with Domain Generalizable Diffusion Models [[arXiv]](https://arxiv.org/abs/2212.01789)
+[^28]: Revisiting Adaptive Convolutions for Video Frame Interpolation [[WACV 2021]](https://openaccess.thecvf.com/content/WACV2021/html/Niklaus_Revisiting_Adaptive_Convolutions_for_Video_Frame_Interpolation_WACV_2021_paper.html) [[arXiv]](https://arxiv.org/abs/2011.01280)
 [^29]: Locally Adaptive Structure and Texture Similarity for Image Quality Assessment [[MM 2021]](https://dl.acm.org/doi/10.1145/3474085.3475419) [[arXiv]](https://arxiv.org/abs/2110.08521)
 [^30]: The Unreasonable Effectiveness of Deep Features as a Perceptual Metric [[CVPR 2018]](https://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_The_Unreasonable_Effectiveness_CVPR_2018_paper.html) [[arXiv]](https://arxiv.org/abs/1801.03924)
 [^31]: AMT: All-Pairs Multi-Field Transforms for Efficient Frame Interpolation [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Li_AMT_All-Pairs_Multi-Field_Transforms_for_Efficient_Frame_Interpolation_CVPR_2023_paper.html) [[arXiv]](https://arxiv.org/abs/2304.09790)
