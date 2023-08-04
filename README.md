@@ -4,7 +4,7 @@ Gradually I intend to add new rankings, but my priority is to keep the existing 
 1. Enhanced models added: [[arXiv]](https://arxiv.org/abs/2306.13933)
 1. New model added: [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Plack_Frame_Interpolation_Transformer_and_Uncertainty_Guidance_CVPR_2023_paper.html)
 1. New model added: [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Yu_Range-Nullspace_Video_Frame_Interpolation_With_Focalized_Motion_Estimation_CVPR_2023_paper.html)
-1. New model added: EDENVFI [[arXiv]](https://arxiv.org/abs/2307.06443)
+1. New model added: VFIFT [[arXiv]](https://arxiv.org/abs/2307.16144)
 
 An introduction to the rankings is in the development process....
 
@@ -191,9 +191,10 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 | 3 | VRT |  **36.53dB** [^5] | June 2022 (VFI) [^5] | [PyTorch](https://github.com/JingyunLiang/VRT) ![Github stars](https://img.shields.io/github/stars/JingyunLiang/VRT) | - | - |
 | 4 | MA-GCSPA septuplet-trained |  **36.50dB** [^3] | March 2022 [^3] | [PyTorch](https://github.com/redrock303/CVPR23-MA-GCSPA) ![Github stars](https://img.shields.io/github/stars/redrock303/CVPR23-MA-GCSPA) | - | - |
 | 5 | ST-MFNet | **36.45dB** [^1] | November 2021 [^7] | [PyTorch](https://github.com/danielism97/ST-MFNet) ![Github stars](https://img.shields.io/github/stars/danielism97/ST-MFNet) | - | - |
-| 6 | FLAVR |  **36.25dB** [^9] | December 2020 [^9] | [PyTorch](https://github.com/tarun005/FLAVR) ![Github stars](https://img.shields.io/github/stars/tarun005/FLAVR) | - | - |
-| 7 | DBVI |  **36.17dB** [^17] | October 2022 [^17] | [PyTorch](https://github.com/Oceanlib/DBVI) ![Github stars](https://img.shields.io/github/stars/Oceanlib/DBVI) | - | - |
-| 8 | EDC | **36.14dB** [^1] | February 2022 [^14] | [PyTorch](https://github.com/danielism97/EDC) ![Github stars](https://img.shields.io/github/stars/danielism97/EDC) | - | - |
+| 6 | EDENVFI PVT(15,15) | **36.387dB** [^42] | July 2023 [^42] | - | - | - |
+| 7 | FLAVR |  **36.25dB** [^9] | December 2020 [^9] | [PyTorch](https://github.com/tarun005/FLAVR) ![Github stars](https://img.shields.io/github/stars/tarun005/FLAVR) | - | - |
+| 8 | DBVI |  **36.17dB** [^17] | October 2022 [^17] | [PyTorch](https://github.com/Oceanlib/DBVI) ![Github stars](https://img.shields.io/github/stars/Oceanlib/DBVI) | - | - |
+| 9 | EDC | **36.14dB** [^1] | February 2022 [^14] | [PyTorch](https://github.com/danielism97/EDC) ![Github stars](https://img.shields.io/github/stars/danielism97/EDC) | - | - |
 
 [[Back to Top]](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [[Back to the List of Rankings]](#list-of-rankings)
@@ -253,3 +254,4 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 [^39]: Joint Video Multi-Frame Interpolation and Deblurring under Unknown Exposure Time [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Shang_Joint_Video_Multi-Frame_Interpolation_and_Deblurring_Under_Unknown_Exposure_Time_CVPR_2023_paper.html) [[arXiv]](https://arxiv.org/abs/2303.15043)
 [^40]: Video Frame Interpolation without Temporal Priors [[NeurIPS 2020]](https://proceedings.neurips.cc/paper_files/paper/2020/hash/9a11883317fde3aef2e2432a58c86779-Abstract.html) [[arXiv]](https://arxiv.org/abs/2112.01161)
 [^41]: MVFI-Net: Motion-aware Video Frame Interpolation Network [[ACCV 2022]](https://openaccess.thecvf.com/content/ACCV2022/html/Lin_MVFI-Net_Motion-aware_Video_Frame_Interpolation_Network_ACCV_2022_paper.html)
+[^42]: Efficient Convolution and Transformer-Based Network for Video Frame Interpolation [ICIP 2023] [[arXiv]](https://arxiv.org/abs/2307.06443)
