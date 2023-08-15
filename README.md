@@ -129,7 +129,7 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 | 1 | MA-GCSPA triplet-trained |  **36.76dB** [^3] | March 2022 [^3] | [PyTorch](https://github.com/redrock303/CVPR23-MA-GCSPA) ![Github stars](https://img.shields.io/github/stars/redrock303/CVPR23-MA-GCSPA) | - | - |
 | 2 | EMA-VFI |  **36.64dB** [^22] | March 2023 [^22] | [PyTorch](https://github.com/MCG-NJU/EMA-VFI) ![Github stars](https://img.shields.io/github/stars/MCG-NJU/EMA-VFI) | - | - |
 | 3 | DQBC-Aug |  **36.57dB** [^36] | April 2023 [^36] | [PyTorch](https://github.com/kinoud/DQBC) ![Github stars](https://img.shields.io/github/stars/kinoud/DQBC) | - | - |
-| 4 | TTVFI |  **36.54dB** [^4] | July 2022 [^4] | - | - | - |
+| 4 | TTVFI |  **36.54dB** [^4] | July 2022 [^4] | [PyTorch](https://github.com/ChengxuLiu/TTVFI) ![Github stars](https://img.shields.io/github/stars/ChengxuLiu/TTVFI) | - | - |
 | 5 | AMT-G |  **36.53dB** [^31] | April 2023 [^31] | [PyTorch](https://github.com/MCG-NKU/AMT) ![Github stars](https://img.shields.io/github/stars/MCG-NKU/AMT) | - | - |
 | 6-7 | AdaFNIO |  **36.50dB** [^19] | November 2022 [^19] | [PyTorch](https://github.com/IDEAS-Lab-Purdue/AdaFNIO) ![Github stars](https://img.shields.io/github/stars/IDEAS-Lab-Purdue/AdaFNIO) | - | - |
 | 6-7 | VFIformer |  **36.50dB** [^6] | May 2022 [^6] | [PyTorch](https://github.com/dvlab-research/VFIformer) ![Github stars](https://img.shields.io/github/stars/dvlab-research/VFIformer) | - | - |
@@ -154,7 +154,7 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
 | 1 | AMT-G |  **0.982** [^31] | April 2023 [^31] | [PyTorch](https://github.com/MCG-NKU/AMT) ![Github stars](https://img.shields.io/github/stars/MCG-NKU/AMT) | - | - |
 | 2-3 | EMA-VFI |  **0.9819** [^22] | March 2023 [^22] | [PyTorch](https://github.com/MCG-NJU/EMA-VFI) ![Github stars](https://img.shields.io/github/stars/MCG-NJU/EMA-VFI) | - | - |
-| 2-3 | TTVFI |  **0.9819** [^4] | July 2022 [^4] | - | - | - |
+| 2-3 | TTVFI |  **0.9819** [^4] | July 2022 [^4] | [PyTorch](https://github.com/ChengxuLiu/TTVFI) ![Github stars](https://img.shields.io/github/stars/ChengxuLiu/TTVFI) | - | - |
 | 4 | DQBC-Aug |  **0.9817** [^36] | April 2023 [^36] | [PyTorch](https://github.com/kinoud/DQBC) ![Github stars](https://img.shields.io/github/stars/kinoud/DQBC) | - | - |
 | 5 | VFIformer |  **0.9816** [^6] | May 2022 [^6] | [PyTorch](https://github.com/dvlab-research/VFIformer) ![Github stars](https://img.shields.io/github/stars/dvlab-research/VFIformer) | - | - |
 | 6 | UPR-Net LARGE |  **0.9815** [^18] | November 2022 [^18] | [PyTorch](https://github.com/srcn-ivl/UPR-Net) ![Github stars](https://img.shields.io/github/stars/srcn-ivl/UPR-Net) | - | - |
@@ -216,7 +216,7 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 [^1]: JNMR: Joint Non-linear Motion Regression for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2206.04231)
 [^2]: Video Frame Interpolation Transformer [[CVPR 2022]](https://openaccess.thecvf.com/content/CVPR2022/html/Shi_Video_Frame_Interpolation_Transformer_CVPR_2022_paper.html) [[arXiv]](https://arxiv.org/abs/2111.13817)
 [^3]: Exploring Motion Ambiguity and Alignment for High-Quality Video Frame Interpolation [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Zhou_Exploring_Motion_Ambiguity_and_Alignment_for_High-Quality_Video_Frame_Interpolation_CVPR_2023_paper.html) [[arXiv]](https://arxiv.org/abs/2203.10291)
-[^4]: TTVFI: Learning Trajectory-Aware Transformer for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2207.09048)
+[^4]: TTVFI: Learning Trajectory-Aware Transformer for Video Frame Interpolation [[TIP 2023]](https://ieeexplore.ieee.org/document/10215337) [[arXiv]](https://arxiv.org/abs/2207.09048)
 [^5]: VRT: A Video Restoration Transformer [[arXiv]](https://arxiv.org/abs/2201.12288)
 [^6]: Video Frame Interpolation with Transformer [[CVPR 2022]](https://openaccess.thecvf.com/content/CVPR2022/html/Lu_Video_Frame_Interpolation_With_Transformer_CVPR_2022_paper.html) [[arXiv]](https://arxiv.org/abs/2205.07230)
 [^7]: ST-MFNet: A Spatio-Temporal Multi-Flow Network for Frame Interpolation [[CVPR 2022]](https://openaccess.thecvf.com/content/CVPR2022/html/Danier_ST-MFNet_A_Spatio-Temporal_Multi-Flow_Network_for_Frame_Interpolation_CVPR_2022_paper.html) [[arXiv]](https://arxiv.org/abs/2111.15483)
