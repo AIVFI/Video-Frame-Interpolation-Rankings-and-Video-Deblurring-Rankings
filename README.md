@@ -1,10 +1,10 @@
 # <p align=center>Video Frame Interpolation Rankings<br />and Video Deblurring Rankings</p>
 
 Gradually I intend to add new rankings, but my priority is to keep the existing ones up to date. Below is a list of <ins>**4 upcoming updates**</ins> that <ins>**I intend to add**</ins> to keep the existing rankings up to date:
-1. Enhanced models added: [[arXiv]](https://arxiv.org/abs/2306.13933)
-1. New model added: [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Plack_Frame_Interpolation_Transformer_and_Uncertainty_Guidance_CVPR_2023_paper.html)
-1. New model added: [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Yu_Range-Nullspace_Video_Frame_Interpolation_With_Focalized_Motion_Estimation_CVPR_2023_paper.html)
-1. New model added: VFIFT [[arXiv]](https://arxiv.org/abs/2307.16144)
+1. Add enhanced models: [[arXiv]](https://arxiv.org/abs/2306.13933)
+1. Add new model: [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Plack_Frame_Interpolation_Transformer_and_Uncertainty_Guidance_CVPR_2023_paper.html)
+1. Add new model: [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Yu_Range-Nullspace_Video_Frame_Interpolation_With_Focalized_Motion_Estimation_CVPR_2023_paper.html)
+1. Add new model: VFIFT [[arXiv]](https://arxiv.org/abs/2307.16144)
 
 An introduction to the rankings is in the development process....
 
@@ -189,8 +189,8 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 | 1 | JNMR | **37.09dB** [^1] | June 2022 [^1] | [PyTorch](https://github.com/ruhig6/JNMR) ![Github stars](https://img.shields.io/github/stars/ruhig6/JNMR) | - | - |
 | 2 | VFIT-B | **36.96dB** [^2] | November 2021 [^2] | [PyTorch](https://github.com/zhshi0816/Video-Frame-Interpolation-Transformer) ![Github stars](https://img.shields.io/github/stars/zhshi0816/Video-Frame-Interpolation-Transformer) | - | - |
 | 3 | VRT |  **36.53dB** [^5] | June 2022 (VFI) [^5] | [PyTorch](https://github.com/JingyunLiang/VRT) ![Github stars](https://img.shields.io/github/stars/JingyunLiang/VRT) | - | - |
-| 4 | MA-GCSPA septuplet-trained |  **36.50dB** [^3] | March 2022 [^3] | [PyTorch](https://github.com/redrock303/CVPR23-MA-GCSPA) ![Github stars](https://img.shields.io/github/stars/redrock303/CVPR23-MA-GCSPA) | - | - |
-| 5 | ST-MFNet | **36.45dB** [^1] | November 2021 [^7] | [PyTorch](https://github.com/danielism97/ST-MFNet) ![Github stars](https://img.shields.io/github/stars/danielism97/ST-MFNet) | - | - |
+| 4 | ST-MFNet | **36.507dB** [^42] | November 2021 [^7] | [PyTorch](https://github.com/danielism97/ST-MFNet) ![Github stars](https://img.shields.io/github/stars/danielism97/ST-MFNet) | - | - |
+| 5 | MA-GCSPA septuplet-trained |  **36.50dB** [^3] | March 2022 [^3] | [PyTorch](https://github.com/redrock303/CVPR23-MA-GCSPA) ![Github stars](https://img.shields.io/github/stars/redrock303/CVPR23-MA-GCSPA) | - | - |
 | 6 | EDENVFI PVT(15,15) | **36.387dB** [^42] | July 2023 [^42] | - | - | - |
 | 7 | FLAVR |  **36.25dB** [^9] | December 2020 [^9] | [PyTorch](https://github.com/tarun005/FLAVR) ![Github stars](https://img.shields.io/github/stars/tarun005/FLAVR) | - | - |
 | 8 | DBVI |  **36.17dB** [^17] | October 2022 [^17] | [PyTorch](https://github.com/Oceanlib/DBVI) ![Github stars](https://img.shields.io/github/stars/Oceanlib/DBVI) | - | - |
