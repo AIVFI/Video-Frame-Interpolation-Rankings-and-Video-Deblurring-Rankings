@@ -1,20 +1,6 @@
 # <p align=center>Video Frame Interpolation Rankings<br />and Video Deblurring Rankings</p>
 
-First Anniversary Update:
-
-On the day of the first anniversary of my first repository, I decided to add my second repository: [Monocular Video Depth Estimation Rankings and Light Field Video Reconstruction from Monocular Video Rankings](https://github.com/AIVFI/Monocular-Video-Depth-Estimation-Rankings-and-Light-Field-Video-Reconstruction-from-MV-Rankings)
-
-In the near future I will write a little more information about what inspired me to add it and how it relates to this repository. 
-
-Today I would like to <ins>**thank you very much for your interest in my first repository**</ins>. I did not expect to receive as many as 45 stars in the first year of its existence:
-
-<img src="https://api.star-history.com/svg?repos=AIVFI/Video-Frame-Interpolation-Rankings-and-Video-Deblurring-Rankings" height="320" width="480" />
-
-Especially since, due to lack of time, it is still far from what I had planned. 
-
-These stars are not only motivation for me to develop it further, but above all these stars make it more and more visible. This is very important to me, because I would like researchers to develop better and better models that are also suitable for practical use. I hope to show what is currently the best and to reach out with these rankings to people who have the knowledge, skills and capabilities to create even better solutions. 
-
-I will try to keep my both repositories updated as often as possible, and to eliminate all the delays and the queue waiting to be added to the rankings already in place.
+**Announcement on 15 September 2023**: From Monday I will gradually change the layout of tables. The most important change is the introduction of badges which, when clicked on, will direct to websites with published papers for the models included in the rankings. This will allow me to completely eliminate the footnotes, which in my opinion are a nuisance when browsing the rankings. Also, the GitHub badges will direct to repository websites. The new GitHub badges will have the GitHub logo. In the tables, there will be new information about the models: Input Frames and Training dataset. As these changes are not currently my priority, the old and new layouts of the tables will appear simultaneously for some time. However, all new models added to the rankings will include the changes described above. The new layout of tables can already be checked and tested today in my second repository: [Monocular Video Depth Estimation Rankings and Light Field Video Reconstruction from Monocular Video Rankings](https://github.com/AIVFI/Monocular-Video-Depth-Estimation-Rankings-and-Light-Field-Video-Reconstruction-from-MV-Rankings) If anyone has any comments or suggestions in this regard, please let me know.
 
 --------------------
 Gradually I intend to add new rankings, but my priority is to keep the existing ones up to date. Below is a list of <ins>**4 upcoming updates**</ins> that <ins>**I intend to add**</ins> to keep the existing rankings up to date:
