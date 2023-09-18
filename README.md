@@ -49,7 +49,7 @@ LPIPS [^30] is a metric that reflects human perception much better than PSNR or 
 
 ### Joint Video Deblurring and Frame Interpolation Rankings
 1. :crown: **RBI with real motion blur:heavy_check_mark:: LPIPS:heart_eyes:** (no data)  
-_This will be the King of all rankings. We look forward to ambitious researchers._
+*This will be the King of all rankings. We look forward to ambitious researchers.*
 1. [**RBI with real motion blur:heavy_check_mark:: PSNR:disappointed:>=28.5dB**](#rbi-with-real-motion-blurheavy_check_mark-psnrdisappointed285db)
 1. **RBI with real motion blur:heavy_check_mark:: SSIM:disappointed:** (to do)
 1. **Adobe240 (640×352) with synthetic motion blur:bangbang:: LPIPS:heart_eyes:** (no data)  
@@ -127,7 +127,7 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 
 ## Vimeo-90K triplet: PSNR:disappointed:>=36dB
 
-| Rank | Model | PSNR ↑ | Originally<br />announced | Official<br />repository | Practical<br />models | VapourSynth |
+| Rank | &nbsp;&nbsp;&nbsp;&nbsp;Model&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;PSNR&nbsp;↑&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.} | Originally<br />announced | Official<br />repository | Practical<br />models | VapourSynth |
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
 | 1 | MA-GCSPA triplet-trained |  **36.76dB** [^3] | March 2022 [^3] | [PyTorch](https://github.com/redrock303/CVPR23-MA-GCSPA) ![Github stars](https://img.shields.io/github/stars/redrock303/CVPR23-MA-GCSPA) | - | - |
 | 2 | EMA-VFI |  **36.64dB** [^22] | March 2023 [^22] | [PyTorch](https://github.com/MCG-NJU/EMA-VFI) ![Github stars](https://img.shields.io/github/stars/MCG-NJU/EMA-VFI) | - | - |
@@ -146,7 +146,8 @@ _This will be the King of all rankings. We look forward to ambitious researchers
 | 15-16 | EBME-H* |  **36.19dB** [^11] | June 2022 [^11] | [PyTorch](https://github.com/srcn-ivl/EBME) ![Github stars](https://img.shields.io/github/stars/srcn-ivl/EBME) | - | - |
 | 15-16 | RIFE-Large |  **36.19dB** [^12] | November 2020 [^12] | [PyTorch](https://github.com/megvii-research/ECCV2022-RIFE) ![Github stars](https://img.shields.io/github/stars/megvii-research/ECCV2022-RIFE) | [RIFE v4.6;<br />v4.5; v4.4;<br />v4.3; v4.2;<br />v3.8; v3.1](https://github.com/hzwer/Practical-RIFE#model-list)<br />![Github stars](https://img.shields.io/github/stars/hzwer/Practical-RIFE) | [TensorRT;<br />ONNX;<br />OpenVINO](https://github.com/AmusementClub/vs-mlrt)<br />![Github stars](https://img.shields.io/github/stars/AmusementClub/vs-mlrt)<br />[TensorRT](https://github.com/HolyWu/vs-rife)<br />![Github stars](https://img.shields.io/github/stars/HolyWu/vs-rife)<br />[ncnn](https://github.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan)<br />![Github stars](https://img.shields.io/github/stars/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan)<br />[ncnn](https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan)<br />![Github stars](https://img.shields.io/github/stars/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan) |
 | 17 | ABME |  **36.18dB** [^13] | August 2021 [^13] | [PyTorch](https://github.com/JunHeum/ABME) ![Github stars](https://img.shields.io/github/stars/JunHeum/ABME) | - | - |
-| 18 | FILM-𝓛<sub>1</sub> |  **36.06dB** [^16] | February 2022 [^16] | [TensorFlow](https://github.com/google-research/frame-interpolation) ![Github stars](https://img.shields.io/github/stars/google-research/frame-interpolation) | [FILM-𝓛<sub>*S*</sub>;<br />FILM-𝓛<sub>VGG</sub>](https://github.com/google-research/frame-interpolation#pre-trained-models) | - |
+| 18 | TDPNet<sub>*nv*</sub> w/o MRTM<br />[![Access](https://img.shields.io/badge/2023-Access-00b5e2)](https://ieeexplore.ieee.org/document/10182248) | **36.069** {2}<br />[![Access](https://img.shields.io/badge/2023-Access-00b5e2)](https://ieeexplore.ieee.org/document/10182248) | Vimeo-90K triplet | - | - | - |
+| 19 | FILM-𝓛<sub>1</sub> |  **36.06dB** [^16] | February 2022 [^16] | [TensorFlow](https://github.com/google-research/frame-interpolation) ![Github stars](https://img.shields.io/github/stars/google-research/frame-interpolation) | [FILM-𝓛<sub>*S*</sub>;<br />FILM-𝓛<sub>VGG</sub>](https://github.com/google-research/frame-interpolation#pre-trained-models) | - |
 
 [[Back to Top]](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [[Back to the List of Rankings]](#list-of-rankings)
