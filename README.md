@@ -80,12 +80,13 @@ LPIPS [^30] is a metric that reflects human perception much better than PSNR or 
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
 
 ## Adobe240 (640×352) with synthetic motion blur:bangbang:: PSNR:disappointed:>=33.3dB
-| Rank | Model | PSNR ↑ | Originally<br />announced | Official<br />&nbsp;&nbsp;repository&nbsp;&nbsp; | Practical<br />model | VapourSynth |
+| Rank | &nbsp;&nbsp;&nbsp;&nbsp;Model&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;PSNR&nbsp;↑&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.} | Originally<br />announced<br />or Training<br />dataset | Official<br />&nbsp;&nbsp;repository&nbsp;&nbsp; | Practical<br />model | VapourSynth |
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
-| 1 | BiT++ |  **34.97dB** [^33] | November 2022 [^33] | [![GitHub Stars](https://img.shields.io/github/stars/zzh-tech/BiT?logo=GitHub&label=Stars)](https://github.com/zzh-tech/BiT) | [<img alt="Request" width="40px" src="cat.png">](https://github.com/zzh-tech/BiT/issues/5) | - |
-| 2 | DeMFI-Net<sub>*rb*</sub>(5,3) |  **34.34dB** [^34] | November 2021 [^34] | [![GitHub Stars](https://img.shields.io/github/stars/JihyongOh/DeMFI?logo=GitHub&label=Stars)](https://github.com/JihyongOh/DeMFI) | - | - |
-| 3 | ALANET |  **33.34dB** [^37] | August 2020 [^37] | [![GitHub Stars](https://img.shields.io/github/stars/agupt013/ALANET?logo=GitHub&label=Stars)](https://github.com/agupt013/ALANET) | - | - |
-| 4 | PRF<sub>4</sub> -*Large* |  **33.32dB** [^38] | February 2020 [^35] | [![GitHub Stars](https://img.shields.io/github/stars/laomao0/BIN?logo=GitHub&label=Stars)](https://github.com/laomao0/BIN) | - | - |
+| 1 | BVFI<br />[![arXiv](https://img.shields.io/badge/2023-arXiv-b31b1b)](https://arxiv.org/abs/2310.05383) | **35.43** {4}<br />[![arXiv](https://img.shields.io/badge/2023-arXiv-b31b1b)](https://arxiv.org/abs/2310.05383) | Adobe240 | - | - | - |
+| 2 | BiT++ |  **34.97dB** [^33] | November 2022 [^33] | [![GitHub Stars](https://img.shields.io/github/stars/zzh-tech/BiT?logo=GitHub&label=Stars)](https://github.com/zzh-tech/BiT) | [<img alt="Request" width="40px" src="cat.png">](https://github.com/zzh-tech/BiT/issues/5) | - |
+| 3 | DeMFI-Net<sub>*rb*</sub>(5,3) |  **34.34dB** [^34] | November 2021 [^34] | [![GitHub Stars](https://img.shields.io/github/stars/JihyongOh/DeMFI?logo=GitHub&label=Stars)](https://github.com/JihyongOh/DeMFI) | - | - |
+| 4 | ALANET |  **33.34dB** [^37] | August 2020 [^37] | [![GitHub Stars](https://img.shields.io/github/stars/agupt013/ALANET?logo=GitHub&label=Stars)](https://github.com/agupt013/ALANET) | - | - |
+| 5 | PRF<sub>4</sub> -*Large* |  **33.32dB** [^38] | February 2020 [^35] | [![GitHub Stars](https://img.shields.io/github/stars/laomao0/BIN?logo=GitHub&label=Stars)](https://github.com/laomao0/BIN) | - | - |
 
 [![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
@@ -122,7 +123,6 @@ LPIPS [^30] is a metric that reflects human perception much better than PSNR or 
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
 
 ## Vimeo-90K triplet: PSNR:disappointed:>=36dB
-
 | Rank | &nbsp;&nbsp;&nbsp;&nbsp;Model&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;PSNR&nbsp;↑&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.} | Originally<br />announced<br />or Training<br />dataset | Official<br />&nbsp;&nbsp;repository&nbsp;&nbsp; | Practical<br />model | VapourSynth |
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
 | 1 | MA-GCSPA triplet-trained |  **36.76dB** [^3] | March 2022 [^3] | [![GitHub Stars](https://img.shields.io/github/stars/redrock303/CVPR23-MA-GCSPA?logo=GitHub&label=Stars)](https://github.com/redrock303/CVPR23-MA-GCSPA) | - | - |
@@ -160,7 +160,6 @@ LPIPS [^30] is a metric that reflects human perception much better than PSNR or 
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
 
 ## Vimeo-90K septuplet: PSNR:disappointed:>=36dB
-
 | Rank | Model | PSNR ↑ | Originally<br />announced | Official<br />&nbsp;&nbsp;repository&nbsp;&nbsp; | Practical<br />model | VapourSynth |
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
 | 1 | JNMR | **37.09dB** [^1] | June 2022 [^1] | [![GitHub Stars](https://img.shields.io/github/stars/ruhig6/JNMR?logo=GitHub&label=Stars)](https://github.com/ruhig6/JNMR) | - | - |
