@@ -1,11 +1,10 @@
 # <p align=center>Video Frame Interpolation Rankings<br />and Video Deblurring Rankings</p>
 
-Gradually I intend to add new rankings, but my priority is to keep the existing ones up to date. Below is a list of <ins>**6 upcoming updates**</ins> that <ins>**I intend to add**</ins> to keep the existing rankings up to date:
+Gradually I intend to add new rankings, but my priority is to keep the existing ones up to date. Below is a list of <ins>**5 upcoming updates**</ins> that <ins>**I intend to add**</ins> to keep the existing rankings up to date:
 1. Add enhanced models: [[arXiv]](https://arxiv.org/abs/2312.15868)
 1. Add enhanced models: [[arXiv]](https://arxiv.org/abs/2311.08007)
 1. Add enhanced models: [[arXiv]](https://arxiv.org/abs/2310.18946)
 1. Add enhanced models: [[arXiv]](https://arxiv.org/abs/2306.13933)
-1. Add missing model: [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Yu_Range-Nullspace_Video_Frame_Interpolation_With_Focalized_Motion_Estimation_CVPR_2023_paper.html)
 1. Add missing model: VFIFT [[arXiv]](https://arxiv.org/abs/2307.16144)
 
 I will also gradually change the layout of tables, so the old and new layouts of the tables will appear simultaneously for some time. In the near future I will write a little more information about what inspired me to add my new repository: [Monocular Depth Estimation Rankings and Light Field Video Reconstruction from Monocular Video Rankings](https://github.com/AIVFI/Monocular-Depth-Estimation-Rankings-and-Light-Field-Video-Reconstruction-from-Monocular-Vid-Rankings)
@@ -70,7 +69,7 @@ LPIPS [^30] is a metric that reflects human perception much better than PSNR or 
 
 ## RBI with real motion blur✔️: PSNR😞>=28.5dB
 | Rank | &nbsp;&nbsp;&nbsp;&nbsp;Model&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;PSNR&nbsp;↑&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.} | Training<br />dataset | Official<br />&nbsp;&nbsp;repository&nbsp;&nbsp; | Practical<br />model | VapourSynth |
-|:----:|:----|:----:|:----:|:----:|:----:|:----:|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 1 | Pre-BiT++<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Zhong_Blur_Interpolation_Transformer_for_Real-World_Motion_From_Blur_CVPR_2023_paper.html) | **31.32** {3}<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Zhong_Blur_Interpolation_Transformer_for_Real-World_Motion_From_Blur_CVPR_2023_paper.html) | *Pretraining*: Adobe240<br />*Training*: RBI | [![GitHub Stars](https://img.shields.io/github/stars/zzh-tech/BiT?logo=GitHub&label=Stars)](https://github.com/zzh-tech/BiT) | [<img alt="Request" width="40px" src="cat.png">](https://github.com/zzh-tech/BiT/issues/5) | - |
 | 2 | DeMFI-Net<sub>*rb*</sub>(5,3)<br />[![ECCV](https://img.shields.io/badge/2022-ECCV-67cd84)](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4406_ECCV_2022_paper.php) | **29.03** {4}<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Zhong_Blur_Interpolation_Transformer_for_Real-World_Motion_From_Blur_CVPR_2023_paper.html) | RBI | [![GitHub Stars](https://img.shields.io/github/stars/JihyongOh/DeMFI?logo=GitHub&label=Stars)](https://github.com/JihyongOh/DeMFI) | - | - |
 | 3 | PRF<sub>4</sub> -*Large*<br />[![CVPR](https://img.shields.io/badge/2020-CVPR-1e407f)](https://openaccess.thecvf.com/content_CVPR_2020/html/Shen_Blurry_Video_Frame_Interpolation_CVPR_2020_paper.html)<br />*Enhancement:*<br />[![TIP](https://img.shields.io/badge/2020-TIP-dba2a7)](https://ieeexplore.ieee.org/document/9257179) | **28.55** {5}<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Zhong_Blur_Interpolation_Transformer_for_Real-World_Motion_From_Blur_CVPR_2023_paper.html) | RBI | [![GitHub Stars](https://img.shields.io/github/stars/laomao0/BIN?logo=GitHub&label=Stars)](https://github.com/laomao0/BIN) | - | - |
@@ -164,7 +163,7 @@ LPIPS [^30] is a metric that reflects human perception much better than PSNR or 
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
 
 ## Vimeo-90K septuplet: PSNR😞>=36dB
-| Rank | Model | PSNR ↑ | Originally<br />announced | Official<br />&nbsp;&nbsp;repository&nbsp;&nbsp; | Practical<br />model | VapourSynth |
+| Rank | &nbsp;&nbsp;&nbsp;&nbsp;Model&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;PSNR&nbsp;↑&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.} | Originally<br />announced<br />or Training<br />dataset | Official<br />&nbsp;&nbsp;repository&nbsp;&nbsp; | Practical<br />model | VapourSynth |
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
 | 1 | JNMR | **37.19dB** [^1] | June 2022 [^1] | [![GitHub Stars](https://img.shields.io/github/stars/ruhig6/JNMR?logo=GitHub&label=Stars)](https://github.com/ruhig6/JNMR) | - | - |
 | 2 | VFIT-B | **36.96dB** [^2] | November 2021 [^2] | [![GitHub Stars](https://img.shields.io/github/stars/zhshi0816/Video-Frame-Interpolation-Transformer?logo=GitHub&label=Stars)](https://github.com/zhshi0816/Video-Frame-Interpolation-Transformer) | - | - |
@@ -172,9 +171,11 @@ LPIPS [^30] is a metric that reflects human perception much better than PSNR or 
 | 4 | ST-MFNet | **36.507dB** [^42] | November 2021 [^7] | [![GitHub Stars](https://img.shields.io/github/stars/danielism97/ST-MFNet?logo=GitHub&label=Stars)](https://github.com/danielism97/ST-MFNet) | - | - |
 | 5 | MA-GCSPA septuplet-trained |  **36.50dB** [^3] | March 2022 [^3] | [![GitHub Stars](https://img.shields.io/github/stars/redrock303/CVPR23-MA-GCSPA?logo=GitHub&label=Stars)](https://github.com/redrock303/CVPR23-MA-GCSPA) | - | - |
 | 6 | EDENVFI PVT(15,15) | **36.387dB** [^42] | July 2023 [^42] | - | - | - |
-| 7 | FLAVR |  **36.25dB** [^9] | December 2020 [^9] | [![GitHub Stars](https://img.shields.io/github/stars/tarun005/FLAVR?logo=GitHub&label=Stars)](https://github.com/tarun005/FLAVR) | - | - |
-| 8 | DBVI |  **36.17dB** [^17] | October 2022 [^17] | [![GitHub Stars](https://img.shields.io/github/stars/Oceanlib/DBVI?logo=GitHub&label=Stars)](https://github.com/Oceanlib/DBVI) | - | - |
-| 9 | EDC | **36.14dB** [^1] | February 2022 [^14] | [![GitHub Stars](https://img.shields.io/github/stars/danielism97/EDC?logo=GitHub&label=Stars)](https://github.com/danielism97/EDC) | - | - |
+| 7 | IFRNet<br />[![CVPR](https://img.shields.io/badge/2022-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2022/html/Kong_IFRNet_Intermediate_Feature_Refine_Network_for_Efficient_Frame_Interpolation_CVPR_2022_paper.html) | **36.37** {2}<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Yu_Range-Nullspace_Video_Frame_Interpolation_With_Focalized_Motion_Estimation_CVPR_2023_paper.html) | Vimeo-90K septuplet | [![GitHub Stars](https://img.shields.io/github/stars/ltkong218/IFRNet?logo=GitHub&label=Stars)](https://github.com/ltkong218/IFRNet) | - | - |
+| 8 | RN-VFI<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Yu_Range-Nullspace_Video_Frame_Interpolation_With_Focalized_Motion_Estimation_CVPR_2023_paper.html) | **36.33** {4}<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Yu_Range-Nullspace_Video_Frame_Interpolation_With_Focalized_Motion_Estimation_CVPR_2023_paper.html) | Vimeo-90K septuplet | - | - | - |
+| 9 | FLAVR |  **36.25dB** [^9] | December 2020 [^9] | [![GitHub Stars](https://img.shields.io/github/stars/tarun005/FLAVR?logo=GitHub&label=Stars)](https://github.com/tarun005/FLAVR) | - | - |
+| 10 | DBVI |  **36.17dB** [^17] | October 2022 [^17] | [![GitHub Stars](https://img.shields.io/github/stars/Oceanlib/DBVI?logo=GitHub&label=Stars)](https://github.com/Oceanlib/DBVI) | - | - |
+| 11 | EDC | **36.14dB** [^1] | February 2022 [^14] | [![GitHub Stars](https://img.shields.io/github/stars/danielism97/EDC?logo=GitHub&label=Stars)](https://github.com/danielism97/EDC) | - | - |
 
 [![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
