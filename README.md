@@ -56,7 +56,7 @@ LPIPS [^30] is a metric that reflects human perception much better than PSNR or 
 - (to do)
 ### Video Frame Interpolation Rankings
 1. [**Vimeo-90K triplet: LPIPS😍(SqueezeNet)<=0.014**](#vimeo-90k-triplet-lpipssqueezenet0014)
-1. [**Vimeo-90K triplet: LPIPS😍<=0.017**](#vimeo-90k-triplet-lpips0017)
+1. [**Vimeo-90K triplet: LPIPS😍<=0.018**](#vimeo-90k-triplet-lpips0018)
 1. [**Vimeo-90K triplet: PSNR😞>=36dB**](#vimeo-90k-triplet-psnr36db)
 1. [**Vimeo-90K septuplet: LPIPS😍<=0.032**](#vimeo-90k-septuplet-lpips0032)
 1. [**Vimeo-90K septuplet: PSNR😞>=36dB**](#vimeo-90k-septuplet-psnr36db)
@@ -109,7 +109,7 @@ LPIPS [^30] is a metric that reflects human perception much better than PSNR or 
 [![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
 
-## Vimeo-90K triplet: LPIPS😍<=0.017
+## Vimeo-90K triplet: LPIPS😍<=0.018
 | RK | &nbsp;&nbsp;&nbsp;&nbsp;Model&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.} | Training<br />dataset | Official<br />&nbsp;&nbsp;repository&nbsp;&nbsp; | Practical<br />model | VapourSynth |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 1 | EAFI-𝓛<sub>*ecp*</sub><br />[![arXiv](https://img.shields.io/badge/2022-arXiv-b31b1b)](https://arxiv.org/abs/2207.12305) |  **0.012** {2}<br />[![arXiv](https://img.shields.io/badge/2022-arXiv-b31b1b)](https://arxiv.org/abs/2207.12305) | Vimeo-90K triplet | - | EAFI-𝓛<sub>*ecp*</sub> | - |
@@ -118,6 +118,7 @@ LPIPS [^30] is a metric that reflects human perception much better than PSNR or 
 | 4 | FILM-𝓛<sub>*S*</sub><br />[![ECCV](https://img.shields.io/badge/2022-ECCV-67cd84)](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4614_ECCV_2022_paper.php) | **0.0132** {2}<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Plack_Frame_Interpolation_Transformer_and_Uncertainty_Guidance_CVPR_2023_paper.html) | Vimeo-90K triplet | [![GitHub Stars](https://img.shields.io/github/stars/google-research/frame-interpolation?logo=GitHub&label=Stars)](https://github.com/google-research/frame-interpolation) | [FILM-𝓛<sub>*S*</sub>](https://github.com/google-research/frame-interpolation#pre-trained-models) | - |
 | 5 | EDSC_s-𝓛<sub>*F*</sub><br />[![TPAMI](https://img.shields.io/badge/2021-TPAMI-fefd02)](https://ieeexplore.ieee.org/document/9501506) |  **0.016** {2}<br />[![arXiv](https://img.shields.io/badge/2020-arXiv-b31b1b)](https://arxiv.org/abs/2006.08070) | Vimeo-90K triplet | [![GitHub Stars](https://img.shields.io/github/stars/Xianhang/EDSC-pytorch?logo=GitHub&label=Stars)](https://github.com/Xianhang/EDSC-pytorch) | [EDSC_s-𝓛<sub>*F*</sub>](https://github.com/Xianhang/EDSC-pytorch#pre-trained-models) | - |
 | 6 | CtxSyn - 𝓛<sub>*F*</sub><br />[![CVPR](https://img.shields.io/badge/2018-CVPR-1e407f)](https://openaccess.thecvf.com/content_cvpr_2018/html/Niklaus_Context-Aware_Synthesis_for_CVPR_2018_paper.html) | **0.017** {2}<br />[![CVPR](https://img.shields.io/badge/2020-CVPR-1e407f)](https://openaccess.thecvf.com/content_CVPR_2020/html/Niklaus_Softmax_Splatting_for_Video_Frame_Interpolation_CVPR_2020_paper.html) | proprietary | - | CtxSyn - 𝓛<sub>*F*</sub> | - |
+| 7 | PerVFI<br />[![CVPR](https://img.shields.io/badge/2024-CVPR-1e407f "The link to the conference paper will be available in June. CVPR 2024: June 17th – 21st")](https://cvpr.thecvf.com/Conferences/2024/AcceptedPapers) | **0.018** {2}<br />[![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2404.06692) | Vimeo-90K triplet | - | PerVFI | - |
 
 [![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
