@@ -1,7 +1,6 @@
 # <p align=center>Video Frame Interpolation Rankings<br />and Video Deblurring Rankings</p>
 
-Gradually I intend to add new rankings, but my priority is to keep the existing ones up to date. Below is a list of <ins>**4 upcoming updates**</ins> that <ins>**I intend to add**</ins> to keep the existing rankings up to date:
-1. Add enhanced models: [[arXiv]](https://arxiv.org/abs/2312.15868)
+Gradually I intend to add new rankings, but my priority is to keep the existing ones up to date. Below is a list of <ins>**3 upcoming updates**</ins> that <ins>**I intend to add**</ins> to keep the existing rankings up to date:
 1. Add enhanced models: [[arXiv]](https://arxiv.org/abs/2311.08007)
 1. Add enhanced models: [[arXiv]](https://arxiv.org/abs/2306.13933)
 1. Add missing model: VFIFT [[arXiv]](https://arxiv.org/abs/2307.16144)
@@ -127,13 +126,13 @@ LPIPS [^30] is a metric that reflects human perception much better than PSNR or 
 | RK | &nbsp;&nbsp;&nbsp;&nbsp;Model&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;PSNR&nbsp;↑&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.} | Originally<br />announced<br />or Training<br />dataset | Official<br />&nbsp;&nbsp;repository&nbsp;&nbsp; | Practical<br />model | VapourSynth |
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
 | 1 | MA-GCSPA triplet-trained |  **36.76dB** [^3] | March 2022 [^3] | [![GitHub Stars](https://img.shields.io/github/stars/redrock303/CVPR23-MA-GCSPA?logo=GitHub&label=Stars)](https://github.com/redrock303/CVPR23-MA-GCSPA) | - | - |
-| 2 | LADDER-L<br />[![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2404.11108) | **36.65** {2}<br />[![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2404.11108) | Vimeo-90K triplet | - | - | - |
-| 3 | EMA-VFI |  **36.64dB** [^22] | March 2023 [^22] | [![GitHub Stars](https://img.shields.io/github/stars/MCG-NJU/EMA-VFI?logo=GitHub&label=Stars)](https://github.com/MCG-NJU/EMA-VFI) | - | - |
-| 4 | DQBC-Aug |  **36.57dB** [^36] | April 2023 [^36] | [![GitHub Stars](https://img.shields.io/github/stars/kinoud/DQBC?logo=GitHub&label=Stars)](https://github.com/kinoud/DQBC) | - | - |
-| 5 | TTVFI |  **36.54dB** [^4] | July 2022 [^4] | [![GitHub Stars](https://img.shields.io/github/stars/ChengxuLiu/TTVFI?logo=GitHub&label=Stars)](https://github.com/ChengxuLiu/TTVFI) | - | - |
-| 6 | AMT-G |  **36.53dB** [^31] | April 2023 [^31] | [![GitHub Stars](https://img.shields.io/github/stars/MCG-NKU/AMT?logo=GitHub&label=Stars)](https://github.com/MCG-NKU/AMT) | - | - |
-| 7-8 | AdaFNIO |  **36.50dB** [^19] | November 2022 [^19] | [![GitHub Stars](https://img.shields.io/github/stars/IDEAS-Lab-Purdue/AdaFNIO?logo=GitHub&label=Stars)](https://github.com/IDEAS-Lab-Purdue/AdaFNIO) | - | - |
-| 7-8 | VFIformer |  **36.50dB** [^6] | May 2022 [^6] | [![GitHub Stars](https://img.shields.io/github/stars/dvlab-research/VFIformer?logo=GitHub&label=Stars)](https://github.com/dvlab-research/VFIformer) | - | - |
+| 2 | VFIformer + HRFFM<br />[![CVPR](https://img.shields.io/badge/2022-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2022/html/Lu_Video_Frame_Interpolation_With_Transformer_CVPR_2022_paper.html)<br />*ENH:*<br />[![arXiv](https://img.shields.io/badge/2023-arXiv-b31b1b)](https://arxiv.org/abs/2312.15868) |  **36.69** {2}<br />[![arXiv](https://img.shields.io/badge/2023-arXiv-b31b1b)](https://arxiv.org/abs/2312.15868) | Vimeo-90K triplet | [![GitHub Stars](https://img.shields.io/github/stars/dvlab-research/VFIformer?logo=GitHub&label=Stars)](https://github.com/dvlab-research/VFIformer)<br />*ENH:*<br />- | - | - |
+| 3 | LADDER-L<br />[![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2404.11108) | **36.65** {2}<br />[![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2404.11108) | Vimeo-90K triplet | - | - | - |
+| 4 | EMA-VFI |  **36.64dB** [^22] | March 2023 [^22] | [![GitHub Stars](https://img.shields.io/github/stars/MCG-NJU/EMA-VFI?logo=GitHub&label=Stars)](https://github.com/MCG-NJU/EMA-VFI) | - | - |
+| 5 | DQBC-Aug |  **36.57dB** [^36] | April 2023 [^36] | [![GitHub Stars](https://img.shields.io/github/stars/kinoud/DQBC?logo=GitHub&label=Stars)](https://github.com/kinoud/DQBC) | - | - |
+| 6 | TTVFI |  **36.54dB** [^4] | July 2022 [^4] | [![GitHub Stars](https://img.shields.io/github/stars/ChengxuLiu/TTVFI?logo=GitHub&label=Stars)](https://github.com/ChengxuLiu/TTVFI) | - | - |
+| 7 | AMT-G |  **36.53dB** [^31] | April 2023 [^31] | [![GitHub Stars](https://img.shields.io/github/stars/MCG-NKU/AMT?logo=GitHub&label=Stars)](https://github.com/MCG-NKU/AMT) | - | - |
+| 8 | AdaFNIO |  **36.50dB** [^19] | November 2022 [^19] | [![GitHub Stars](https://img.shields.io/github/stars/IDEAS-Lab-Purdue/AdaFNIO?logo=GitHub&label=Stars)](https://github.com/IDEAS-Lab-Purdue/AdaFNIO) | - | - |
 | 9 | FGDCN-L |  **36.46dB** [^21] | November 2022 [^21] | [![GitHub Stars](https://img.shields.io/github/stars/lpcccc-cv/FGDCN?logo=GitHub&label=Stars)](https://github.com/lpcccc-cv/FGDCN) | - | - |
 | 10 | UPR-Net LARGE |  **36.42dB** [^18] | November 2022 [^18] | [![GitHub Stars](https://img.shields.io/github/stars/srcn-ivl/UPR-Net?logo=GitHub&label=Stars)](https://github.com/srcn-ivl/UPR-Net) | - | - |
 | 11 | EAFI-𝓛<sub>*ecc*</sub> |  **36.38dB** [^8] | July 2022 [^8] | - | EAFI-𝓛<sub>*ecp*</sub> | - |
@@ -215,7 +214,7 @@ I have decided to completely abandon rankings based on the SSIM metric. Below ar
 [^3]: Exploring Motion Ambiguity and Alignment for High-Quality Video Frame Interpolation [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Zhou_Exploring_Motion_Ambiguity_and_Alignment_for_High-Quality_Video_Frame_Interpolation_CVPR_2023_paper.html) [[arXiv]](https://arxiv.org/abs/2203.10291)
 [^4]: TTVFI: Learning Trajectory-Aware Transformer for Video Frame Interpolation [[TIP 2023]](https://ieeexplore.ieee.org/document/10215337) [[arXiv]](https://arxiv.org/abs/2207.09048)
 [^5]: VRT: A Video Restoration Transformer [[arXiv]](https://arxiv.org/abs/2201.12288)
-[^6]: Video Frame Interpolation with Transformer [[CVPR 2022]](https://openaccess.thecvf.com/content/CVPR2022/html/Lu_Video_Frame_Interpolation_With_Transformer_CVPR_2022_paper.html) [[arXiv]](https://arxiv.org/abs/2205.07230)
+
 [^7]: ST-MFNet: A Spatio-Temporal Multi-Flow Network for Frame Interpolation [[CVPR 2022]](https://openaccess.thecvf.com/content/CVPR2022/html/Danier_ST-MFNet_A_Spatio-Temporal_Multi-Flow_Network_for_Frame_Interpolation_CVPR_2022_paper.html) [[arXiv]](https://arxiv.org/abs/2111.15483)
 [^8]: Error-Aware Spatial Ensembles for Video Frame Interpolation [[arXiv]](https://arxiv.org/abs/2207.12305)
 [^9]: FLAVR: Flow-Agnostic Video Representations for Fast Frame Interpolation [[WACV 2023]](https://openaccess.thecvf.com/content/WACV2023/html/Kalluri_FLAVR_Flow-Agnostic_Video_Representations_for_Fast_Frame_Interpolation_WACV_2023_paper.html) [[arXiv]](https://arxiv.org/abs/2012.08512)
