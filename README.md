@@ -62,6 +62,7 @@ LPIPS [^30] is a metric that reflects human perception much better than PSNR or 
 ### Appendices
 - **Appendix 1: Rules for qualifying models for the rankings** (to do)
 - [**Appendix 2: Metrics selection for the rankings**](#appendix-2-metrics-selection-for-the-rankings)
+- [**Appendix 3: List of all research papers from the above rankings**](#appendix-3-list-of-all-research-papers-from-the-above-rankings)
 
 --------------------
 
@@ -205,6 +206,63 @@ I have decided to completely abandon rankings based on the SSIM metric. Below ar
 - The fifth reason is that I want to encourage researchers who want to use only two metrics in their paper to use LPIPS and PSNR instead of PSNR and SSIM.
 
 - The sixth reason is that the time saved by dropping the SSIM-based rankings will allow me to add new rankings based on other test data, which will be more useful and valuable.
+
+[![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
+[![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
+
+## Appendix 3: List of all research papers from the above rankings
+
+📝 **Note:** Temporarily, the following list contains full descriptions of those methods that have been removed from the footnotes or not included in the footnotes at all due to the new layout of the tables.
+
+| Method | Paper | &nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;&nbsp; |
+|:---:|:---:|:---:|
+| ABME |  |  |
+| AdaFNIO |  |  |
+| ALANET |  |  |
+| AMT |  |  |
+| BIN | Blurry Video Frame Interpolation | [![CVPR](https://img.shields.io/badge/2020-CVPR-1e407f)](https://openaccess.thecvf.com/content_CVPR_2020/html/Shen_Blurry_Video_Frame_Interpolation_CVPR_2020_paper.html) |
+| BiT | Blur Interpolation Transformer for Real-World Motion from Blur | [![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Zhong_Blur_Interpolation_Transformer_for_Real-World_Motion_From_Blur_CVPR_2023_paper.html) |
+| BVFI | Three-Stage Cascade Framework for Blurry Video Frame Interpolation | [![arXiv](https://img.shields.io/badge/2023-arXiv-b31b1b)](https://arxiv.org/abs/2310.05383) |
+| CDFI |  |  |
+| CtxSyn | Context-aware Synthesis for Video Frame Interpolation | [![CVPR](https://img.shields.io/badge/2018-CVPR-1e407f)](https://openaccess.thecvf.com/content_cvpr_2018/html/Niklaus_Context-Aware_Synthesis_for_CVPR_2018_paper.html) |
+| DBVI |  |  |
+| DeMFI | DeMFI: Deep Joint Deblurring and Multi-Frame Interpolation with Flow-Guided Attentive Correlation and Recursive Boosting | [![ECCV](https://img.shields.io/badge/2022-ECCV-67cd84)](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4406_ECCV_2022_paper.php) |
+| DQBC |  |  |
+| DRVI |  |  |
+| EAFI | Error-Aware Spatial Ensembles for Video Frame Interpolation | [![arXiv](https://img.shields.io/badge/2022-arXiv-b31b1b)](https://arxiv.org/abs/2207.12305) |
+| EBME |  |  |
+| EDC |  |  |
+| EDENVFI |  |  |
+| EDSC | Multiple Video Frame Interpolation via Enhanced Deformable Separable Convolution | [![TPAMI](https://img.shields.io/badge/2021-TPAMI-fefd02)](https://ieeexplore.ieee.org/document/9501506) |
+| EMA-VFI |  |  |
+| FGDCN |  |  |
+| FILM | FILM: Frame Interpolation for Large Motion | [![ECCV](https://img.shields.io/badge/2022-ECCV-67cd84)](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4614_ECCV_2022_paper.php) |
+| FLAVR |  |  |
+| HRFFM | Video Frame Interpolation with Region-Distinguishable Priors from SAM | [![arXiv](https://img.shields.io/badge/2023-arXiv-b31b1b)](https://arxiv.org/abs/2312.15868) |
+| H-VFI |  |  |
+| IFRNet | IFRNet: Intermediate Feature Refine Network for Efficient Frame Interpolation | [![CVPR](https://img.shields.io/badge/2022-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2022/html/Kong_IFRNet_Intermediate_Feature_Refine_Network_for_Efficient_Frame_Interpolation_CVPR_2022_paper.html) |
+| JNMR |  |  |
+| LADDER | LADDER: An Efficient Framework for Video Frame Interpolation | [![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2404.11108) |
+| M2M | Many-to-many Splatting for Efficient Video Frame Interpolation | [![CVPR](https://img.shields.io/badge/2022-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2022/html/Hu_Many-to-Many_Splatting_for_Efficient_Video_Frame_Interpolation_CVPR_2022_paper.html) |
+| MA-GCSPA |  |  |
+| NCM |  |  |
+| PerVFI | Perceptual-Oriented Video Frame Interpolation Via Asymmetric Synergistic Blending | [![CVPR](https://img.shields.io/badge/2024-CVPR-1e407f "The link to the conference paper will be available in June. CVPR 2024: June 17th – 21st")](https://cvpr.thecvf.com/Conferences/2024/AcceptedPapers) |
+| PRF | Video Frame Interpolation and Enhancement via Pyramid Recurrent Framework | [![TIP](https://img.shields.io/badge/2020-TIP-dba2a7)](https://ieeexplore.ieee.org/document/9257179) |
+| ProBoost-Net | Progressive Motion Boosting for Video Frame Interpolation | [![TMM](https://img.shields.io/badge/2022-TMM-f6d6bd)](https://ieeexplore.ieee.org/document/10003662) |
+| RIFE | Real-Time Intermediate Flow Estimation for Video Frame Interpolation | [![ECCV](https://img.shields.io/badge/2022-ECCV-67cd84)](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/95_ECCV_2022_paper.php) |
+| RN-VFI | Range-nullspace Video Frame Interpolation with Focalized Motion Estimation | [![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Yu_Range-Nullspace_Video_Frame_Interpolation_With_Focalized_Motion_Estimation_CVPR_2023_paper.html) |
+| SoftSplat | Softmax Splatting for Video Frame Interpolation | [![CVPR](https://img.shields.io/badge/2020-CVPR-1e407f)](https://openaccess.thecvf.com/content_CVPR_2020/html/Niklaus_Softmax_Splatting_for_Video_Frame_Interpolation_CVPR_2020_paper.html) |
+| SSR | Video Frame Interpolation with Many-to-many Splatting and Spatial Selective Refinement | [![TPAMI](https://img.shields.io/badge/2024-TPAMI-fefd02)](https://ieeexplore.ieee.org/document/10294102) |
+| ST-MFNet |  |  |
+| TDPNet | Textural Detail Preservation Network for Video Frame Interpolation | [![Access](https://img.shields.io/badge/2023-Access-00b5e2)](https://ieeexplore.ieee.org/document/10182248) |
+| TTVFI |  |  |
+| UGFI | Frame Interpolation Transformer and Uncertainty Guidance | [![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Plack_Frame_Interpolation_Transformer_and_Uncertainty_Guidance_CVPR_2023_paper.html) |
+| UPR-Net |  |  |
+| UTI-VFI |  |  |
+| VFIformer | Video Frame Interpolation with Transformer | [![CVPR](https://img.shields.io/badge/2022-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2022/html/Lu_Video_Frame_Interpolation_With_Transformer_CVPR_2022_paper.html) |
+| VFIT |  |  |
+| VIDUE |  |  |
+| VRT |  |  |
 
 [![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
