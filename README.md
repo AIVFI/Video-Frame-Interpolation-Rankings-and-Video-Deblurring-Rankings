@@ -1,46 +1,13 @@
 # <p align=center>Video Frame Interpolation Rankings<br />and Video Deblurring Rankings</p>
 
-Gradually I intend to add new rankings, but my priority is to keep the existing ones up to date. Below is a list of <ins>**2 upcoming updates**</ins> that <ins>**I intend to add**</ins> to keep the existing rankings up to date:
-1. Add enhanced models: [[arXiv]](https://arxiv.org/abs/2311.08007)
-1. Add enhanced models: [[arXiv]](https://arxiv.org/abs/2306.13933)
+Researchers! Please develope joint video deblurring and frame interpolation models, incorporate [InterpAny-Clearer](https://github.com/zzh-tech/InterpAny-Clearer) in your models and train at least one of your models on Style loss, also called Gram matrix loss (the best perceptual loss function):
 
-I will also gradually change the layout of tables, so the old and new layouts of the tables will appear simultaneously for some time. In the near future I will write a little more information about what inspired me to add my new repository: [Monocular Depth Estimation Rankings and 2D to 3D Video Conversion Rankings](https://github.com/AIVFI/Monocular-Depth-Estimation-Rankings-and-2D-to-3D-Video-Conversion-Rankings)
-
---------------------
-Researchers! Please train at least one of your models on **perceptual loss**. I have made a special column in my rankings dedicated specifically to such models. Why models trained on perceptual loss? This is best summarised by the following quote [^15]:
-
-> "the model trained using color loss 𝓛<sub>*Lap*</sub> performs best in
-terms of PSNR and SSIM whereas **the one trained using perceptual
-loss 𝓛<sub>*F*</sub> performs best in terms of LPIPS**. We further
-note that the 𝓛<sub>*F*</sub>-trained model **better recovers fine details in
-challenging cases, making it preferable in practice**."
-
-It can be seen from the results of two **video frame interpolation models** from the quote above on the  Vimeo-90K triplet test set [^15]:
-
-| Model | PSNR ↑ | SSIM ↑ | LPIPS ↓ |
-|:----|:----:|:----:|:----:|
-| SoftSplat - 𝓛<sub>*Lap*</sub> | <ins>**36.10dB**</ins> | <ins>**0.970**</ins> | 0.021 |
-| SoftSplat - 𝓛<sub>*F*</sub> | 35.48dB | 0.964 | <ins>**0.013**</ins> |
-
-Sometimes even almost 3dB better PSNR result does not guarantee better LPIPS result, as shown by the results of two different video frame interpolation methods on the Vimeo-90K septuplet test set [^27]:
-
-| Model | PSNR ↑ | SSIM ↑ | LPIPS ↓ |
-|:----|:----:|:----:|:----:|
-| VFIT-B | <ins>**36.963dB**</ins> | <ins>**0.9649**</ins> | 0.0304 |
-| RIFE | 34.048dB | 0.9449 | <ins>**0.0233**</ins> |
-
-LPIPS [^30] is a metric that reflects human perception much better than PSNR or SSIM, which is also evident from the results presented in the paper of the competitive perceptual metric [^29]:
-
-| IQA<br />Model | BAPPS database<br />Frame interpolation<br />2AFC score ↑ | BAPPS database<br />Video deblurring<br />2AFC score ↑ | Ding20 database<br />Deblurring<br />2AFC score ↑ |
-|:----|:----:|:----:|:----:|
-| Human | 0.686 | 0.671 | 0.843 |
-| LPIPS | 0.630 | 0.605 | 0.788 |
-| PSNR | 0.543 | 0.590 | 0.518 |
-| SSIM | 0.548 | 0.583 | 0.575 |
+![FILM - Loss Functions Ablation](https://film-net.github.io/static/images/loss_ablation.png)
+Source: FILM - Loss Functions Ablation https://film-net.github.io/
 
 ## <p align=center>List of Rankings</p>
 <p align=center>Each ranking includes only the best model for one method.</p>  
-<p align=center>The rankings exclude all event-based models.</p>
+<p align=center>The rankings exclude all event-based and spike-guided models.</p>
 
 ### Joint Video Deblurring and Frame Interpolation Rankings
 1. :crown: **RBI with real motion blur✔️: LPIPS😍** (no data)  
@@ -170,7 +137,6 @@ LPIPS [^30] is a metric that reflects human perception much better than PSNR or 
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
 | 1 | JNMR | **37.19dB** [^1] | June 2022 [^1] | [![GitHub Stars](https://img.shields.io/github/stars/ruhig6/JNMR?logo=GitHub&label=Stars)](https://github.com/ruhig6/JNMR) | - | - |
 | 2 | VFIT-B<br />[![CVPR](https://img.shields.io/badge/2022-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2022/html/Shi_Video_Frame_Interpolation_Transformer_CVPR_2022_paper.html) | **36.96** {4}<br />[![CVPR](https://img.shields.io/badge/2022-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2022/html/Shi_Video_Frame_Interpolation_Transformer_CVPR_2022_paper.html) | Vimeo-90K septuplet | [![GitHub Stars](https://img.shields.io/github/stars/zhshi0816/Video-Frame-Interpolation-Transformer?logo=GitHub&label=Stars)](https://github.com/zhshi0816/Video-Frame-Interpolation-Transformer) | - | - |
-| 2 | VFIT-B | **36.96dB** [^2] | November 2021 [^2] | [![GitHub Stars](https://img.shields.io/github/stars/zhshi0816/Video-Frame-Interpolation-Transformer?logo=GitHub&label=Stars)](https://github.com/zhshi0816/Video-Frame-Interpolation-Transformer) | - | - |
 | 3 | VRT |  **36.53dB** [^5] | June 2022 (VFI) [^5] | [![GitHub Stars](https://img.shields.io/github/stars/JingyunLiang/VRT?logo=GitHub&label=Stars)](https://github.com/JingyunLiang/VRT) | - | - |
 | 4 | ST-MFNet | **36.507dB** [^42] | November 2021 [^7] | [![GitHub Stars](https://img.shields.io/github/stars/danielism97/ST-MFNet?logo=GitHub&label=Stars)](https://github.com/danielism97/ST-MFNet) | - | - |
 | 5 | MA-GCSPA septuplet-trained |  **36.50dB** [^3] | March 2022 [^3] | [![GitHub Stars](https://img.shields.io/github/stars/redrock303/CVPR23-MA-GCSPA?logo=GitHub&label=Stars)](https://github.com/redrock303/CVPR23-MA-GCSPA) | - | - |
