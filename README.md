@@ -144,7 +144,7 @@ Source: FILM - Loss Functions Ablation https://film-net.github.io/
 | 7 | EDENVFI PVT(15,15) | **36.387dB** [^42] | July 2023 [^42] | - | - | - |
 | 8 | IFRNet<br />[![CVPR](https://img.shields.io/badge/2022-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2022/html/Kong_IFRNet_Intermediate_Feature_Refine_Network_for_Efficient_Frame_Interpolation_CVPR_2022_paper.html) | **36.37** {2}<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Yu_Range-Nullspace_Video_Frame_Interpolation_With_Focalized_Motion_Estimation_CVPR_2023_paper.html) | Vimeo-90K septuplet | [![GitHub Stars](https://img.shields.io/github/stars/ltkong218/IFRNet?logo=GitHub&label=Stars)](https://github.com/ltkong218/IFRNet) | - | - |
 | 9 | RN-VFI<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Yu_Range-Nullspace_Video_Frame_Interpolation_With_Focalized_Motion_Estimation_CVPR_2023_paper.html) | **36.33** {4}<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Yu_Range-Nullspace_Video_Frame_Interpolation_With_Focalized_Motion_Estimation_CVPR_2023_paper.html) | Vimeo-90K septuplet | - | - | - |
-| 10 | FLAVR |  **36.25dB** [^9] | December 2020 [^9] | [![GitHub Stars](https://img.shields.io/github/stars/tarun005/FLAVR?logo=GitHub&label=Stars)](https://github.com/tarun005/FLAVR) | - | - |
+| 10 | FLAVR<br />[![WACV](https://img.shields.io/badge/2023-WACV-2e0094)](https://openaccess.thecvf.com/content/WACV2023/html/Kalluri_FLAVR_Flow-Agnostic_Video_Representations_for_Fast_Frame_Interpolation_WACV_2023_paper.html) |  **36.3** {4}<br />[![WACV](https://img.shields.io/badge/2023-WACV-2e0094)](https://openaccess.thecvf.com/content/WACV2023/html/Kalluri_FLAVR_Flow-Agnostic_Video_Representations_for_Fast_Frame_Interpolation_WACV_2023_paper.html) | Vimeo-90K septuplet | [![GitHub Stars](https://img.shields.io/github/stars/tarun005/FLAVR?logo=GitHub&label=Stars)](https://github.com/tarun005/FLAVR) | - | - |
 | 11 | DBVI |  **36.17dB** [^17] | October 2022 [^17] | [![GitHub Stars](https://img.shields.io/github/stars/Oceanlib/DBVI?logo=GitHub&label=Stars)](https://github.com/Oceanlib/DBVI) | - | - |
 | 12 | EDC | **36.14dB** [^1] | February 2022 [^14] | [![GitHub Stars](https://img.shields.io/github/stars/danielism97/EDC?logo=GitHub&label=Stars)](https://github.com/danielism97/EDC) | - | - |
 
@@ -200,13 +200,13 @@ I have decided to completely abandon rankings based on the SSIM metric. Below ar
 | DRVI |  |  |
 | EAFI | Error-Aware Spatial Ensembles for Video Frame Interpolation | [![arXiv](https://img.shields.io/badge/2022-arXiv-b31b1b)](https://arxiv.org/abs/2207.12305) |
 | EBME |  |  |
-| EDC |  |  |
+| EDC | Enhancing Deformable Convolution based Video Frame Interpolation with Coarse-to-fine 3D CNN | [![ICIP](https://img.shields.io/badge/2022-ICIP-a6539b)](https://ieeexplore.ieee.org/document/9897929) |
 | EDENVFI |  |  |
 | EDSC | Multiple Video Frame Interpolation via Enhanced Deformable Separable Convolution | [![TPAMI](https://img.shields.io/badge/2021-TPAMI-fefd02)](https://ieeexplore.ieee.org/document/9501506) |
 | EMA-VFI |  |  |
 | FGDCN |  |  |
 | FILM | FILM: Frame Interpolation for Large Motion | [![ECCV](https://img.shields.io/badge/2022-ECCV-67cd84)](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4614_ECCV_2022_paper.php) |
-| FLAVR |  |  |
+| FLAVR | FLAVR: Flow-Agnostic Video Representations for Fast Frame Interpolation | [![WACV](https://img.shields.io/badge/2023-WACV-2e0094)](https://openaccess.thecvf.com/content/WACV2023/html/Kalluri_FLAVR_Flow-Agnostic_Video_Representations_for_Fast_Frame_Interpolation_WACV_2023_paper.html) |
 | HRFFM | Video Frame Interpolation with Region-Distinguishable Priors from SAM | [![arXiv](https://img.shields.io/badge/2023-arXiv-b31b1b)](https://arxiv.org/abs/2312.15868) |
 | H-VFI |  |  |
 | IFRNet | IFRNet: Intermediate Feature Refine Network for Efficient Frame Interpolation | [![CVPR](https://img.shields.io/badge/2022-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2022/html/Kong_IFRNet_Intermediate_Feature_Refine_Network_for_Efficient_Frame_Interpolation_CVPR_2022_paper.html) |
