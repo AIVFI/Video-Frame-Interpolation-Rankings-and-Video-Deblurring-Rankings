@@ -23,6 +23,7 @@ Source: MoSt-DSA - Loss Function Comparison https://arxiv.org/html/2407.07078
 ### Video Deblurring Rankings
 - (to do)
 ### Video Frame Interpolation Rankings
+1. [**X-TEST (×8): LPIPS😍<=0.07**](#x-test-8-lpips007)
 1. [**Vimeo-90K triplet: LPIPS😍(SqueezeNet)<=0.014**](#vimeo-90k-triplet-lpipssqueezenet0014)
 1. [**Vimeo-90K triplet: LPIPS😍<=0.018**](#vimeo-90k-triplet-lpips0018)
 1. [**Vimeo-90K triplet: PSNR😞>=36dB**](#vimeo-90k-triplet-psnr36db)
@@ -64,6 +65,15 @@ Source: MoSt-DSA - Loss Function Comparison https://arxiv.org/html/2407.07078
 | 2 | FLAVR |  **27.23dB** [^39] | December 2020 [^9] | [![GitHub Stars](https://img.shields.io/github/stars/tarun005/FLAVR?logo=GitHub&label=Stars)](https://github.com/tarun005/FLAVR) | - | - |
 | 3 | UTI-VFI |  **26.69dB** [^39] | December 2020 [^40] | [![GitHub Stars](https://img.shields.io/github/stars/yjzhang96/UTI-VFI?logo=GitHub&label=Stars)](https://github.com/yjzhang96/UTI-VFI) | - | - |
 | 4 | DeMFI |  **25.71dB** [^39] | November 2021 [^34] | [![GitHub Stars](https://img.shields.io/github/stars/JihyongOh/DeMFI?logo=GitHub&label=Stars)](https://github.com/JihyongOh/DeMFI) | - | - |
+
+[![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
+[![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
+
+## X-TEST (×8): LPIPS😍<=0.07
+📝 Note: This ranking is the first in this repository that will include a new layout. This is already the 3rd layout, and the reason for its introduction is the significant differences between the results of the same models in different papers. This new layout has been in place for some time in my other repository: [Monocular-Depth-Estimation-Rankings-and-2D-to-3D-Video-Conversion-Rankings](https://github.com/AIVFI/Monocular-Depth-Estimation-Rankings-and-2D-to-3D-Video-Conversion-Rankings)
+| RK | Model <br />*Links:*<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;Repository&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2412.11365)<br />BiM-VFI | - |
+|:---:|:---:|:---:|:---:|
+| 1 | **BiM-VFI**<br />[![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2412.11365) | **0.068** {2} | - |
 
 [![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
@@ -195,6 +205,7 @@ I have decided to completely abandon rankings based on the SSIM metric. Below ar
 | ALANET |  |  |
 | AMT |  |  |
 | BIN | Blurry Video Frame Interpolation | [![CVPR](https://img.shields.io/badge/2020-CVPR-1e407f)](https://openaccess.thecvf.com/content_CVPR_2020/html/Shen_Blurry_Video_Frame_Interpolation_CVPR_2020_paper.html) |
+| BiM-VFI | BiM-VFI: Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions | [![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2412.11365) |
 | BiT | Blur Interpolation Transformer for Real-World Motion from Blur | [![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Zhong_Blur_Interpolation_Transformer_for_Real-World_Motion_From_Blur_CVPR_2023_paper.html) |
 | BVFI | Three-Stage Cascade Framework for Blurry Video Frame Interpolation | [![arXiv](https://img.shields.io/badge/2023-arXiv-b31b1b)](https://arxiv.org/abs/2310.05383) |
 | CDFI |  |  |
