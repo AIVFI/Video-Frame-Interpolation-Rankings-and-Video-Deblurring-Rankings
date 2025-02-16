@@ -23,6 +23,7 @@ Source: MoSt-DSA - Loss Function Comparison https://arxiv.org/html/2407.07078
 ### Video Deblurring Rankings
 - (to do)
 ### Video Frame Interpolation Rankings
+1. [**SNU-FILM (Hard): LPIPS😍<=0.0419**](#snu-film-hard-lpips00419)
 1. [**X-TEST (×8): LPIPS😍<=0.07**](#x-test-8-lpips007)
 1. [**Vimeo-90K triplet: LPIPS😍(SqueezeNet)<=0.014**](#vimeo-90k-triplet-lpipssqueezenet0014)
 1. [**Vimeo-90K triplet: LPIPS😍<=0.018**](#vimeo-90k-triplet-lpips0018)
@@ -69,8 +70,17 @@ Source: MoSt-DSA - Loss Function Comparison https://arxiv.org/html/2407.07078
 [![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
 
+## SNU-FILM (Hard): LPIPS😍<=0.0419
+📝 Note: This ranking include a new layout. This is already the 3rd layout, and the reason for its introduction is the significant differences between the results of the same models in different papers. This new layout has been in place for some time in my other repository: [Monocular-Depth-Estimation-Rankings-and-2D-to-3D-Video-Conversion-Rankings](https://github.com/AIVFI/Monocular-Depth-Estimation-Rankings-and-2D-to-3D-Video-Conversion-Rankings)
+| RK | Model <br />*Links:*<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;Repository&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![AAAI](https://img.shields.io/badge/2025-AAAI-fddfa0)](https://arxiv.org/abs/2406.17256)<br />MoMo | - |
+|:---:|:---:|:---:|:---:|
+| 1 | **MoMo**<br />[![AAAI](https://img.shields.io/badge/2025-AAAI-fddfa0)](https://arxiv.org/abs/2406.17256) [![GitHub Stars](https://img.shields.io/github/stars/JHLew/MoMo)](https://github.com/JHLew/MoMo) | **0.0419** {2} | - |
+
+[![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
+[![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
+
 ## X-TEST (×8): LPIPS😍<=0.07
-📝 Note: This ranking is the first in this repository that will include a new layout. This is already the 3rd layout, and the reason for its introduction is the significant differences between the results of the same models in different papers. This new layout has been in place for some time in my other repository: [Monocular-Depth-Estimation-Rankings-and-2D-to-3D-Video-Conversion-Rankings](https://github.com/AIVFI/Monocular-Depth-Estimation-Rankings-and-2D-to-3D-Video-Conversion-Rankings)
+📝 Note: This ranking include a new layout. This is already the 3rd layout, and the reason for its introduction is the significant differences between the results of the same models in different papers. This new layout has been in place for some time in my other repository: [Monocular-Depth-Estimation-Rankings-and-2D-to-3D-Video-Conversion-Rankings](https://github.com/AIVFI/Monocular-Depth-Estimation-Rankings-and-2D-to-3D-Video-Conversion-Rankings)
 | RK | Model <br />*Links:*<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;Repository&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2412.11365)<br />BiM-VFI | - |
 |:---:|:---:|:---:|:---:|
 | 1 | **BiM-VFI**<br />[![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2412.11365) | **0.068** {2} | - |
