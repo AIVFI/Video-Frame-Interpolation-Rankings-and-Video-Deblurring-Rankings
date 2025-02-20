@@ -25,7 +25,7 @@ Source: MoSt-DSA - Loss Function Comparison https://arxiv.org/html/2407.07078
 ### Video Frame Interpolation Rankings
 1. [**SNU-FILM Medium (×2): LPIPS😍<=0.0202**](#snu-film-medium-2-lpips00202)
 1. [**SNU-FILM Hard (×2): LPIPS😍<=0.0419**](#snu-film-hard-2-lpips00419)
-1. [**SNU-FILM Extreme (×2): LPIPS😍<=0.0872**](#snu-film-extreme-2-lpips00872)
+1. [**SNU-FILM Extreme (×2): LPIPS😍<=0.0889**](#snu-film-extreme-2-lpips00889)
 1. [**X-TEST (×8): LPIPS😍<=0.07**](#x-test-8-lpips007)
 1. [**Vimeo-90K triplet: LPIPS😍(SqueezeNet)<=0.014**](#vimeo-90k-triplet-lpipssqueezenet0014)
 1. [**Vimeo-90K triplet: LPIPS😍<=0.018**](#vimeo-90k-triplet-lpips0018)
@@ -90,12 +90,13 @@ Source: MoSt-DSA - Loss Function Comparison https://arxiv.org/html/2407.07078
 [![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
 
-## SNU-FILM Extreme (×2): LPIPS😍<=0.0872
+## SNU-FILM Extreme (×2): LPIPS😍<=0.0889
 📝 Note: This ranking has the most up-to-date layout. This new layout has been in place for some time in my other repository: [Monocular-Depth-Estimation-Rankings-and-2D-to-3D-Video-Conversion-Rankings](https://github.com/AIVFI/Monocular-Depth-Estimation-Rankings-and-2D-to-3D-Video-Conversion-Rankings)
 | RK | Model <br />*Links:*<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;Repository&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Plack_Frame_Interpolation_Transformer_and_Uncertainty_Guidance_CVPR_2023_paper.html)<br />UGFI | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![AAAI](https://img.shields.io/badge/2025-AAAI-fddfa0)](https://arxiv.org/abs/2406.17256)<br />MoMo |
 |:---:|:---:|:---:|:---:|
 | 1 | **UGFI 𝓛<sub>*S*</sub>**<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Plack_Frame_Interpolation_Transformer_and_Uncertainty_Guidance_CVPR_2023_paper.html) | **0.0864** {2} | - |
 | 2 | **MoMo**<br />[![AAAI](https://img.shields.io/badge/2025-AAAI-fddfa0)](https://arxiv.org/abs/2406.17256) [![GitHub Stars](https://img.shields.io/github/stars/JHLew/MoMo)](https://github.com/JHLew/MoMo) | - | **0.0872** {2} |
+| 3 | **FILM-𝓛<sub>*S*</sub>**<br />[![ECCV](https://img.shields.io/badge/2022-ECCV-67cd84)](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4614_ECCV_2022_paper.php) [![GitHub Stars](https://img.shields.io/github/stars/google-research/frame-interpolation)](https://github.com/google-research/frame-interpolation) | **0.0899** {2} | **0.0889** {2} |
 
 [![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
