@@ -23,6 +23,7 @@ Source: MoSt-DSA - Loss Function Comparison https://arxiv.org/html/2407.07078
 ### Video Deblurring Rankings
 - (to do)
 ### Video Frame Interpolation Rankings
+1. [**SNU-FILM-arb Medium (×4): LPIPS😍<=0.016**](#snu-film-arb-medium-4-lpips0016)
 1. [**SNU-FILM Extreme (×2): LPIPS😍<=0.0889**](#snu-film-extreme-2-lpips00889)
 1. [**SNU-FILM Hard (×2): LPIPS😍<=0.0429**](#snu-film-hard-2-lpips00429)
 1. [**SNU-FILM Medium (×2): LPIPS😍<=0.0202**](#snu-film-medium-2-lpips00202)
@@ -68,6 +69,15 @@ Source: MoSt-DSA - Loss Function Comparison https://arxiv.org/html/2407.07078
 | 2 | FLAVR |  **27.23dB** [^39] | December 2020 [^9] | [![GitHub Stars](https://img.shields.io/github/stars/tarun005/FLAVR)](https://github.com/tarun005/FLAVR) | - | - |
 | 3 | UTI-VFI |  **26.69dB** [^39] | December 2020 [^40] | [![GitHub Stars](https://img.shields.io/github/stars/yjzhang96/UTI-VFI)](https://github.com/yjzhang96/UTI-VFI) | - | - |
 | 4 | DeMFI |  **25.71dB** [^39] | November 2021 [^34] | [![GitHub Stars](https://img.shields.io/github/stars/JihyongOh/DeMFI)](https://github.com/JihyongOh/DeMFI) | - | - |
+
+[![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
+[![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
+
+## SNU-FILM-arb Medium (×4): LPIPS😍<=0.016
+📝 Note: This ranking has the most up-to-date layout.
+| RK | Model <br />*Links:*<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;Repository&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2407.08680)<br />GIMM-VFI | - |
+|:---:|:---:|:---:|:---:|
+| 1 | **GIMM-VFI-R-P**<br />[![NeurIPS](https://img.shields.io/badge/2024-NeurIPS-68448a)](https://proceedings.neurips.cc/paper_files/paper/2024/hash/7495fa446f10e9edef6e47b2d327596e-Abstract-Conference.html) [![GitHub Stars](https://img.shields.io/github/stars/GSeanCDAT/GIMM-VFI)](https://github.com/GSeanCDAT/GIMM-VFI) | **0.016** {2} | - |
 
 [![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
@@ -231,6 +241,14 @@ I have decided to completely abandon rankings based on the SSIM metric. Below ar
 
 ## Appendix 3: List of all research papers from the above rankings
 
+| Method | Abbr. | Paper | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />(Alt link) | Official<br />&nbsp;&nbsp;repository&nbsp;&nbsp; |
+|:---:|:---:|:---:|:---:|:---:|
+| BiM-VFI | - | BiM-VFI: Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions | [![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2412.11365) | - |
+| FILM | - | FILM: Frame Interpolation for Large Motion | [![ECCV](https://img.shields.io/badge/2022-ECCV-67cd84)](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4614_ECCV_2022_paper.php) | [![GitHub Stars](https://img.shields.io/github/stars/google-research/frame-interpolation)](https://github.com/google-research/frame-interpolation) |
+| GIMM-VFI | - | Generalizable Implicit Motion Modeling for Video Frame Interpolation | [![NeurIPS](https://img.shields.io/badge/2024-NeurIPS-68448a)](https://proceedings.neurips.cc/paper_files/paper/2024/hash/7495fa446f10e9edef6e47b2d327596e-Abstract-Conference.html)<br />[![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2407.08680) | [![GitHub Stars](https://img.shields.io/github/stars/GSeanCDAT/GIMM-VFI)](https://github.com/GSeanCDAT/GIMM-VFI) |
+| MoMo | - | Disentangled Motion Modeling for Video Frame Interpolation | [![AAAI](https://img.shields.io/badge/2025-AAAI-fddfa0)](https://arxiv.org/abs/2406.17256) | [![GitHub Stars](https://img.shields.io/github/stars/JHLew/MoMo)](https://github.com/JHLew/MoMo) |
+| UGFI | - | Frame Interpolation Transformer and Uncertainty Guidance | [![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Plack_Frame_Interpolation_Transformer_and_Uncertainty_Guidance_CVPR_2023_paper.html) | - |
+
 📝 **Note:** Temporarily, the following list contains full descriptions of those methods that have been removed from the footnotes or not included in the footnotes at all due to the new layout of the tables.
 
 | Method | Paper | &nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;&nbsp; |
@@ -240,7 +258,6 @@ I have decided to completely abandon rankings based on the SSIM metric. Below ar
 | ALANET |  |  |
 | AMT |  |  |
 | BIN | Blurry Video Frame Interpolation | [![CVPR](https://img.shields.io/badge/2020-CVPR-1e407f)](https://openaccess.thecvf.com/content_CVPR_2020/html/Shen_Blurry_Video_Frame_Interpolation_CVPR_2020_paper.html) |
-| BiM-VFI | BiM-VFI: Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions | [![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2412.11365) |
 | BiT | Blur Interpolation Transformer for Real-World Motion from Blur | [![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Zhong_Blur_Interpolation_Transformer_for_Real-World_Motion_From_Blur_CVPR_2023_paper.html) |
 | BVFI | Three-Stage Cascade Framework for Blurry Video Frame Interpolation | [![arXiv](https://img.shields.io/badge/2023-arXiv-b31b1b)](https://arxiv.org/abs/2310.05383) |
 | CDFI |  |  |
@@ -256,7 +273,6 @@ I have decided to completely abandon rankings based on the SSIM metric. Below ar
 | EDSC | Multiple Video Frame Interpolation via Enhanced Deformable Separable Convolution | [![TPAMI](https://img.shields.io/badge/2021-TPAMI-fefd02)](https://ieeexplore.ieee.org/document/9501506) |
 | EMA-VFI |  |  |
 | FGDCN |  |  |
-| FILM | FILM: Frame Interpolation for Large Motion | [![ECCV](https://img.shields.io/badge/2022-ECCV-67cd84)](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4614_ECCV_2022_paper.php) |
 | FLAVR | FLAVR: Flow-Agnostic Video Representations for Fast Frame Interpolation | [![WACV](https://img.shields.io/badge/2023-WACV-2e0094)](https://openaccess.thecvf.com/content/WACV2023/html/Kalluri_FLAVR_Flow-Agnostic_Video_Representations_for_Fast_Frame_Interpolation_WACV_2023_paper.html) |
 | HiFI | High-Resolution Frame Interpolation with Patch-based Cascaded Diffusion | [![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2410.11838) |
 | HRFFM | Video Frame Interpolation with Region-Distinguishable Priors from SAM | [![arXiv](https://img.shields.io/badge/2023-arXiv-b31b1b)](https://arxiv.org/abs/2312.15868) |
@@ -267,7 +283,6 @@ I have decided to completely abandon rankings based on the SSIM metric. Below ar
 | LADDER | LADDER: An Efficient Framework for Video Frame Interpolation | [![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2404.11108) |
 | M2M | Many-to-many Splatting for Efficient Video Frame Interpolation | [![CVPR](https://img.shields.io/badge/2022-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2022/html/Hu_Many-to-Many_Splatting_for_Efficient_Video_Frame_Interpolation_CVPR_2022_paper.html) |
 | MA-GCSPA | Exploring Motion Ambiguity and Alignment for High-Quality Video Frame Interpolation | [![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Zhou_Exploring_Motion_Ambiguity_and_Alignment_for_High-Quality_Video_Frame_Interpolation_CVPR_2023_paper.html) |
-| MoMo | Disentangled Motion Modeling for Video Frame Interpolation | [![AAAI](https://img.shields.io/badge/2025-AAAI-fddfa0)](https://arxiv.org/abs/2406.17256) |
 | NCM |  |  |
 | PerVFI | Perceptual-Oriented Video Frame Interpolation Via Asymmetric Synergistic Blending | [![CVPR](https://img.shields.io/badge/2024-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2024/html/Wu_Perception-Oriented_Video_Frame_Interpolation_via_Asymmetric_Blending_CVPR_2024_paper.html) |
 | PRF | Video Frame Interpolation and Enhancement via Pyramid Recurrent Framework | [![TIP](https://img.shields.io/badge/2020-TIP-dba2a7)](https://ieeexplore.ieee.org/document/9257179) |
@@ -280,7 +295,6 @@ I have decided to completely abandon rankings based on the SSIM metric. Below ar
 | Swin-VFI | Video Frame Interpolation for Polarization via Swin-Transformer | [![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2406.11371) |
 | TDPNet | Textural Detail Preservation Network for Video Frame Interpolation | [![Access](https://img.shields.io/badge/2023-Access-00b5e2)](https://ieeexplore.ieee.org/document/10182248) |
 | TTVFI |  |  |
-| UGFI | Frame Interpolation Transformer and Uncertainty Guidance | [![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Plack_Frame_Interpolation_Transformer_and_Uncertainty_Guidance_CVPR_2023_paper.html) |
 | UPR-Net |  |  |
 | UTI-VFI |  |  |
 | VFIformer | Video Frame Interpolation with Transformer | [![CVPR](https://img.shields.io/badge/2022-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2022/html/Lu_Video_Frame_Interpolation_With_Transformer_CVPR_2022_paper.html) |
