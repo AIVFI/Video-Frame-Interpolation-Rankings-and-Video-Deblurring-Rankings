@@ -23,7 +23,7 @@ Source: MoSt-DSA - Loss Function Comparison https://arxiv.org/html/2407.07078
 ### Video Deblurring Rankings
 - (to do)
 ### Video Frame Interpolation Rankings
-1. [**SNU-FILM-arb Medium (×4): LPIPS😍<=0.016**](#snu-film-arb-medium-4-lpips0016)
+1. [**SNU-FILM-arb Medium (×4): LPIPS😍<=0.023**](#snu-film-arb-medium-4-lpips0023)
 1. [**SNU-FILM Extreme (×2): LPIPS😍<=0.0889**](#snu-film-extreme-2-lpips00889)
 1. [**SNU-FILM Hard (×2): LPIPS😍<=0.0429**](#snu-film-hard-2-lpips00429)
 1. [**SNU-FILM Medium (×2): LPIPS😍<=0.0202**](#snu-film-medium-2-lpips00202)
@@ -73,11 +73,12 @@ Source: MoSt-DSA - Loss Function Comparison https://arxiv.org/html/2407.07078
 [![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
 
-## SNU-FILM-arb Medium (×4): LPIPS😍<=0.016
+## SNU-FILM-arb Medium (×4): LPIPS😍<=0.023
 📝 Note: This ranking has the most up-to-date layout.
-| RK | Model <br />*Links:*<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;Repository&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2407.08680)<br />GIMM-VFI | - |
+| RK | Model <br />*Links:*<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;Repository&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2407.08680)<br />GIMM-VFI | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2412.11365)<br />BiM-VFI |
 |:---:|:---:|:---:|:---:|
 | 1 | **GIMM-VFI-R-P**<br />[![NeurIPS](https://img.shields.io/badge/2024-NeurIPS-68448a)](https://proceedings.neurips.cc/paper_files/paper/2024/hash/7495fa446f10e9edef6e47b2d327596e-Abstract-Conference.html) [![GitHub Stars](https://img.shields.io/github/stars/GSeanCDAT/GIMM-VFI)](https://github.com/GSeanCDAT/GIMM-VFI) | **0.016** {2} | - |
+| 2 | **BiM-VFI**<br />[![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2412.11365) | - | **0.023** {2} |
 
 [![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
