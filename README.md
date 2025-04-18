@@ -24,7 +24,7 @@ Source: MoSt-DSA - Loss Function Comparison https://arxiv.org/html/2407.07078
 - (to do)
 ### Video Frame Interpolation Rankings
 1. [**X-TEST (×8): LPIPS😍<=0.07**](#x-test-8-lpips007)
-1. [**SNU-FILM-arb Extreme (×16): LPIPS😍<=0.092**](#snu-film-arb-extreme-16-lpips0092)
+1. [**SNU-FILM-arb Extreme (×16): LPIPS😍<=0.095**](#snu-film-arb-extreme-16-lpips0095)
 1. [**SNU-FILM-arb Hard (×8): LPIPS😍<=0.048**](#snu-film-arb-hard-8-lpips0048)
 1. [**SNU-FILM-arb Medium (×4): LPIPS😍<=0.026**](#snu-film-arb-medium-4-lpips0026)
 1. [**SNU-FILM Extreme (×2): LPIPS😍<=0.104**](#snu-film-extreme-2-lpips0104)
@@ -86,7 +86,7 @@ Source: MoSt-DSA - Loss Function Comparison https://arxiv.org/html/2407.07078
 [![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
 
-## SNU-FILM-arb Extreme (×16): LPIPS😍<=0.092
+## SNU-FILM-arb Extreme (×16): LPIPS😍<=0.095
 📝 Note: This ranking has the most up-to-date layout.
 | RK | Model <br />*Links:*<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;Repository&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2407.08680)<br />Table 4&7<br />GIMM-VFI | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![CVPR](https://img.shields.io/badge/2025-CVPR-1e407f)](https://arxiv.org/abs/2412.11365)<br />Table 1<br />BiM-VFI |
 |:---:|:---:|:---:|:---:|
@@ -94,6 +94,7 @@ Source: MoSt-DSA - Loss Function Comparison https://arxiv.org/html/2407.07078
 | 2 | **BiM-VFI**<br />[![CVPR](https://img.shields.io/badge/2025-CVPR-1e407f)](https://arxiv.org/abs/2412.11365) [![GitHub Stars](https://img.shields.io/github/stars/KAIST-VICLab/BiM-VFI)](https://github.com/KAIST-VICLab/BiM-VFI) | - | **0.070** {2} |
 | 3 | **M2M-PWC**<br />[![CVPR](https://img.shields.io/badge/2022-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2022/html/Hu_Many-to-Many_Splatting_for_Efficient_Video_Frame_Interpolation_CVPR_2022_paper.html) [![GitHub Stars](https://img.shields.io/github/stars/feinanshan/M2M_VFI)](https://github.com/feinanshan/M2M_VFI) | **0.112** {2} | **0.089** {2} |
 | 4 | **UPR-Net LARGE**<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Jin_A_Unified_Pyramid_Recurrent_Network_for_Video_Frame_Interpolation_CVPR_2023_paper.html) [![GitHub Stars](https://img.shields.io/github/stars/srcn-ivl/UPR-Net)](https://github.com/srcn-ivl/UPR-Net) | **0.111** {2} | **0.092** {2} |
+| 5 | **IA-Clearer [D,R]<sub>u</sub> IFRNet**<br />[![ECCV](https://img.shields.io/badge/2024-ECCV-67cd84)](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/4908_ECCV_2024_paper.php) [![GitHub Stars](https://img.shields.io/github/stars/zzh-tech/InterpAny-Clearer)](https://github.com/zzh-tech/InterpAny-Clearer) | - | **0.095** {2} |
 
 [![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
