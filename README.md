@@ -29,7 +29,7 @@ Source: MoSt-DSA - Loss Function Comparison https://arxiv.org/html/2407.07078
 1. [**SNU-FILM-arb Medium (×4): LPIPS😍<=0.026**](#snu-film-arb-medium-4-lpips0026)
 1. [**SNU-FILM Extreme (×2): LPIPS😍<=0.104**](#snu-film-extreme-2-lpips0104)
 1. [**SNU-FILM Hard (×2): LPIPS😍<=0.0480**](#snu-film-hard-2-lpips00480)
-1. [**SNU-FILM Medium (×2): LPIPS😍<=0.0213**](#snu-film-medium-2-lpips00213)
+1. [**SNU-FILM Medium (×2): LPIPS😍<=0.022**](#snu-film-medium-2-lpips0022)
 ### Video Frame Interpolation Rankings that will no longer be updated
 1. [**Vimeo-90K triplet: LPIPS😍<=0.018**](#vimeo-90k-triplet-lpips0018)
 1. [**Vimeo-90K triplet: LPIPS😍(SqueezeNet)<=0.014**](#vimeo-90k-triplet-lpipssqueezenet0014)
@@ -152,15 +152,16 @@ Source: MoSt-DSA - Loss Function Comparison https://arxiv.org/html/2407.07078
 [![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
 
-## SNU-FILM Medium (×2): LPIPS😍<=0.0213
+## SNU-FILM Medium (×2): LPIPS😍<=0.022
 📝 Note: This ranking has the most up-to-date layout.
-| RK | Model <br />*Links:*<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;Repository&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![CVPR](https://img.shields.io/badge/2025-CVPR-1e407f)](https://arxiv.org/abs/2504.00380)<br />Table 1<br />HFD | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![OpenReview](https://img.shields.io/badge/OpenReview-8c1b13)](https://openreview.net/forum?id=S6fd7X47Ra)<br />Table 2<br />DvP | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![AAAI](https://img.shields.io/badge/2025-AAAI-fddfa0)](https://arxiv.org/abs/2406.17256)<br />Table 1<br />MoMo | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Plack_Frame_Interpolation_Transformer_and_Uncertainty_Guidance_CVPR_2023_paper.html)<br />Table 1<br />UGFI |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| 1 | **HFD**<br />[![CVPR](https://img.shields.io/badge/2025-CVPR-1e407f)](https://arxiv.org/abs/2504.00380) | **0.0191** {2} | - | - | - |
-| 2 | **DvP+**<br />[![MM](https://img.shields.io/badge/2024-MM-cc1962)](https://dl.acm.org/doi/10.1145/3664647.3681555) | - | **0.020** {4} | - | - |
-| 3 | **MoMo**<br />[![AAAI](https://img.shields.io/badge/2025-AAAI-fddfa0)](https://arxiv.org/abs/2406.17256) [![GitHub Stars](https://img.shields.io/github/stars/JHLew/MoMo)](https://github.com/JHLew/MoMo) | - | - | **0.0202** {2} | - |
-| 4 | **UGFI 𝓛<sub>*S*</sub>**<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Plack_Frame_Interpolation_Transformer_and_Uncertainty_Guidance_CVPR_2023_paper.html) | - | - | - | **0.0209** {2} |
-| 5 | **FILM-𝓛<sub>*S*</sub>**<br />[![ECCV](https://img.shields.io/badge/2022-ECCV-67cd84)](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4614_ECCV_2022_paper.php) [![GitHub Stars](https://img.shields.io/github/stars/google-research/frame-interpolation)](https://github.com/google-research/frame-interpolation) | - | - | **0.0213** {2} | **0.0215** {2} |
+| RK | Model <br />*Links:*<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;Repository&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![CVPR](https://img.shields.io/badge/2025-CVPR-1e407f)](https://arxiv.org/abs/2504.00380)<br />Table 1<br />HFD | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![OpenReview](https://img.shields.io/badge/OpenReview-8c1b13)](https://openreview.net/forum?id=S6fd7X47Ra)<br />Table 2<br />DvP | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![AAAI](https://img.shields.io/badge/2025-AAAI-fddfa0)](https://arxiv.org/abs/2406.17256)<br />Table 1<br />MoMo | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Plack_Frame_Interpolation_Transformer_and_Uncertainty_Guidance_CVPR_2023_paper.html)<br />Table 1<br />UGFI | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2405.05953)<br />Table 1<br />CBBD |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 1 | **HFD**<br />[![CVPR](https://img.shields.io/badge/2025-CVPR-1e407f)](https://arxiv.org/abs/2504.00380) | **0.0191** {2} | - | - | - | - |
+| 2 | **DvP+**<br />[![MM](https://img.shields.io/badge/2024-MM-cc1962)](https://dl.acm.org/doi/10.1145/3664647.3681555) | - | **0.020** {4} | - | - | - |
+| 3 | **MoMo**<br />[![AAAI](https://img.shields.io/badge/2025-AAAI-fddfa0)](https://arxiv.org/abs/2406.17256) [![GitHub Stars](https://img.shields.io/github/stars/JHLew/MoMo)](https://github.com/JHLew/MoMo) | - | - | **0.0202** {2} | - | - |
+| 4 | **UGFI 𝓛<sub>*S*</sub>**<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Plack_Frame_Interpolation_Transformer_and_Uncertainty_Guidance_CVPR_2023_paper.html) | - | - | - | **0.0209** {2} | - |
+| 5 | **FILM-𝓛<sub>*S*</sub>**<br />[![ECCV](https://img.shields.io/badge/2022-ECCV-67cd84)](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4614_ECCV_2022_paper.php) [![GitHub Stars](https://img.shields.io/github/stars/google-research/frame-interpolation)](https://github.com/google-research/frame-interpolation) | - | - | **0.0213** {2} | **0.0215** {2} | - |
+| 6 | **CBBD**<br />[![MM](https://img.shields.io/badge/2024-MM-cc1962)](https://dl.acm.org/doi/10.1145/3664647.3680961) [![GitHub Stars](https://img.shields.io/github/stars/ZonglinL/ConsecutiveBrownianBridge)](https://github.com/ZonglinL/ConsecutiveBrownianBridge) | **0.0274** {2} | - | - | - | **0.022** {2} |
 
 [![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
