@@ -16,8 +16,6 @@ Source: MoSt-DSA - Loss Function Comparison https://arxiv.org/html/2407.07078
 1. :crown: **RBI with real motion blur✔️: LPIPS😍** (no data)  
 *This will be the King of all rankings. We look forward to ambitious researchers.*
 1. [**RBI with real motion blur✔️: PSNR😞>=28.5dB**](#rbi-with-real-motion-blur%EF%B8%8F-psnr285db)
-1. **Adobe240 (640×352) with synthetic motion blur✖️: LPIPS😍** (no data)  
-1. [**Adobe240 (640×352) with synthetic motion blur✖️: PSNR😞>=33.3dB**](#adobe240-640352-with-synthetic-motion-blur%EF%B8%8F-psnr333db)
 ### Video Deblurring Rankings
 - (to do)
 ### Video Frame Interpolation Rankings
@@ -42,23 +40,12 @@ Source: MoSt-DSA - Loss Function Comparison https://arxiv.org/html/2407.07078
 --------------------
 
 ## RBI with real motion blur✔️: PSNR😞>=28.5dB
-| RK | &nbsp;&nbsp;&nbsp;&nbsp;Model&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;PSNR&nbsp;↑&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.} | Training<br />dataset | Official<br />&nbsp;&nbsp;repository&nbsp;&nbsp; | Practical<br />model | VapourSynth |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| 1 | Pre-BiT++<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Zhong_Blur_Interpolation_Transformer_for_Real-World_Motion_From_Blur_CVPR_2023_paper.html) | **31.32** {3}<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Zhong_Blur_Interpolation_Transformer_for_Real-World_Motion_From_Blur_CVPR_2023_paper.html) | *Pretraining*: Adobe240<br />*Training*: RBI | [![GitHub Stars](https://img.shields.io/github/stars/zzh-tech/BiT)](https://github.com/zzh-tech/BiT) | [<img alt="Request" width="40px" src="cat.png">](https://github.com/zzh-tech/BiT/issues/5) | - |
-| 2 | DeMFI-Net<sub>*rb*</sub>(5,3)<br />[![ECCV](https://img.shields.io/badge/2022-ECCV-67cd84)](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4406_ECCV_2022_paper.php) | **29.03** {4}<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Zhong_Blur_Interpolation_Transformer_for_Real-World_Motion_From_Blur_CVPR_2023_paper.html) | RBI | [![GitHub Stars](https://img.shields.io/github/stars/JihyongOh/DeMFI)](https://github.com/JihyongOh/DeMFI) | - | - |
-| 3 | PRF<sub>4</sub> -*Large*<br />[![CVPR](https://img.shields.io/badge/2020-CVPR-1e407f)](https://openaccess.thecvf.com/content_CVPR_2020/html/Shen_Blurry_Video_Frame_Interpolation_CVPR_2020_paper.html)<br />*ENH:*<br />[![TIP](https://img.shields.io/badge/2020-TIP-dba2a7)](https://ieeexplore.ieee.org/document/9257179) | **28.55** {5}<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Zhong_Blur_Interpolation_Transformer_for_Real-World_Motion_From_Blur_CVPR_2023_paper.html) | RBI | [![GitHub Stars](https://img.shields.io/github/stars/laomao0/BIN)](https://github.com/laomao0/BIN) | - | - |
-
-[![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
-[![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
-
-## Adobe240 (640×352) with synthetic motion blur✖️: PSNR😞>=33.3dB
-| RK | &nbsp;&nbsp;&nbsp;&nbsp;Model&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;PSNR&nbsp;↑&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.} | Originally<br />announced<br />or Training<br />dataset | Official<br />&nbsp;&nbsp;repository&nbsp;&nbsp; | Practical<br />model | VapourSynth |
-|:----:|:----|:----:|:----:|:----:|:----:|:----:|
-| 1 | BVFI<br />[![arXiv](https://img.shields.io/badge/2023-arXiv-b31b1b)](https://arxiv.org/abs/2310.05383) | **35.43** {4}<br />[![arXiv](https://img.shields.io/badge/2023-arXiv-b31b1b)](https://arxiv.org/abs/2310.05383) | Adobe240 | - | - | - |
-| 2 | BiT++<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Zhong_Blur_Interpolation_Transformer_for_Real-World_Motion_From_Blur_CVPR_2023_paper.html) | **34.97** {3}<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Zhong_Blur_Interpolation_Transformer_for_Real-World_Motion_From_Blur_CVPR_2023_paper.html) | Adobe240 | [![GitHub Stars](https://img.shields.io/github/stars/zzh-tech/BiT)](https://github.com/zzh-tech/BiT) | [<img alt="Request" width="40px" src="cat.png">](https://github.com/zzh-tech/BiT/issues/5) | - |
-| 3 | DeMFI-Net<sub>*rb*</sub>(5,3)<br />[![ECCV](https://img.shields.io/badge/2022-ECCV-67cd84)](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4406_ECCV_2022_paper.php) | **34.34** {4}<br />[![ECCV](https://img.shields.io/badge/2022-ECCV-67cd84)](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4406_ECCV_2022_paper.php) | Adobe240 | [![GitHub Stars](https://img.shields.io/github/stars/JihyongOh/DeMFI)](https://github.com/JihyongOh/DeMFI) | - | - |
-| 4 | ALANET |  **33.34dB** [^37] | August 2020 [^37] | [![GitHub Stars](https://img.shields.io/github/stars/agupt013/ALANET)](https://github.com/agupt013/ALANET) | - | - |
-| 5 | PRF<sub>4</sub> -*Large* |  **33.32dB** [^38] | February 2020 [^35] | [![GitHub Stars](https://img.shields.io/github/stars/laomao0/BIN)](https://github.com/laomao0/BIN) | - | - |
+📝 Note: Pre-BiT++ is pre-trained on Adobe240 and then fine-tuned on RBI.
+| RK | Model <br />*Links:*<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;Repository&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;PSNR&nbsp;↑&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Zhong_Blur_Interpolation_Transformer_for_Real-World_Motion_From_Blur_CVPR_2023_paper.html)<br />Table 1&6<br />BiT |
+|:---:|:---:|:---:|
+| 1 | **Pre-BiT++**<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Zhong_Blur_Interpolation_Transformer_for_Real-World_Motion_From_Blur_CVPR_2023_paper.html) [![GitHub Stars](https://img.shields.io/github/stars/zzh-tech/BiT)](https://github.com/zzh-tech/BiT) | **31.32** {3} |
+| 2 | **DeMFI-Net**<sub>*rb*</sub>**(5,3)**<br />[![ECCV](https://img.shields.io/badge/2022-ECCV-67cd84)](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4406_ECCV_2022_paper.php) [![GitHub Stars](https://img.shields.io/github/stars/JihyongOh/DeMFI)](https://github.com/JihyongOh/DeMFI) | **29.03** {4} |
+| 3 | **PRF<sub>4</sub>** -*Large*<br />[![TIP](https://img.shields.io/badge/2020-TIP-dba2a7)](https://ieeexplore.ieee.org/document/9257179) [![GitHub Stars](https://img.shields.io/github/stars/laomao0/BIN)](https://github.com/laomao0/BIN) | **28.55** {5} |
 
 [![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
@@ -295,8 +282,6 @@ I have decided to completely abandon rankings based on the SSIM metric. Below ar
 | UGFI | - | Frame Interpolation Transformer and Uncertainty Guidance | [![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Plack_Frame_Interpolation_Transformer_and_Uncertainty_Guidance_CVPR_2023_paper.html) | - |
 | XVFI | - | XVFI: eXtreme Video Frame Interpolation | [![ICCV](https://img.shields.io/badge/2021-ICCV-fcb900)](https://openaccess.thecvf.com/content/ICCV2021/html/Sim_XVFI_eXtreme_Video_Frame_Interpolation_ICCV_2021_paper.html) | [![GitHub Stars](https://img.shields.io/github/stars/JihyongOh/XVFI)](https://github.com/JihyongOh/XVFI) |
 
-📝 **Note:** Temporarily, the following list contains full descriptions of those methods that have been removed from the footnotes or not included in the footnotes at all due to the new layout of the tables.
-
 | Method | Paper | &nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;&nbsp; |
 |:---:|:---:|:---:|
 | ABME |  |  |
@@ -304,7 +289,6 @@ I have decided to completely abandon rankings based on the SSIM metric. Below ar
 | ALANET |  |  |
 | AMT |  |  |
 | BIN | Blurry Video Frame Interpolation | [![CVPR](https://img.shields.io/badge/2020-CVPR-1e407f)](https://openaccess.thecvf.com/content_CVPR_2020/html/Shen_Blurry_Video_Frame_Interpolation_CVPR_2020_paper.html) |
-| BVFI | Three-Stage Cascade Framework for Blurry Video Frame Interpolation | [![arXiv](https://img.shields.io/badge/2023-arXiv-b31b1b)](https://arxiv.org/abs/2310.05383) |
 | CDFI |  |  |
 | CtxSyn | Context-aware Synthesis for Video Frame Interpolation | [![CVPR](https://img.shields.io/badge/2018-CVPR-1e407f)](https://openaccess.thecvf.com/content_cvpr_2018/html/Niklaus_Context-Aware_Synthesis_for_CVPR_2018_paper.html) |
 | DBVI |  |  |
@@ -381,7 +365,7 @@ I have decided to completely abandon rankings based on the SSIM metric. Below ar
 [^34]: DeMFI: Deep Joint Deblurring and Multi-Frame Interpolation with Flow-Guided Attentive Correlation and Recursive Boosting [[ECCV 2022]](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4406_ECCV_2022_paper.php) [[arXiv]](https://arxiv.org/abs/2111.09985)
 [^35]: Blurry Video Frame Interpolation [[CVPR 2020]](https://openaccess.thecvf.com/content_CVPR_2020/html/Shen_Blurry_Video_Frame_Interpolation_CVPR_2020_paper.html) [[arXiv]](https://arxiv.org/abs/2002.12259)
 [^36]: Video Frame Interpolation with Densely Queried Bilateral Correlation [[IJCAI 2023]](https://www.ijcai.org/proceedings/2023/198) [[arXiv]](https://arxiv.org/abs/2304.13596)
-[^37]: ALANET: Adaptive Latent Attention Network for Joint Video Deblurring and Interpolation [[MM 2020]](https://dl.acm.org/doi/10.1145/3394171.3413686) [[arXiv]](https://arxiv.org/abs/2009.01005)
+
 [^38]: Video Frame Interpolation and Enhancement via Pyramid Recurrent Framework [[TIP 2020]](https://ieeexplore.ieee.org/document/9257179)
 
 
