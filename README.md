@@ -30,7 +30,6 @@ Source: MoSt-DSA - Loss Function Comparison https://arxiv.org/html/2407.07078
 1. [**Vimeo-90K triplet: LPIPS😍<=0.018**](#vimeo-90k-triplet-lpips0018)
 1. [**Vimeo-90K triplet: LPIPS😍(SqueezeNet)<=0.014**](#vimeo-90k-triplet-lpipssqueezenet0014)
 1. [**Vimeo-90K triplet: PSNR😞>=36dB**](#vimeo-90k-triplet-psnr36db)
-1. [**Vimeo-90K septuplet: LPIPS😍<=0.032**](#vimeo-90k-septuplet-lpips0032)
 1. [**Vimeo-90K septuplet: PSNR😞>=36dB**](#vimeo-90k-septuplet-psnr36db)
 ### Appendices
 - **Appendix 1: Rules for qualifying models for the rankings** (to do)
@@ -204,17 +203,6 @@ Source: MoSt-DSA - Loss Function Comparison https://arxiv.org/html/2407.07078
 [![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
 
-## Vimeo-90K septuplet: LPIPS😍<=0.032
-| RK | Model | LPIPS ↓ | Originally<br />announced | Official<br />&nbsp;&nbsp;repository&nbsp;&nbsp; | Practical<br />model | VapourSynth |
-|:----:|:----|:----:|:----:|:----:|:----:|:----:|
-| 1 | RIFE |  **0.0233** [^27] | November 2020 [^12] | [![GitHub Stars](https://img.shields.io/github/stars/megvii-research/ECCV2022-RIFE)](https://github.com/megvii-research/ECCV2022-RIFE) | [Practical-RIFE 4.25](https://github.com/hzwer/Practical-RIFE#trained-model) | [![TensorRT](https://img.shields.io/badge/TensorRT-77b900)](https://github.com/AmusementClub/vs-mlrt)<br />[![GitHub Stars](https://img.shields.io/github/stars/AmusementClub/vs-mlrt)](https://github.com/AmusementClub/vs-mlrt)<br />[![TensorRT](https://img.shields.io/badge/TensorRT-77b900)](https://github.com/HolyWu/vs-rife)<br />[![GitHub Stars](https://img.shields.io/github/stars/HolyWu/vs-rife)](https://github.com/HolyWu/vs-rife)<br />[![ncnn](https://img.shields.io/badge/ncnn-0052d9)](https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan)<br />[![GitHub Stars](https://img.shields.io/github/stars/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan)](https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan) |
-| 2 | IFRNet |  **0.0274** [^27] | May 2022 [^10] | [![GitHub Stars](https://img.shields.io/github/stars/ltkong218/IFRNet)](https://github.com/ltkong218/IFRNet) | - | - |
-| 3 | VFIT-B | **0.0304** [^27] | November 2021 [^2] | [![GitHub Stars](https://img.shields.io/github/stars/zhshi0816/Video-Frame-Interpolation-Transformer)](https://github.com/zhshi0816/Video-Frame-Interpolation-Transformer) | - | - |
-| 4 | ABME |  **0.0309** [^27] | August 2021 [^13] | [![GitHub Stars](https://img.shields.io/github/stars/JunHeum/ABME)](https://github.com/JunHeum/ABME) | - | - |
-
-[![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
-[![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
-
 ## Vimeo-90K septuplet: PSNR😞>=36dB
 | RK | &nbsp;&nbsp;&nbsp;&nbsp;Model&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;PSNR&nbsp;↑&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.} | Originally<br />announced<br />or Training<br />dataset | Official<br />&nbsp;&nbsp;repository&nbsp;&nbsp; | Practical<br />model | VapourSynth |
 |:----:|:----|:----:|:----:|:----:|:----:|:----:|
@@ -355,7 +343,7 @@ I have decided to completely abandon rankings based on the SSIM metric. Below ar
 [^24]: CDFI: Compression-Driven Network Design for Frame Interpolation [[CVPR 2021]](https://openaccess.thecvf.com/content/CVPR2021/html/Ding_CDFI_Compression-Driven_Network_Design_for_Frame_Interpolation_CVPR_2021_paper.html) [[arXiv]](https://arxiv.org/abs/2103.10559)
 [^25]: Multiple Video Frame Interpolation via Enhanced Deformable Separable Convolution [[TPAMI 2021]](https://ieeexplore.ieee.org/document/9501506) [[arXiv]](https://arxiv.org/abs/2006.08070)
 [^26]: DRVI: Dual Refinement for Video Interpolation [[Access 2021]](https://ieeexplore.ieee.org/document/9513293)
-[^27]: Exploring Discontinuity for Video Frame Interpolation [[CVPR 2023]](https://openaccess.thecvf.com/content/CVPR2023/html/Lee_Exploring_Discontinuity_for_Video_Frame_Interpolation_CVPR_2023_paper.html) [[arXiv]](https://arxiv.org/abs/2202.07291)
+
 [^28]: Revisiting Adaptive Convolutions for Video Frame Interpolation [[WACV 2021]](https://openaccess.thecvf.com/content/WACV2021/html/Niklaus_Revisiting_Adaptive_Convolutions_for_Video_Frame_Interpolation_WACV_2021_paper.html) [[arXiv]](https://arxiv.org/abs/2011.01280)
 [^29]: Locally Adaptive Structure and Texture Similarity for Image Quality Assessment [[MM 2021]](https://dl.acm.org/doi/10.1145/3474085.3475419) [[arXiv]](https://arxiv.org/abs/2110.08521)
 [^30]: The Unreasonable Effectiveness of Deep Features as a Perceptual Metric [[CVPR 2018]](https://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_The_Unreasonable_Effectiveness_CVPR_2018_paper.html) [[arXiv]](https://arxiv.org/abs/1801.03924)
