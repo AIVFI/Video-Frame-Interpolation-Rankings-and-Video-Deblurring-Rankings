@@ -23,7 +23,7 @@ Source: MoSt-DSA - Loss Function Comparison https://arxiv.org/html/2407.07078
 1. [**SNU-FILM-arb Extreme (×16): LPIPS😍<=0.095**](#snu-film-arb-extreme-16-lpips0095)
 1. [**SNU-FILM-arb Hard (×8): LPIPS😍<=0.048**](#snu-film-arb-hard-8-lpips0048)
 1. [**SNU-FILM-arb Medium (×4): LPIPS😍<=0.026**](#snu-film-arb-medium-4-lpips0026)
-1. [**SNU-FILM Extreme (×2): LPIPS😍<=0.104**](#snu-film-extreme-2-lpips0104)
+1. [**SNU-FILM Extreme (×2): LPIPS😍<=0.1099**](#snu-film-extreme-2-lpips01099)
 1. [**SNU-FILM Hard (×2): LPIPS😍<=0.052**](#snu-film-hard-2-lpips0052)
 1. [**SNU-FILM Medium (×2): LPIPS😍<=0.022**](#snu-film-medium-2-lpips0022)
 ### Video Frame Interpolation Rankings that will no longer be updated
@@ -99,7 +99,7 @@ Source: MoSt-DSA - Loss Function Comparison https://arxiv.org/html/2407.07078
 [![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
 
-## SNU-FILM Extreme (×2): LPIPS😍<=0.104
+## SNU-FILM Extreme (×2): LPIPS😍<=0.1099
 📝 Note: This ranking has the most up-to-date layout.
 | RK | Model <br />*Links:*<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue&nbsp;&nbsp;&nbsp;Repository&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![CVPR](https://img.shields.io/badge/2025-CVPR-1e407f)](https://arxiv.org/abs/2504.00380)<br />Table 1<br />HFD | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Plack_Frame_Interpolation_Transformer_and_Uncertainty_Guidance_CVPR_2023_paper.html)<br />Table 1<br />UGFI | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2406.17256)<br />Table 1<br />MoMo | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![CVPR](https://img.shields.io/badge/2025-CVPR-1e407f)](https://arxiv.org/abs/2412.11365)<br />Table 2<br />BiM-VFI | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![OpenReview](https://img.shields.io/badge/OpenReview-8c1b13)](https://openreview.net/forum?id=S6fd7X47Ra)<br />Table 2<br />DvP | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![CVPR](https://img.shields.io/badge/2025-CVPR-1e407f)](https://arxiv.org/abs/2503.15831)<br />Table 1<br />EDEN | &nbsp;&nbsp;&nbsp;LPIPS&nbsp;↓&nbsp;&nbsp;&nbsp;<br />{Input&nbsp;fr.}<br />[![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2405.05953)<br />Table 1<br />CBBD |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -112,6 +112,7 @@ Source: MoSt-DSA - Loss Function Comparison https://arxiv.org/html/2407.07078
 | 6-7 | **DvP+**<br />[![MM](https://img.shields.io/badge/2024-MM-cc1962)](https://dl.acm.org/doi/10.1145/3664647.3681555) | - | - | - | - | **0.097** {4} | - | - |
 | 8 | **EDEN**<br />[![CVPR](https://img.shields.io/badge/2025-CVPR-1e407f)](https://arxiv.org/abs/2503.15831) [![GitHub Stars](https://img.shields.io/github/stars/bbldCVer/EDEN)](https://github.com/bbldCVer/EDEN) | - | - | - | - | - | **0.0986** {2} | - |
 | 9 | **CBBD**<br />[![MM](https://img.shields.io/badge/2024-MM-cc1962)](https://dl.acm.org/doi/10.1145/3664647.3680961) [![GitHub Stars](https://img.shields.io/github/stars/ZonglinL/ConsecutiveBrownianBridge)](https://github.com/ZonglinL/ConsecutiveBrownianBridge) | **0.1040** {2} | - | - | - | - | **0.1101** {2} | **0.104** {2} |
+| 10 | **EMA-VFI**<br />[![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Zhang_Extracting_Motion_and_Appearance_via_Inter-Frame_Attention_for_Efficient_Video_CVPR_2023_paper.html) [![GitHub Stars](https://img.shields.io/github/stars/MCG-NJU/EMA-VFI)](https://github.com/MCG-NJU/EMA-VFI) | **0.1099** {2} | - | **0.1099** {2} | **0.113** {2} | **0.119** {2} | - | **0.114** {2} |
 
 [![Back to Top](https://img.shields.io/badge/Back_to_Top-555555)](#video-frame-interpolation-rankingsand-video-deblurring-rankings)
 [![Back to the List of Rankings](https://img.shields.io/badge/Back_to_the_List_of_Rankings-555555)](#list-of-rankings)
@@ -262,6 +263,7 @@ I have decided to completely abandon rankings based on the SSIM metric. Below ar
 | DeMFI | - | DeMFI: Deep Joint Deblurring and Multi-Frame Interpolation with Flow-Guided Attentive Correlation and Recursive Boosting | [![ECCV](https://img.shields.io/badge/2022-ECCV-67cd84)](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4406_ECCV_2022_paper.php) | [![GitHub Stars](https://img.shields.io/github/stars/JihyongOh/DeMFI)](https://github.com/JihyongOh/DeMFI) |
 | DvP | - | Dual-view Pyramid Network for Video Frame Interpolation | [![MM](https://img.shields.io/badge/2024-MM-cc1962)](https://dl.acm.org/doi/10.1145/3664647.3681555)<br />[![OpenReview](https://img.shields.io/badge/OpenReview-8c1b13)](https://openreview.net/forum?id=S6fd7X47Ra) | - |
 | EDEN | - | EDEN: Enhanced Diffusion for High-quality Large-motion Video Frame Interpolation | [![CVPR](https://img.shields.io/badge/2025-CVPR-1e407f)](https://arxiv.org/abs/2503.15831) | [![GitHub Stars](https://img.shields.io/github/stars/bbldCVer/EDEN)](https://github.com/bbldCVer/EDEN) |
+| EMA-VFI | - | Extracting Motion and Appearance via Inter-Frame Attention for Efficient Video Frame Interpolation | [![CVPR](https://img.shields.io/badge/2023-CVPR-1e407f)](https://openaccess.thecvf.com/content/CVPR2023/html/Zhang_Extracting_Motion_and_Appearance_via_Inter-Frame_Attention_for_Efficient_Video_CVPR_2023_paper.html) | [![GitHub Stars](https://img.shields.io/github/stars/MCG-NJU/EMA-VFI)](https://github.com/MCG-NJU/EMA-VFI) |
 | FILM | - | FILM: Frame Interpolation for Large Motion | [![ECCV](https://img.shields.io/badge/2022-ECCV-67cd84)](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4614_ECCV_2022_paper.php) | [![GitHub Stars](https://img.shields.io/github/stars/google-research/frame-interpolation)](https://github.com/google-research/frame-interpolation) |
 | GIMM-VFI | - | Generalizable Implicit Motion Modeling for Video Frame Interpolation | [![NeurIPS](https://img.shields.io/badge/2024-NeurIPS-68448a)](https://proceedings.neurips.cc/paper_files/paper/2024/hash/7495fa446f10e9edef6e47b2d327596e-Abstract-Conference.html)<br />[![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2407.08680) | [![GitHub Stars](https://img.shields.io/github/stars/GSeanCDAT/GIMM-VFI)](https://github.com/GSeanCDAT/GIMM-VFI) |
 | HFD | - | Hierarchical Flow Diffusion for Efficient Frame Interpolation | [![CVPR](https://img.shields.io/badge/2025-CVPR-1e407f)](https://arxiv.org/abs/2504.00380) | - |
@@ -289,7 +291,6 @@ I have decided to completely abandon rankings based on the SSIM metric. Below ar
 | EDC | Enhancing Deformable Convolution based Video Frame Interpolation with Coarse-to-fine 3D CNN | [![ICIP](https://img.shields.io/badge/2022-ICIP-a6539b)](https://ieeexplore.ieee.org/document/9897929) |
 | EDENVFI |  |  |
 | EDSC | Multiple Video Frame Interpolation via Enhanced Deformable Separable Convolution | [![TPAMI](https://img.shields.io/badge/2021-TPAMI-fefd02)](https://ieeexplore.ieee.org/document/9501506) |
-| EMA-VFI |  |  |
 | FGDCN |  |  |
 | FLAVR | FLAVR: Flow-Agnostic Video Representations for Fast Frame Interpolation | [![WACV](https://img.shields.io/badge/2023-WACV-2e0094)](https://openaccess.thecvf.com/content/WACV2023/html/Kalluri_FLAVR_Flow-Agnostic_Video_Representations_for_Fast_Frame_Interpolation_WACV_2023_paper.html) |
 | HiFI | High-Resolution Frame Interpolation with Patch-based Cascaded Diffusion | [![arXiv](https://img.shields.io/badge/2024-arXiv-b31b1b)](https://arxiv.org/abs/2410.11838) |
